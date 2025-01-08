@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Not Enough Salt - Home</title>
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Meal Plan</a>
+          </li>
+          <li>
+            <a href="#">News</a>
+          </li>
+          <li>
+            <img src="/Assets/Logo.svg" alt="NotEnoughSalt Logo" href="#" />
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">FAQs</a>
+          </li>
+          <li>
+            <a href="#">Profile</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div>
+        <div class="search_bar">
+          <input type="text" placeholder="Search.." />
+          <img src="/Assets/Etc/Search.svg" alt="Search Image" />
+        </div>
+
+        <div>
+          <div class="picks_of_the_week">
+            <div>
+              <h2>Our Picks of the Week!</h2>
+            </div>
+            <div class="picks_of_the_week_images">
+              <img src="/Assets/Food/Crepes.jpg" alt="Crepes Image" />
+              <img src="/Assets/Food/Carbonara.jpg" alt="Carbonara Image" />
+              <img src="/Assets/Food/Briyani.jpg" alt="Briyano Image" />
+            </div>
+          </div>
+
+          <div class="find_perfect_recipe">
+            <div>
+              <h2>Find the Perfect Recipe!</h2>
+            </div>
+            <div class="find_perfect_recipe_dropdowns">
+              <div>
+                <select name="find_recipe_course" id="find_recipe_course">
+                  <option value="breakfast">Breakfast</option>
+                  <option value="lunch">Lunch</option>
+                  <option value="dinner">Dinner</option>
+                  <option value="dessert">Dessert</option>
+                  <option value="snack">Snack</option>
+                </select>
+              </div>
+
+              <div>
+                <select name="find_recipe_region" id="find_recipe_region">
+                  <option value="africa">Africa</option>
+                  <option value="americas">Americas</option>
+                  <option value="asia">Asia</option>
+                  <option value="europe">Europe</option>
+                  <option value="oceania">Oceania</option>
+                </select>
+              </div>
+
+              <div>
+                <select name="find_recipe_time" id="find_recipe_time">
+                  <option value="under_30">Under 30 Minutes</option>
+                  <option value="under_1">Under 1 Hour</option>
+                  <option value="more_1">More Than 1 Hour</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button class="find_recipe_button">Find</button>
+        </div>
+
+        <div class="recent_favorites">
+          <h2>Recent Favorites</h2>
+          <a href="#">
+            <img src="/Assets/Etc/number1.svg" alt="1" />
+            <p>Zesty Lemon Herb Chicken Skewers</p>
+          </a>
+
+          <a href="#">
+            <img src="/Assets/Etc/number2.svg" alt="2" />
+            <p>Honey-Glazed BBQ Salmon Bites</p>
+          </a>
+
+          <a href="#">
+            <img src="/Assets/Etc/number3.svg" alt="3" />
+            <p>Spicy Mango Salsa Tacos</p>
+          </a>
+        </div>
+
+        <div class="explore_more">
+          <h2>Explore More!</h2>
+
+          <a href="#">
+            <img
+              src="/Assets/Food/MamalygaMujdei.jpg"
+              alt="Mamalyga with Mujdei Image"
+            />
+          </a>
+          <a href="#">
+            <img src="/Assets/Food/Bibimbap.jpg" alt="Bibimbap Image" />
+          </a>
+          <a href="#">
+            <img src="/Assets/Food/Pizza.jpg" alt="Pizza Image" />
+          </a>
+          <a href="#">
+            <img src="/Assets/Food/LoMein.jpg" alt="Lo Mein Image" />
+          </a>
+        </div>
+      </div>
+    </main>
+    <script src="home.js"></script>
+  </body>
+</html>
