@@ -11,46 +11,55 @@
   <body>
     <main>
       <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Meal Plan</a>
-          </li>
-          <li>
-            <a href="#">News</a>
-          </li>
-          <li>
-            <img src="/Assets/Logo.svg" alt="NotEnoughSalt Logo" href="#" />
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">FAQs</a>
-          </li>
-          <li>
-            <a href="#">Profile</a>
-          </li>
-        </ul>
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="#">home</a>
+            </li>
+            <li>
+              <a href="#">meal plan</a>
+            </li>
+            <li>
+              <a href="#">news</a>
+            </li>
+            <li>
+              <img
+                class="nav_nes_logo"
+                src="/Assets/Logo.svg"
+                alt="NotEnoughSalt Logo"
+                href="#"
+              />
+            </li>
+            <li>
+              <a href="#">about</a>
+            </li>
+            <li>
+              <a href="#">faqs</a>
+            </li>
+            <li>
+              <a href="#">profile</a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <div>
         <div class="search_bar">
-          <input type="text" placeholder="Search.." />
-          <img src="/Assets/Etc/Search.svg" alt="Search Image" />
+          <input class="search_bar_input" type="text" placeholder="Search.." />
         </div>
 
         <div>
-          <div class="picks_of_the_week">
+          <div class="picks_of_the_week_images">
             <div>
-              <h2>Our Picks of the Week!</h2>
+              <div class="picks_of_the_week_text">
+                <h2>Our Picks</h2>
+                <h2>of the Week!</h2>
+              </div>
+              <img src="/Assets/Food/Crepe.svg" alt="Crepes Image" />
             </div>
-            <div class="picks_of_the_week_images">
-              <img src="/Assets/Food/Crepes.jpg" alt="Crepes Image" />
-              <img src="/Assets/Food/Carbonara.jpg" alt="Carbonara Image" />
-              <img src="/Assets/Food/Briyani.jpg" alt="Briyano Image" />
+            <div class="picks_of_the_week_images_cb">
+              <img src="/Assets/Food/Carbonara.svg" alt="Carbonara Image" />
+              <img src="/Assets/Food/Briyani.svg" alt="Briyano Image" />
             </div>
           </div>
 
@@ -184,11 +193,44 @@
               <p>All Recipes</p>
             </div>
           </div>
-
         </div>
 
+        <div class="newsletter">
+          <h2>Join Our Newsletter!</h2>
+          <div>
+            <p>
+              Stay in the loop! Join our newsletter for exclusive updates,
+              special offers, and the latest insights delivered straight to your
+              inbox. Be the first to know about new recipes. Don’t miss out!
+            </p>
+            <input type="text" placeholder="Email" />
+          </div>
+        </div>
       </div>
     </main>
+
+    <footer>
+      <img src="/Assets/Etc/NeedHelpSalt.svg" alt="Need Help?" />
+      <div class="keep_in_touch">
+        <h2>Let's keep in touch!</h2>
+        <div class="keep_in_touch_email">
+          <p>Contact Us - support@notenoughsalt.com</p>
+        </div>
+        <div class="keep_in_touch_social">
+          <img src="/Assets/Etc/Media/Instagram Fill.svg" alt="Instagram" />
+          <img src="/Assets/Etc/Media/Google Fill.svg" alt="Google" />
+          <img src="/Assets/Etc/Media/Pinterest Fill.svg" alt="Pinterest" />
+          <img src="/Assets/Etc/Media/Youtube Fill.svg" alt="YouTube" />
+
+          <p>@NotEnoughSalt</p>
+        </div>
+        <div class="keep_in_touch_etc">
+          <p>about</p>
+          <p>recipes</p>
+        </div>
+      </div>
+    </footer>
+
     <script src="home.js"></script>
   </body>
 </html>
