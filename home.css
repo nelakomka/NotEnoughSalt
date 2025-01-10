@@ -45,7 +45,7 @@ h2 {
   font-style: normal;
   font-size: 45px;
   color: #f17e37;
-  -webkit-text-stroke: 1px #522a12;
+  -webkit-text-stroke: 2px #522a12;
   text-shadow: #522a12 2px 3px 3px;
 }
 
@@ -67,6 +67,7 @@ h2 {
     background-image: url('/Assets/Etc/Search.svg');
     background-repeat: no-repeat;
     background-position: 15px;
+    cursor: pointer;
   }
 }
 
@@ -96,3 +97,91 @@ h2 {
     width: min-content;
   }
 }
+
+.perfect_and_recent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+
+  .find_perfect_recipe {
+    position: relative;
+    background-color: #79b3e6;
+    border-radius: 10px;
+    height: 240px;
+    margin-top: 90px;
+    padding: 20px;
+
+    .find_perfect_recipe_text {
+      position: absolute;
+      top: -50px;
+      left: -50px;
+      rotate: -10.45deg;
+      line-height: 45px;
+
+      h2 {
+        color: #b8b880;
+      }
+    }
+
+    .dropdowns_and_button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 35px;
+
+      .find_perfect_recipe_dropdowns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        margin-top: 50px;
+
+        select {
+          background-color: #f8efdf;
+          padding: 7px;
+          border-radius: 3px;
+
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+
+      button {
+        background-color: #b8b880;
+        padding: 7px 25px;
+        border-radius: 10px;
+        box-shadow: #522a12 2px 3px 3px;
+        cursor: pointer;
+        margin-top: 15px;
+
+        font-size: 17px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .recent_favorites {
+    align-self: flex-end;
+
+    .recent_favorites_top {
+      border: 2px solid #522a12;
+      border-radius: 10px;
+
+      & > :not(:last-child) {
+        border-bottom: 2px solid #522a12;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        color: #522a12;
+        text-decoration: none;
+        gap: 15px;
+        padding: 3px;
+      }
+    }
+  }
+}
+
