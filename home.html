@@ -219,27 +219,51 @@
     </main>
 
     <footer>
-      <img src="/Assets/Etc/NeedHelpSalt.svg" alt="Need Help?" />
       <div class="keep_in_touch">
-        <h2>Let's keep in touch!</h2>
-        <div class="keep_in_touch_email">
-          <p>Contact Us - support@notenoughsalt.com</p>
+        <div class="keep_in_touch_top">
+          <h2>Let's keep in touch!</h2>
+          <img
+            src="/Assets/Etc/NeedHelpSalt.svg"
+            alt="Need Help?"
+            onclick="toggleChat()"
+          />
+          <div class="keep_in_touch_top_bot close">
+            <div class="keep_in_touch_top_bot_toggle">
+              <button class="active" onclick="toggleChatSelect(event, 'chat')">
+                Chat Assistant
+              </button>
+              <button onclick="toggleChatSelect(event, 'calc')">
+                Calculator
+              </button>
+            </div>
+            <div class="keep_in_touch_top_bot_chat">
+              <h4>It's empty...</h4>
+              <input type="text" placeholder="Ask away..." />
+            </div>
+            <div class="keep_in_touch_top_bot_calc close">
+              <img src="./Assets/Etc/Cooming.png" width="170px" />
+            </div>
+          </div>
         </div>
-        <div class="keep_in_touch_social">
-          <img src="/Assets/Etc/Media/Instagram Fill.svg" alt="Instagram" />
-          <img src="/Assets/Etc/Media/Google Fill.svg" alt="Google" />
-          <img src="/Assets/Etc/Media/Pinterest Fill.svg" alt="Pinterest" />
-          <img src="/Assets/Etc/Media/Youtube Fill.svg" alt="YouTube" />
-
-          <p>@NotEnoughSalt</p>
-        </div>
-        <div class="keep_in_touch_etc">
-          <p>about</p>
-          <p>recipes</p>
+        <div class="keep_in_touch_bottom">
+          <div class="keep_in_touch_email">
+            <p>Contact Us - support@notenoughsalt.com</p>
+          </div>
+          <div class="keep_in_touch_social">
+            <img src="/Assets/Etc/Media/Instagram Fill.svg" alt="Instagram" />
+            <img src="/Assets/Etc/Media/Google Fill.svg" alt="Google" />
+            <img src="/Assets/Etc/Media/Pinterest Fill.svg" alt="Pinterest" />
+            <img src="/Assets/Etc/Media/Youtube Fill.svg" alt="YouTube" />
+            <p>@NotEnoughSalt</p>
+          </div>
+          <div class="keep_in_touch_etc">
+            <p>about</p>
+            <p>recipes</p>
+          </div>
         </div>
       </div>
     </footer>
 
-    <script src="home.js"></script>
+    <script src="./Pages/Recipes.js"></script>
   </body>
 </html>
