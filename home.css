@@ -185,3 +185,28 @@ h2 {
   }
 }
 
+.explore_more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 85px;
+  gap: 10px;
+
+  h2 {
+    color: #e3c341;
+  }
+
+  .explore_more_images {
+    display: flex;
+    gap: 25px;
+
+    a {
+      text-decoration: none;
+
+      img {
+        height: 275px;
+      }
+    }
+  }
+}
