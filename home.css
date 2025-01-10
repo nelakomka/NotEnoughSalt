@@ -252,7 +252,56 @@ h2 {
   }
 }
 
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  h2 {
+    position: absolute;
+    top: -30px;
+    left: 250px;
+    color: #79b3e6;
+    background-color: #f8efdf;
+    padding: 0 10px;
+  }
+
+  .newsletter_text_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #522a12;
+    border-radius: 10px;
+    padding: 50px 150px;
+
+    p {
+      font-size: 20px;
+      color: #522a12;
+      text-align: center;
+      width: 650px;
+      font-weight: 300;
+    }
+
+    input {
+      background-color: white;
+      border-radius: 3px;
+      border-style: none;
+      width: 320px;
+      height: 27px;
+      padding: 10px;
+      margin-top: 10px;
+      box-shadow: #522b1254 2px 3px 15px;
+      cursor: pointer;
+    }
+  }
+}
+
 footer {
+  margin-bottom: 30px;
+
   .keep_in_touch {
     max-width: 95%;
     width: 100%;
@@ -271,14 +320,17 @@ footer {
       }
 
       img {
+        position: fixed;
+        bottom: 60px;
+        right: 20px;
         cursor: pointer;
         z-index: 2;
       }
 
       .keep_in_touch_top_bot {
-        position: absolute;
-        right: 70px;
-        bottom: 50px;
+        position: fixed;
+        right: 90px;
+        bottom: 80px;
         width: 415px;
         height: 350px;
         padding: 25px;
@@ -328,13 +380,10 @@ footer {
         }
 
         .keep_in_touch_top_bot_calc {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          img {
-            width: fit-content;
-          }
+          position: relative;
+          bottom: -20px;
+          right: -100px;
+          width: fit-content;
         }
       }
 
