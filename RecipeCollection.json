@@ -1,0 +1,884 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  },
+  "recipes": [
+    {
+      "name": "Pasta Carbonara",
+      "history": null,
+      "tags": {
+        "cuisine": "Italian",
+        "region": "Europe",
+        "mealTypes": ["Lunch", "Dinner"],
+        "spicyLevel": 0,
+        "difficulty": 1,
+        "cookingTime": "Under 30 minutes",
+        "servings": 3
+      },
+      "ingredients": [
+        { "name": "Pasta", "quantity": "0.5lb" },
+        { "name": "Bacon", "quantity": "5 slices" },
+        {
+          "name": "Sour Cream",
+          "quantity": "5 tablespoons",
+          "alternatives": ["1/2 cup heavy whipping cream", "1/2 cup half and half"]
+        },
+        { "name": "Cheese", "quantity": "a handful", "optional": true },
+        { "name": "Garlic", "quantity": "1-2 cloves", "optional": true }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "instruction": "Fill a pot halfway with water, add 1-2 tsp salt, and bring to a boil."
+        },
+        {
+          "step": 2,
+          "instruction": "Add pasta to boiling water. Heat a pan over medium-low heat."
+        },
+        {
+          "step": 3,
+          "instruction": "Drizzle oil in the pan and let it heat. Cut bacon into 2-inch pieces."
+        },
+        {
+          "step": 4,
+          "instruction": "Cook bacon for 1-2 minutes on each side. Strain pasta, reserving a cup of pasta water."
+        },
+        {
+          "step": 5,
+          "instruction": "Add pasta to bacon. Add sauce base and some pasta water to desired consistency."
+        },
+        {
+          "step": 6,
+          "instruction": "Optional: Add flour to thicken. Add cheese, salt, and pepper to taste. Serve."
+        }
+      ]
+    },
+    {
+      "name": "Mamalyga with Mujdei",
+      "history": "Traditional dish from Moldova, with deep personal connection.",
+      "tags": {
+        "cuisine": "Romanian",
+        "region": "Eastern Europe",
+        "mealTypes": ["Lunch", "Dinner"],
+        "spicyLevel": 0,
+        "difficulty": 2,
+        "cookingTime": "1 hour",
+        "servings": 6
+      },
+      "ingredients": [
+        {
+          "category": "Mamalyga",
+          "items": [
+            { "name": "Corn Grits", "quantity": "200g" },
+            { "name": "Hot Water", "quantity": "450ml" },
+            { "name": "Butter/Lard", "quantity": "1.5 tbsp" },
+            { "name": "Salt", "quantity": "4 pinches" }
+          ]
+        },
+        {
+          "category": "Mujdei",
+          "items": [
+            { "name": "Sunflower Oil", "quantity": "3 tbsp" },
+            { "name": "Water", "quantity": "1 cup" },
+            { "name": "Garlic", "quantity": "3 cloves" },
+            { "name": "Parsley and Dill", "quantity": "100g" },
+            { "name": "Salt", "quantity": "a pinch" }
+          ]
+        },
+        {
+          "category": "Extras",
+          "items": ["Fish", "Feta cheese", "Sour cream"]
+        }
+      ],
+      "steps": [
+        {
+          "section": "Mamalyga",
+          "instructions": [
+            "Boil water in a non-stick pot, add salt and butter/lard.",
+            "Rinse corn grits, add to pot, and cook for 18-20 minutes.",
+            "Steam for 30-40 minutes. Refrigerate overnight if desired."
+          ]
+        },
+        {
+          "section": "Mujdei",
+          "instructions": [
+            "Mix sunflower oil, garlic, salt, and herbs.",
+            "Add water and stir well. Serve with Mamalyga and extras."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Briyani",
+      "history": null,
+      "tags": {
+        "cuisine": "Pakistani",
+        "region": "Asia",
+        "mealTypes": ["Lunch", "Dinner"],
+        "spicyLevel": 3,
+        "difficulty": 2,
+        "cookingTime": "1 hour 30 minutes",
+        "servings": 4
+      },
+      "ingredients": [
+        { "name": "Chicken or Lamb", "quantity": "1lb" },
+        { "name": "Basmati Rice", "quantity": "2 cups" },
+        { "name": "Canola Oil", "quantity": "1 tablespoon" },
+        { "name": "Garlic Paste", "quantity": "1/2 tablespoon" },
+        { "name": "Ginger Paste", "quantity": "1/2 teaspoon" },
+        { "name": "Diced Tomatoes", "quantity": "6 ounces" },
+        { "name": "Yogurt", "quantity": "1 tablespoon" },
+        { "name": "Chili Powder", "quantity": "1/4 teaspoon" },
+        { "name": "Cloves", "quantity": "2 whole" },
+        { "name": "Green Cardamom Pods", "quantity": "1 1/2" },
+        { "name": "Black Cardamom Pod", "quantity": "1" },
+        { "name": "Black Peppercorns", "quantity": "2" },
+        { "name": "Cumin Powder", "quantity": "2 teaspoons" },
+        { "name": "Coriander Powder", "quantity": "1/2 teaspoon" },
+        { "name": "Garam Masala", "quantity": "1/2 teaspoon" },
+        { "name": "Curry Powder", "quantity": "1/2 teaspoon" },
+        { "name": "Cinnamon Stick", "quantity": "1/4 piece" },
+        { "name": "Salt", "quantity": "1 teaspoon" },
+        { "name": "Bay Leaf", "quantity": "1/2 piece" },
+        { "name": "Fresh Green Chili", "quantity": "1" },
+        { "name": "Fresh Cilantro", "quantity": "1/2 tablespoon" },
+        { "name": "Saffron", "quantity": "a pinch" },
+        { "name": "Potatoes", "quantity": "optional" }
+      ],
+      "steps": [
+        { "step": 1, "instruction": "Wash and soak rice for half an hour." },
+        { "step": 2, "instruction": "Cook the rice in a rice cooker or pot with 4 cups of water for 2 cups of rice." },
+        { "step": 3, "instruction": "Add spices, garlic paste, and ginger paste to the pot while cooking the rice." },
+        { "step": 4, "instruction": "Add yogurt and diced tomatoes, cooking until dry." },
+        { "step": 5, "instruction": "Add meat and green chili. Cook until meat is done, adding water if needed." },
+        { "step": 6, "instruction": "Mix saffron with hot water in a separate bowl, then layer rice and meat with the saffron mixture." },
+        { "step": 7, "instruction": "Bake at 350°F for 20 minutes." }
+      ]
+    }, 
+    {
+      "name": "Crepes (Blini)",
+      "history": null,
+      "tags": {
+        "cuisine": "Russian",
+        "region": "Eastern Europe",
+        "mealTypes": ["Breakfast", "Lunch", "Dessert"],
+        "spicyLevel": 0,
+        "difficulty": 2,
+        "cookingTime": "35 minutes",
+        "servings": 10
+      },
+      "ingredients": [
+        { "name": "Milk", "quantity": "400 ml" },
+        { "name": "Egg", "quantity": "1" },
+        { "name": "Salt", "quantity": "a pinch" },
+        { "name": "Sugar", "quantity": "2 1/2 tablespoons" },
+        { "name": "Wheat Flour", "quantity": "300 grams" },
+        { "name": "Vegetable Oil", "quantity": "1 3/4 tablespoons" },
+        { "name": "Baking Powder", "quantity": "a pinch" }
+      ],
+      "steps": [
+        { "step": 1, "instruction": "Pour room-temperature milk into a mixing bowl, beat in eggs, and add salt and sugar." },
+        { "step": 2, "instruction": "Gradually add flour, stirring to avoid lumps. Stir well to achieve the consistency of low-fat sour cream. Add baking powder." },
+        { "step": 3, "instruction": "Let the batter rest for 15-20 minutes, then stir in vegetable oil." },
+        { "step": 4, "instruction": "Heat a frying pan, add a little oil, and pour in a thin layer of batter." },
+        { "step": 5, "instruction": "Flip the crepe once a thin crust forms. Cook for about 30 seconds and remove." },
+        { "step": 6, "instruction": "Repeat until all batter is used. Serve with sweet or savory toppings of choice." }
+      ]
+    },
+    {
+      "name": "Classic Margherita Pizza",
+      "history": "The Classic Margherita Pizza originated in Naples in 1889, created by pizzaiolo Raffaele Esposito to honor Queen Margherita of Savoy. He used red tomatoes, white mozzarella, and green basil to represent the Italian flag. The queen loved it, and the pizza was named in her honor, becoming a beloved symbol of Italian cuisine.",
+      "tags": {
+        "cuisine": "Italian",
+        "region": "Europe",
+        "mealTypes": ["Lunch", "Dinner"],
+        "spicyLevel": 0,
+        "difficulty": 2,
+        "cookingTime": "1 hour 30 minutes",
+        "servings": "2-4"
+      },
+      "ingredients": [
+        {
+          "category": "Dough",
+          "items": [
+            { "name": "All-Purpose Flour", "quantity": "2 cups" },
+            { "name": "Instant Yeast", "quantity": "1 teaspoon" },
+            { "name": "Salt", "quantity": "1/2 teaspoon" },
+            { "name": "Warm Water", "quantity": "3/4 cup" },
+            { "name": "Olive Oil", "quantity": "1 tablespoon" }
+          ]
+        },
+        {
+          "category": "Topping",
+          "items": [
+            { "name": "Crushed Tomatoes", "quantity": "1 cup", "note": "canned or fresh" },
+            { "name": "Dried Oregano", "quantity": "1 teaspoon" },
+            { "name": "Fresh Mozzarella Cheese", "quantity": "1 cup" },
+            { "name": "Fresh Basil Leaves", "quantity": "a couple" },
+            { "name": "Olive Oil", "quantity": "1 tablespoon", "note": "for drizzling" }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "section": "Make the Dough",
+          "instructions": [
+            "In a mixing bowl, combine the flour, yeast, and salt.",
+            "Gradually add warm water and olive oil, mixing until dough forms.",
+            "Knead on a floured surface for about 5-7 minutes until smooth.",
+            "Place the dough in a greased bowl, cover with a towel, and let it rise in a warm place for about 1 hour or until doubled in size."
+          ]
+        },
+        {
+          "section": "Prepare the Pizza",
+          "instructions": [
+            "Preheat the oven to 475°F (245°C). If you have a pizza stone, place it in the oven to heat.",
+            "In a bowl, mix crushed tomatoes with oregano, salt, and pepper. Adjust seasoning to taste.",
+            "Punch down the risen dough and roll it out on a floured surface to your desired thickness.",
+            "Transfer the dough to a parchment-lined baking sheet or a pizza peel if using a stone.",
+            "Spread the tomato sauce evenly over the dough. Arrange slices of mozzarella cheese on top and drizzle with olive oil.",
+            "Carefully transfer the pizza to the preheated oven (or onto the pizza stone) and bake for 10-12 minutes or until the crust is golden and the cheese is bubbling."
+          ]
+        },
+        {
+          "section": "Finish and Serve",
+          "instructions": [
+            "Remove the pizza from the oven and top with fresh basil leaves.",
+            "Let it cool for a couple of minutes, then slice and enjoy!"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sauerbraten",
+      "history": "Sauerbraten is often considered Germany’s national dish. Its origins date back to the Middle Ages when meat was marinated to preserve it. The dish varies by region, with different marinades and accompaniments, reflecting local traditions.",
+      "tags": {
+        "cuisine": "German",
+        "region": "Europe",
+        "mealTypes": ["Dinner"],
+        "spicyLevel": 0,
+        "difficulty": 3,
+        "cookingTime": "~3-4 hours (plus overnight marinating 72-120 hours)",
+        "servings": "6-8"
+      },
+      "ingredients": [
+        { "name": "Beef Roast", "quantity": "3-4 pounds", "note": "chuck or round" },
+        { "name": "Red Wine Vinegar", "quantity": "2 cups" },
+        { "name": "Water", "quantity": "1 cup" },
+        { "name": "Onion", "quantity": "1 cup", "note": "sliced" },
+        { "name": "Carrots", "quantity": "2 pieces", "note": "chopped" },
+        { "name": "Garlic Cloves", "quantity": "2 pieces", "note": "minced" },
+        { "name": "Bay Leaves", "quantity": "2 pieces" },
+        { "name": "Whole Peppercorns", "quantity": "1 teaspoon" },
+        { "name": "Sugar", "quantity": "1 teaspoon" },
+        { "name": "Vegetable Oil", "quantity": "2 tablespoons" },
+        { "name": "Beef Broth", "quantity": "2 cups", "note": "for gravy" },
+        { "name": "Cornstarch", "quantity": "2 tablespoons", "optional": true }
+      ],
+      "steps": [
+        {
+          "section": "Prepare the Marinade",
+          "instructions": [
+            "In a large bowl, combine red wine vinegar, water, sliced onion, chopped carrots, minced garlic, bay leaves, peppercorns, sugar, and salt. Stir well."
+          ]
+        },
+        {
+          "section": "Marinate the Meat",
+          "instructions": [
+            "Place the beef roast in a large resealable plastic bag or a deep dish.",
+            "Pour the marinade over the meat, ensuring it's fully submerged.",
+            "Seal the bag or cover the dish and refrigerate for 72 to 120 hours, turning the meat occasionally."
+          ]
+        },
+        {
+          "section": "Cook the Roast",
+          "instructions": [
+            "After marinating, remove the beef from the marinade and pat it dry with paper towels. Reserve the marinade for later use.",
+            "In a large pot or Dutch oven, heat vegetable oil over medium-high heat. Add the beef and sear on all sides until browned.",
+            "Once the meat is browned, add the reserved marinade and beef broth to the pot. Bring to a simmer.",
+            "Cover the pot and reduce the heat to low. Let the roast braise for about 2 to 3 hours or until the meat is tender and easily shreds with a fork."
+          ]
+        },
+        {
+          "section": "Make the Gravy",
+          "instructions": [
+            "Once the roast is done, remove it from the pot and let it rest for a few minutes.",
+            "Strain the cooking liquid into a saucepan. If desired, mix cornstarch with cold water to create a slurry, then add it to the strained liquid to thicken the gravy. Simmer until thickened."
+          ]
+        },
+        {
+          "section": "Serve",
+          "instructions": [
+            "Slice the Sauerbraten and serve it with the gravy, along with traditional sides like red cabbage and potato dumplings or noodles."
+          ]
+        }
+  ]
+},
+{
+  "name": "Bibimbap",
+  "history": "Bibimbap translates to 'mixed rice.' It originated as a way to use up leftover vegetables and meat, served over rice. It's a colorful, nutritious dish that showcases seasonal ingredients and is often topped with a fried egg and gochujang (Korean chili paste).",
+  "tags": {
+    "cuisine": "Korean",
+    "region": "Asia",
+    "mealTypes": ["Lunch", "Dinner"],
+    "spicyLevel": 2,
+    "difficulty": 2,
+    "cookingTime": "40 minutes",
+    "servings": "2-4"
+  },
+  "ingredients": [
+    { "name": "Rice", "quantity": "2 cups" },
+    { "name": "Assorted Vegetables", "quantity": "1 cup", "examples": ["spinach", "carrots", "zucchini", "mushrooms", "bean sprouts"] },
+    { "name": "Meat", "quantity": "1 cup", "examples": ["beef", "chicken", "tofu"] },
+    { "name": "Fried Eggs", "quantity": "2 pieces" },
+    { "name": "Gochujang", "quantity": "2 tablespoons", "note": "Korean chili paste" },
+    { "name": "Sesame Oil", "quantity": "for drizzling" },
+    { "name": "Sesame Seeds", "quantity": "for garnish" },
+    { "name": "Soy Sauce", "quantity": "optional, for serving" }
+  ],
+  "steps": [
+    {
+      "section": "Prepare the Vegetables",
+      "instructions": [
+        "Blanch or sauté each vegetable separately until tender.",
+        "Season with a little salt and sesame oil. Set aside."
+      ]
+    },
+    {
+      "section": "Cook the Meat",
+      "instructions": [
+        "If using beef or chicken, marinate in soy sauce, garlic, and sesame oil for about 15 minutes.",
+        "Stir-fry until cooked through. For tofu, pan-fry until golden."
+      ]
+    },
+    {
+      "section": "Assemble the Bowl",
+      "instructions": [
+        "Place cooked rice in the center of each bowl.",
+        "Arrange the prepared vegetables and meat around the rice.",
+        "Top with a fried egg."
+      ]
+    },
+    {
+      "section": "Garnish and Serve",
+      "instructions": [
+        "Drizzle gochujang over the top and add a drizzle of sesame oil.",
+        "Sprinkle with sesame seeds and serve with soy sauce on the side.",
+        "Mix all the ingredients together thoroughly before eating."
+      ]
+    }
+  ]
+},
+{
+  "name": "Mediterranean Chickpea Salad",
+  "history": "This vibrant salad is a staple in Mediterranean cuisine, showcasing fresh ingredients and flavors. It's often enjoyed as a light meal or side dish and is a great example of the region's emphasis on vegetables, legumes, and healthy fats.",
+  "tags": {
+    "cuisine": "Mediterranean",
+    "mealTypes": ["Lunch", "Dinner"],
+    "dietaryPreference": "Vegan",
+    "spicyLevel": 0,
+    "difficulty": 1,
+    "cookingTime": "15-20 minutes",
+    "servings": 4
+  },
+  "ingredients": [
+    { "name": "Chickpeas", "quantity": "1 can (15oz)", "note": "rinsed and drained" },
+    { "name": "Cherry Tomatoes", "quantity": "1 cup", "note": "halved" },
+    { "name": "Cucumber", "quantity": "1 piece", "note": "diced" },
+    { "name": "Red Onion", "quantity": "1/2 medium", "note": "finely chopped" },
+    { "name": "Bell Pepper", "quantity": "1 piece", "note": "red or yellow, diced" },
+    { "name": "Fresh Parsley", "quantity": "1/4 cup", "note": "chopped" },
+    { "name": "Lemon Juice", "quantity": "from 1 lemon" },
+    { "name": "Olive Oil", "quantity": "3 tablespoons" },
+    { "name": "Dried Oregano", "quantity": "1/2 teaspoon" },
+    { "name": "Feta Cheese", "quantity": "1/4 cup", "note": "optional, crumbled" }
+  ],
+  "steps": [
+    {
+      "section": "Combine Ingredients",
+      "instructions": [
+        "In a large bowl, add chickpeas, cherry tomatoes, cucumber, red onion, bell pepper, parsley, and feta cheese (if using)."
+      ]
+    },
+    {
+      "section": "Make the Dressing",
+      "instructions": [
+        "In a small bowl, whisk together lemon juice, olive oil, salt, pepper, and oregano."
+      ]
+    },
+    {
+      "section": "Dress the Salad",
+      "instructions": [
+        "Pour the dressing over the salad and toss gently to combine."
+      ]
+    },
+    {
+      "section": "Serve",
+      "instructions": [
+        "Let the salad sit for about 10 minutes to allow the flavors to meld.",
+        "Serve chilled or at room temperature."
+      ]
+    }
+  ]
+},
+{
+  "name": "Simple Shrimp Bowl",
+  "tags": {
+    "cuisine": "Chinese",
+    "region": "Asia",
+    "mealTypes": ["Lunch", "Dinner"],
+    "spicyLevel": 0,
+    "difficulty": 1,
+    "cookingTime": "25 minutes",
+    "servings": 6
+  },
+  "ingredients": [
+    { "name": "Rice Vinegar", "quantity": "100 ml" },
+    { "name": "Jasmine Rice", "quantity": "1/2 kg" },
+    { "name": "Cane Sugar", "quantity": "50g" },
+    { "name": "Rukola", "quantity": "100g" },
+    { "name": "Sesame Oil", "quantity": "50 ml" },
+    { "name": "Garlic", "quantity": "12 cloves", "note": "finely chopped" },
+    { "name": "Fish Sauce", "quantity": "3 tablespoons" },
+    { "name": "Lemon", "quantity": "2 pieces" },
+    { "name": "Shrimp", "quantity": "1/2 kg" },
+    { "name": "Cilantro", "quantity": "50g" }
+  ],
+  "steps": [
+    {
+      "section": "Cook the Rice",
+      "instructions": [
+        "Cook the jasmine rice in a separate saucepan according to package instructions."
+      ]
+    },
+    {
+      "section": "Prepare the Shrimp",
+      "instructions": [
+        "Heat a wok and add sesame oil.",
+        "Lightly fry the finely chopped garlic, being careful not to overcook it.",
+        "Squeeze the juice of two lemons into the wok, and add fish sauce, rice vinegar, sugar, and shrimp.",
+        "Simmer until the broth starts to boil, then reduce the heat."
+      ]
+    },
+    {
+      "section": "Combine Ingredients",
+      "instructions": [
+        "Add arugula, cilantro, and rice to the boiling broth.",
+        "Mix well, cover, and let it sit for 2-3 minutes to allow the rice to absorb the flavors."
+      ]
+    },
+    {
+      "section": "Serve",
+      "instructions": [
+        "Serve hot and enjoy!"
+      ]
+    }
+  ]
+},
+{
+  "name": "Cuban Picadillo",
+  "history": "Cuban picadillo is a traditional dish, beloved across the Caribbean and Latin America. It has Spanish origins but was adapted with local ingredients in Cuba. Picadillo is a versatile, savory ground beef filling that includes a mix of sweet and salty flavors from raisins and olives. It’s often served with rice, used in empanadas, or as a filling for stuffed peppers or pastries.",
+  "tags": {
+    "cuisine": "Cuban",
+    "region": "North America",
+    "mealTypes": ["Appetizer", "Lunch", "Dinner"],
+    "spicyLevel": 0,
+    "difficulty": 1,
+    "cookingTime": "35 minutes",
+    "servings": "4-6"
+  },
+  "ingredients": [
+    { "name": "Ground Beef", "quantity": "1 lb" },
+    { "name": "Small Onion", "quantity": "1", "note": "finely chopped" },
+    { "name": "Green Bell Pepper", "quantity": "1", "note": "finely chopped" },
+    { "name": "Garlic", "quantity": "3 cloves", "note": "minced" },
+    { "name": "Tomato Sauce", "quantity": "1/3 cup" },
+    { "name": "Dry White Wine", "quantity": "1/4 cup", "optional": true },
+    { "name": "Green Olives", "quantity": "1/4 cup", "note": "pimento-stuffed preferred, sliced" },
+    { "name": "Raisins", "quantity": "1/4 cup" },
+    { "name": "Ground Cumin", "quantity": "1 tsp" },
+    { "name": "Dried Oregano", "quantity": "1 tsp" },
+    { "name": "Bay Leaf", "quantity": "1" },
+    { "name": "Salt and Pepper", "quantity": "to taste", "note": "pinch" },
+    { "name": "Olive Oil", "quantity": "2 tbsp" },
+    { "name": "Water or Beef Broth", "quantity": "1/4 cup" },
+    { "name": "Capers", "quantity": "2 tbsp", "optional": true },
+    { "name": "Small Potato", "quantity": "1", "optional": true, "note": "diced and fried" }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "instruction": "Heat the olive oil in a large skillet over medium heat. Add the chopped onion and green bell pepper, and sauté for about 3-4 minutes, until softened."
+    },
+    {
+      "step": 2,
+      "instruction": "Add the garlic and cook for another 1-2 minutes, until fragrant."
+    },
+    {
+      "step": 3,
+      "instruction": "Add the ground beef to the skillet, breaking it apart with a wooden spoon. Cook until browned, about 5-7 minutes."
+    },
+    {
+      "step": 4,
+      "instruction": "Stir in the cumin, oregano, salt, pepper, and bay leaf. Cook for another minute to toast the spices."
+    },
+    {
+      "step": 5,
+      "instruction": "Stir in the tomato sauce, white wine (if using), and water or beef broth. Allow the mixture to simmer for 10-15 minutes, until the flavors meld."
+    },
+    {
+      "step": 6,
+      "instruction": "Add the olives, raisins, and capers (if using). Stir well and let simmer for another 5 minutes."
+    },
+    {
+      "step": 7,
+      "instruction": "If using diced potatoes, fry them separately until golden and crispy, then stir them into the picadillo mixture."
+    },
+    {
+      "step": 8,
+      "instruction": "Taste and adjust seasoning with additional salt, pepper, or cumin as needed. Remove the bay leaf."
+    },
+    {
+      "step": 9,
+      "instruction": "Serve over rice, use as a filling for empanadas, or stuff into peppers."
+    }
+  ]
+},
+{
+  "name": "Grilled Cheese and Tomato Soup",
+  "history": "Grilled cheese and tomato soup is a classic comfort food pairing, particularly popular in American cuisine. The dish gained prominence in the mid-20th century, often served in homes and school cafeterias. The combination of buttery, crispy grilled bread with melted cheese and a rich, tangy tomato soup creates a cozy, nostalgic meal perfect for any time of year.",
+  "tags": {
+    "cuisine": "American",
+    "region": "North America",
+    "mealTypes": ["Lunch", "Dinner"],
+    "spicyLevel": 0,
+    "difficulty": 1,
+    "cookingTime": "30 minutes",
+    "servings": 4
+  },
+  "ingredients": [
+    {
+      "category": "Grilled Cheese",
+      "items": [
+        { "name": "Bread", "quantity": "8 slices", "note": "sourdough or white bread preferred" },
+        { "name": "Cheddar Cheese", "quantity": "8 slices", "note": "or cheese of your choice" },
+        { "name": "Butter", "quantity": "4 tbsp", "note": "softened" },
+        { "name": "Garlic Powder", "quantity": "1 tsp", "optional": true },
+        { "name": "Italian Seasoning", "quantity": "1 tsp", "optional": true }
+      ]
+    },
+    {
+      "category": "Tomato Soup",
+      "items": [
+        { "name": "Olive Oil", "quantity": "1 tbsp" },
+        { "name": "Small Onion", "quantity": "1", "note": "diced" },
+        { "name": "Garlic", "quantity": "2 cloves", "note": "minced" },
+        { "name": "Crushed Tomatoes", "quantity": "1 can (28 oz)" },
+        { "name": "Vegetable Broth", "quantity": "2 cups" },
+        { "name": "Tomato Paste", "quantity": "1 tbsp" },
+        { "name": "Sugar", "quantity": "1 tsp", "note": "to balance acidity" },
+        { "name": "Dried Basil", "quantity": "1/2 tsp", "alternatives": ["1 tbsp fresh basil, chopped"] },
+        { "name": "Salt and Pepper", "quantity": "pinch to taste" },
+        { "name": "Heavy Cream or Milk", "quantity": "1/2 cup", "optional": true, "note": "for creamier soup" }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "section": "Prepare the Tomato Soup",
+      "instructions": [
+        "Heat olive oil in a medium pot over medium heat. Add the diced onion and sauté for 4-5 minutes, until softened.",
+        "Add the minced garlic and cook for 1 minute until fragrant.",
+        "Stir in the crushed tomatoes, vegetable broth, tomato paste, sugar, and dried basil. Season with salt and pepper.",
+        "Bring the mixture to a simmer and let it cook for about 15 minutes, allowing the flavors to meld.",
+        "For a smoother texture, use an immersion blender or transfer the soup to a blender to purée until smooth. Be careful with hot liquids!"
+      ]
+    },
+    {
+      "section": "Prepare the Grilled Cheese",
+      "instructions": [
+        "Heat a skillet or griddle over medium heat. Butter one side of each slice of bread. Optionally, sprinkle with garlic powder or Italian seasoning.",
+        "Place a slice of cheese between two slices of bread, with the buttered sides facing out.",
+        "Cook the sandwiches in the skillet for 2-3 minutes per side, pressing down gently with a spatula, until the bread is golden brown and crispy, and the cheese is melted."
+      ]
+    },
+    {
+      "section": "Serve",
+      "instructions": [
+        "Ladle the tomato soup into bowls, garnish with fresh basil or croutons if desired.",
+        "Cut the grilled cheese sandwiches in halves or quarters and serve alongside the soup for dipping."
+      ]
+    }
+  ]
+},
+{
+  "name": "Baja Shrimp Tacos",
+  "history": "Baja shrimp tacos are inspired by the fresh, coastal cuisine of Baja California, Mexico. Known for their combination of seasoned shrimp, a crisp cabbage slaw, and a tangy crema sauce, these tacos capture the essence of surf-side Mexican street food. They're typically served in warm corn tortillas with a fresh squeeze of lime, offering a perfect balance of flavors and textures.",
+  "tags": {
+    "cuisine": "Mexican",
+    "region": "North America",
+    "mealTypes": ["Lunch", "Dinner"],
+    "spicyLevel": 1,
+    "difficulty": 2,
+    "cookingTime": "25 minutes",
+    "servings": 4
+  },
+  "ingredients": [
+    {
+      "category": "Shrimp",
+      "items": [
+        { "name": "Large Shrimp", "quantity": "1 lb", "note": "peeled and deveined" },
+        { "name": "Garlic Powder", "quantity": "1 tsp" },
+        { "name": "Smoked Paprika", "quantity": "1 tsp" },
+        { "name": "Cumin", "quantity": "1/2 tsp" },
+        { "name": "Chili Powder or Cayenne", "quantity": "1/2 tsp", "optional": true, "note": "for heat" },
+        { "name": "Olive Oil", "quantity": "2 tbsp" },
+        { "name": "Lime Juice", "quantity": "1 tbsp" },
+        { "name": "Salt and Pepper", "quantity": "pinch to taste" }
+      ]
+    },
+    {
+      "category": "Slaw",
+      "items": [
+        { "name": "Shredded Green Cabbage", "quantity": "2 cups" },
+        { "name": "Red Onion", "quantity": "1/4 cup", "note": "thinly sliced" },
+        { "name": "Cilantro", "quantity": "1/4 cup", "note": "chopped" },
+        { "name": "Lime Juice", "quantity": "1 tbsp" },
+        { "name": "Olive Oil", "quantity": "1 tbsp" },
+        { "name": "Salt and Pepper", "quantity": "pinch to taste" }
+      ]
+    },
+    {
+      "category": "Baja Sauce",
+      "items": [
+        { "name": "Mayonnaise", "quantity": "1/4 cup" },
+        { "name": "Sour Cream", "quantity": "1/4 cup" },
+        { "name": "Lime Juice", "quantity": "1 tbsp" },
+        { "name": "Hot Sauce", "quantity": "1 tsp", "optional": true },
+        { "name": "Garlic Powder", "quantity": "1 tsp" },
+        { "name": "Salt", "quantity": "pinch to taste" }
+      ]
+    },
+    {
+      "category": "Tacos",
+      "items": [
+        { "name": "Small Corn Tortillas", "quantity": "8" },
+        { "name": "Lime Wedges", "quantity": "for serving", "optional": true },
+        { "name": "Cilantro", "quantity": "extra for garnish", "optional": true }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "section": "Prepare the Shrimp",
+      "instructions": [
+        "In a bowl, toss the shrimp with garlic powder, smoked paprika, cumin, chili powder (if using), olive oil, lime juice, salt, and pepper.",
+        "Let the shrimp marinate for about 10 minutes while preparing the slaw and sauce."
+      ]
+    },
+    {
+      "section": "Make the Slaw",
+      "instructions": [
+        "In a separate bowl, combine shredded cabbage, red onion, cilantro, lime juice, olive oil, salt, and pepper.",
+        "Toss well and set aside to let the flavors meld."
+      ]
+    },
+    {
+      "section": "Cook the Shrimp",
+      "instructions": [
+        "Grilled version: Preheat a grill or grill pan over medium-high heat. Thread the shrimp onto skewers or place directly on the grill. Cook for 2-3 minutes per side, until the shrimp are opaque and slightly charred.",
+        "Sautéed version: Heat a non-stick skillet over medium-high heat. Add a drizzle of olive oil and cook the shrimp in batches for 2-3 minutes per side, until cooked through."
+      ]
+    },
+    {
+      "section": "Assemble and Serve",
+      "instructions": [
+        "Warm the corn tortillas in a dry skillet or wrap in foil and heat in a low oven.",
+        "Place a few cooked shrimp on each tortilla, top with a spoonful of slaw, and drizzle generously with Baja sauce.",
+        "Garnish with extra cilantro and a squeeze of fresh lime. Serve immediately."
+      ]
+    }
+  ]
+},
+{
+  "name": "Tuna Salad",
+  "history": "A quick and easy meal perfect for lunch or a light dinner.",
+  "tags": {
+    "cuisine": "American",
+    "region": "North America",
+    "mealTypes": ["Lunch", "Snack"],
+    "dietaryPreference": ["Under 30 Minutes", "Gluten-Free", "Simple"],
+    "spicyLevel": 0,
+    "difficulty": 1,
+    "cookingTime": "10 minutes",
+    "servings": 2
+  },
+  "ingredients": [
+    { "name": "Salted Tuna", "quantity": "1 can" },
+    { "name": "Mayonnaise", "quantity": "3 tablespoons" },
+    { "name": "Salt and Pepper", "quantity": "to taste" }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "instruction": "Break up the tuna in a medium-sized bowl with a fork."
+    },
+    {
+      "step": 2,
+      "instruction": "Mix in the mayonnaise, along with a pinch of salt and pepper."
+    }
+  ]
+},
+{
+  "name": "Avocado Toast",
+  "history": "A trendy breakfast or snack option that's healthy and satisfying.",
+  "tags": {
+    "cuisine": "Australian",
+    "region": "Oceania",
+    "mealTypes": ["Breakfast", "Snack"],
+    "dietaryPreference": ["Under 30 Minutes"],
+    "spicyLevel": 0,
+    "difficulty": 1,
+    "cookingTime": "10 minutes",
+    "servings": 2
+  },
+  "ingredients": [
+    { "name": "Whole Wheat Bread", "quantity": "2 slices" },
+    { "name": "Avocado", "quantity": "1/2", "note": "scooped" },
+    { "name": "Salt", "quantity": "a pinch" },
+    { "name": "Butter", "quantity": "as needed", "note": "for spreading" }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "instruction": "Spread butter on the bread and toast until golden brown."
+    },
+    {
+      "step": 2,
+      "instruction": "Cut the avocado in half, remove the pit, and scoop out half into a bowl."
+    },
+    {
+      "step": 3,
+      "instruction": "Mix in salt and desired toppings. Spread over the toasted bread and enjoy."
+    }
+  ]
+},
+{
+  "name": "Air Fryer Steak",
+  "history": "A flavorful and juicy steak cooked quickly in an air fryer.",
+  "tags": {
+    "cuisine": "American, European",
+    "region": "North America, Europe",
+    "mealTypes": ["Lunch", "Dinner"],
+    "dietaryPreference": ["Under 30 Minutes"],
+    "spicyLevel": 0,
+    "difficulty": 1,
+    "cookingTime": "15 minutes",
+    "servings": 1
+  },
+  "ingredients": [
+    { "name": "Ribeye Steak", "quantity": "7 ounces" },
+    { "name": "Garlic Powder", "quantity": "1/2 teaspoon" },
+    { "name": "Dried Rosemary", "quantity": "a pinch", "note": "to taste" },
+    { "name": "Salt and Pepper", "quantity": "a pinch each", "note": "to taste" },
+    { "name": "Butter", "quantity": "optional", "note": "for serving" }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "instruction": "Preheat the air fryer to 400°F (200°C)."
+    },
+    {
+      "step": 2,
+      "instruction": "Season the steak on both sides with salt, pepper, garlic powder, and rosemary."
+    },
+    {
+      "step": 3,
+      "instruction": "Once the air fryer is preheated, place the steak inside and cook on both sides to your desired doneness."
+    }
+  ]
+},
+{
+  "name": "Stir-Fried Lo Mein with Beef and Broccoli",
+  "history": "Lo Mein, a Cantonese-inspired dish, became popular in Western countries due to its balance of flavors and versatility. Traditionally made with soft egg noodles, this dish incorporates a mix of protein, vegetables, and soy-based sauces, making it a satisfying one-pan meal. The combination of beef and broccoli is a favorite variation in Chinese-American cuisine, offering rich umami and nutritious greens.",
+  "tags": {
+    "cuisine": "Chinese-American",
+    "region": "Asia",
+    "mealTypes": ["Dinner"],
+    "dietaryPreference": ["Quick Meals"],
+    "spicyLevel": 1,
+    "difficulty": 1,
+    "cookingTime": "25 minutes",
+    "servings": 4
+  },
+  "ingredients": [
+    { "name": "Lo Mein Noodles", "quantity": "8 oz", "alternatives": ["spaghetti"] },
+    { "name": "Beef", "quantity": "1 lb", "note": "flank steak or sirloin, thinly sliced" },
+    { "name": "Broccoli Florets", "quantity": "2 cups" },
+    { "name": "Vegetable Oil", "quantity": "2 tbsp", "divided": true },
+    { "name": "Garlic", "quantity": "3 cloves", "note": "minced" },
+    { "name": "Ginger", "quantity": "1 inch", "note": "grated" },
+    { "name": "Soy Sauce", "quantity": "1/4 cup" },
+    { "name": "Oyster Sauce", "quantity": "2 tbsp" },
+    { "name": "Hoisin Sauce", "quantity": "1 tbsp" },
+    { "name": "Sesame Oil", "quantity": "1 tbsp" },
+    { "name": "Cornstarch", "quantity": "1 tbsp", "optional": true, "note": "for tenderizing beef" },
+    { "name": "Chili Garlic Sauce", "quantity": "1 tsp", "optional": true },
+    { "name": "Sugar", "quantity": "1 tsp" },
+    { "name": "Green Onions", "quantity": "2", "note": "chopped, for garnish" },
+    { "name": "Sesame Seeds", "quantity": "optional, for garnish" }
+  ],
+  "steps": [
+    { "step": 1, "instruction": "Cook the lo mein noodles according to package instructions. Drain and set aside." },
+    { "step": 2, "instruction": "Marinate the sliced beef with 1 tbsp soy sauce, 1 tbsp cornstarch (optional), and 1 tsp sesame oil. Set aside for 10 minutes." },
+    { "step": 3, "instruction": "Blanch the broccoli in boiling water for 2 minutes. Drain and set aside." },
+    { "step": 4, "instruction": "Heat 1 tbsp oil in a large skillet or wok over high heat. Add the beef and stir-fry for 2-3 minutes until browned. Remove from the skillet and set aside." },
+    { "step": 5, "instruction": "In the same skillet, heat another 1 tbsp oil. Sauté garlic and ginger until fragrant (about 30 seconds)." },
+    { "step": 6, "instruction": "Add broccoli to the skillet and stir-fry for 1 minute. Return the beef to the pan, followed by the cooked noodles." },
+    { "step": 7, "instruction": "In a small bowl, whisk together soy sauce, oyster sauce, hoisin sauce, sesame oil, chili garlic sauce (if using), and sugar." },
+    { "step": 8, "instruction": "Pour the sauce over the noodle mixture. Stir-fry for 2-3 minutes until everything is well coated and heated through." },
+    { "step": 9, "instruction": "Transfer to serving plates, garnish with green onions and sesame seeds (optional), and enjoy." }
+  ]
+},
+{
+  "name": "Classic Smashed Burger",
+  "history": "The smashed burger originated in American diners during the Great Depression as an affordable way to serve flavorful food quickly. Popularized in the Midwest by places like Steak 'n Shake and Sid’s Diner, the technique involved pressing ground beef onto a hot surface to create a crispy crust through the Maillard reaction.",
+  "tags": {
+    "cuisine": "American",
+    "region": "North America",
+    "mealTypes": ["Lunch", "Dinner"],
+    "dietaryPreference": ["Quick", "Beginner-Friendly"],
+    "spicyLevel": 0,
+    "difficulty": 1,
+    "cookingTime": "20 minutes",
+    "servings": 4
+  },
+  "ingredients": [
+    { "name": "Ground Beef", "quantity": "1 lb", "note": "80/20 lean-to-fat ratio" },
+    { "name": "Salt and Pepper", "quantity": "to taste" },
+    { "name": "Burger Buns", "quantity": "4", "note": "toasted" },
+    { "name": "Cheese Slices", "quantity": "4", "note": "American or cheddar" },
+    { "name": "Butter or Mayonnaise", "quantity": "as needed", "note": "for buns" },
+    {
+      "category": "Toppings (optional)",
+      "items": [
+        { "name": "Sliced Onions", "quantity": "optional" },
+        { "name": "Pickles", "quantity": "optional" },
+        { "name": "Lettuce", "quantity": "optional" },
+        { "name": "Tomato", "quantity": "optional" },
+        { "name": "Ketchup, Mustard, or Mayo", "quantity": "optional" }
+      ]
+    }
+  ],
+  "steps": [
+    { "step": 1, "instruction": "Divide the ground beef into 4 equal balls (about 4 oz/115 g each). Keep the beef loosely packed for juicier burgers." },
+    { "step": 2, "instruction": "Heat a cast iron skillet or griddle on medium-high heat for 5-8 minutes until very hot." },
+    { "step": 3, "instruction": "Place 1 beef ball on the hot skillet. Use a spatula to smash the ball flat to about 1/4-inch thick. Press down hard for 10-15 seconds." },
+    { "step": 4, "instruction": "Season the patties with salt and pepper immediately after smashing. Let them cook for 2-3 minutes without moving." },
+    { "step": 5, "instruction": "Flip the patties once the edges are browned and crispy. Add a slice of cheese on top and cook for another 1-2 minutes until the cheese melts." },
+    { "step": 6, "instruction": "Butter or spread mayo on the inside of the buns. Toast them lightly on the skillet for 30-60 seconds until golden brown." },
+    { "step": 7, "instruction": "Assemble the burgers with patties on the bottom buns. Add desired toppings and sauces. Top with the other half of the bun." }
+  ]
+}
+]
+}
