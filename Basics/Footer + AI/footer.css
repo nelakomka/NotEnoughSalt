@@ -1,0 +1,105 @@
+footer {
+  margin-bottom: 30px;
+
+  .keep_in_touch {
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto;
+
+    .keep_in_touch_top {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      border-bottom: 1px solid #79b3e6;
+      padding-bottom: 10px;
+      position: relative;
+
+      h2 {
+        color: #b8b880;
+      }
+
+      img {
+        position: fixed;
+        bottom: 60px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 2;
+      }
+
+      .keep_in_touch_top_bot {
+        position: fixed;
+        right: 90px;
+        bottom: 80px;
+        width: 415px;
+        height: 350px;
+        padding: 25px;
+        background-color: #f8efdf;
+        border: 6px solid #e7cc61;
+        box-shadow: 0 0 0 1px #522a12;
+        border-radius: 10px;
+
+        h4 {
+          font-size: 30px;
+          text-align: center;
+        }
+
+        input {
+          width: 80%;
+          padding: 10px;
+          border: none;
+          background: #ffffff;
+          border-radius: 15px;
+        }
+
+        .keep_in_touch_top_bot_toggle {
+          position: absolute;
+          top: -35px;
+          right: 0;
+
+          button {
+            background-color: #e7cc61;
+            border-radius: 5px 5px 0 0;
+            padding: 5px 10px;
+            border-width: 1px 1px 0 1px;
+            border-style: solid;
+            border-color: #522a12;
+            cursor: pointer;
+          }
+
+          .active {
+            font-weight: 700;
+          }
+        }
+
+        .keep_in_touch_top_bot_chat {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+        }
+
+        .keep_in_touch_top_bot_calc {
+          position: relative;
+          bottom: -20px;
+          right: -100px;
+          width: fit-content;
+        }
+      }
+
+      .close {
+        display: none !important;
+      }
+    }
+
+    .keep_in_touch_bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+
+      & > div {
+        display: flex;
+        gap: 15px;
+      }
+    }
+  }
+}
