@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -8,9 +7,17 @@
   font-family: 'Source Serif 4', serif;
 }
 
-body {
+html,body {
+  display: flex;
+  flex-direction: column;
   background-color: #f8efdf;
+  height: 100%;
 }
+
+main {
+  flex: 1;
+}
+
 /* Nav (do not touch) */
 nav {
   background-color: #e3c341;
@@ -51,7 +58,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin: 50px 0 10px 0;
 
   .search_bar_input {
     background-color: white;
@@ -71,7 +78,7 @@ h2 {
 
 /* Footer (do not touch) */
 footer {
-  margin-bottom: 30px;
+  padding-bottom: 40px;
 
   .keep_in_touch {
     max-width: 95%;
@@ -87,7 +94,13 @@ footer {
       position: relative;
 
       h2 {
+        font-family: 'Oleo Script Swash Caps', serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 45px;
         color: #b8b880;
+        -webkit-text-stroke: 2px #522a12;
+        text-shadow: #522a12 2px 3px 3px;
       }
 
       img {
