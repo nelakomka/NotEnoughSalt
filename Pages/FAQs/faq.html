@@ -6,52 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Not Enough Salt - FAQs</title>
     <link rel="stylesheet" href="./faq.css" />
+    <link rel="stylesheet" href="../../Basics/Template.css" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
-    <main>
+    <header>
       <!-- Navigation -->
       <nav>
         <div class="navbar">
           <ul>
             <li>
-              <a href="index.html">home</a>
+              <a href="../Home/home.html">home</a>
             </li>
             <li>
-              <a href="#">meal plan</a>
+              <a href="../MealPlan/MealPlan.html">meal plan</a>
             </li>
             <li>
-              <a href="#">news</a>
+              <a href="../Home/home.html">news</a>
             </li>
             <li>
               <img
                 class="nav_nes_logo"
-                src="/Assets/Logo.svg"
+                src="../../Assets/Etc/Logo.svg"
                 alt="NotEnoughSalt Logo"
-                href="#"
+                href="../Home/home.html"
               />
             </li>
             <li>
-              <a href="#">about</a>
+              <a href="../Home/home.html">news</a>
             </li>
             <li>
-              <a href="faq.html">faqs</a>
+              <a href="../FAQs/faq.html">faqs</a>
             </li>
             <li>
-              <a href="#">profile</a>
+              <a href="../Home/home.html">profile</a>
             </li>
           </ul>
         </div>
       </nav>
-
+    </header>
+    <main>
       <!-- Search Bar -->
       <div class="search_bar">
         <input class="search_bar_input" type="text" placeholder="Search..." />
       </div>
 
       <!-- FAQ Header -->
-      <header>
+      <div class="header">
         <h1>Frequently Asked Questions</h1>
         <div class="tabs">
           <button class="tab-button active" data-category="general">
@@ -64,7 +66,7 @@
             Recipe Questions
           </button>
         </div>
-      </header>
+      </div>
 
       <!-- FAQ Section -->
       <section class="faq-section">
@@ -198,59 +200,54 @@
           </div>
         </div>
       </section>
-
-      <!-- Footer -->
-      <footer>
-        <div class="keep_in_touch">
-          <div class="keep_in_touch_top">
-            <h2>Let's keep in touch!</h2>
+    </main>
+    <footer>
+      <div class="keep_in_touch">
+        <div class="keep_in_touch_top">
+          <h2>Let's keep in touch!</h2>
+          <img
+            src="/Assets/Etc/NeedHelpSalt.svg"
+            alt="Need Help?"
+            onclick="toggleChat()"
+          />
+          <div class="keep_in_touch_top_bot close">
+            <div class="keep_in_touch_top_bot_toggle">
+              <button class="active" onclick="toggleChatSelect(event, 'chat')">
+                Chat Assistant
+              </button>
+              <button onclick="toggleChatSelect(event, 'calc')">
+                Calculator
+              </button>
+            </div>
+            <div class="keep_in_touch_top_bot_chat">
+              <h4>It's empty...</h4>
+              <input type="text" placeholder="Ask away..." />
+            </div>
             <img
-              src="/Assets/Etc/NeedHelpSalt.svg"
-              alt="Need Help?"
-              onclick="toggleChat()"
+              class="keep_in_touch_top_bot_calc close"
+              src="../../Assets/Etc/Coming.png"
+              width="170px"
             />
-            <div class="keep_in_touch_top_bot close">
-              <div class="keep_in_touch_top_bot_toggle">
-                <button
-                  class="active"
-                  onclick="toggleChatSelect(event, 'chat')"
-                >
-                  Chat Assistant
-                </button>
-                <button onclick="toggleChatSelect(event, 'calc')">
-                  Calculator
-                </button>
-              </div>
-              <div class="keep_in_touch_top_bot_chat">
-                <h4>It's empty...</h4>
-                <input type="text" placeholder="Ask away..." />
-              </div>
-              <img
-                class="keep_in_touch_top_bot_calc close"
-                src="./Assets/Etc/Cooming.png"
-                width="170px"
-              />
-            </div>
-          </div>
-          <div class="keep_in_touch_bottom">
-            <div class="keep_in_touch_email">
-              <p>Contact Us - support@notenoughsalt.com</p>
-            </div>
-            <div class="keep_in_touch_social">
-              <img src="/Assets/Etc/Media/Instagram Fill.svg" alt="Instagram" />
-              <img src="/Assets/Etc/Media/Google Fill.svg" alt="Google" />
-              <img src="/Assets/Etc/Media/Pinterest Fill.svg" alt="Pinterest" />
-              <img src="/Assets/Etc/Media/Youtube Fill.svg" alt="YouTube" />
-              <p>@NotEnoughSalt</p>
-            </div>
-            <div class="keep_in_touch_etc">
-              <p>about</p>
-              <p>recipes</p>
-            </div>
           </div>
         </div>
-      </footer>
-    </main>
+        <div class="keep_in_touch_bottom">
+          <div class="keep_in_touch_email">
+            <p>Contact Us - support@notenoughsalt.com</p>
+          </div>
+          <div class="keep_in_touch_social">
+            <img src="/Assets/Etc/Media/Instagram Fill.svg" alt="Instagram" />
+            <img src="/Assets/Etc/Media/Google Fill.svg" alt="Google" />
+            <img src="/Assets/Etc/Media/Pinterest Fill.svg" alt="Pinterest" />
+            <img src="/Assets/Etc/Media/Youtube Fill.svg" alt="YouTube" />
+            <p>@NotEnoughSalt</p>
+          </div>
+          <div class="keep_in_touch_etc">
+            <p>about</p>
+            <p>recipes</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./faq.js"></script>
   </body>
 </html>

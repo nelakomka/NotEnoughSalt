@@ -1,68 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Source Serif 4', serif;
-}
-
-/* General Body Styling */
-body {
-  background-color: #f8efdf;
-  color: #522a12;
-}
-
-/* Navigation Bar (copied from home CSS) */
-nav {
-  background-color: #e3c341;
-
-  display: flex;
-  justify-content: space-evenly;
-
-  ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 120px;
-  }
-
-  a {
-    color: #522a12;
-    text-decoration: none;
-  }
-
-  .nav_nes_logo {
-    width: 150px;
-    margin: -15px;
-  }
-}
-/* Search Bar (copied from home CSS) */
-.search_bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-
-  .search_bar_input {
-    background-color: white;
-    border-radius: 102px;
-    border-style: none;
-    width: 541px;
-    height: 27px;
-    padding: 12px 20px 12px 40px;
-    box-shadow: #522b1254 2px 3px 15px;
-
-    background-image: url('/Assets/Etc/Search.svg');
-    background-repeat: no-repeat;
-    background-position: 15px;
-    cursor: pointer;
-  }
-}
-
 /* FAQ Header */
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -71,31 +8,36 @@ header {
   padding: 20px;
 }
 
-header h1 {
+.header h1 {
   font-family: serif;
   font-size: 30px;
-  color: black;  
+  color: #522a12;
 }
 
 /* FAQ Tabs */
 .tabs {
   display: flex;
   gap: 0;
-  
+
+  button:first-child {
+    border-radius: 10px 0 0 10px;
+  }
+
+  button:last-child {
+    border-radius: 0 10px 10px 0;
+  }
 }
 
 .tab-button {
   padding: 10px 20px;
-  background-color: #f17e37;
-  color: black;
+  background-color: #ef8645c9;
+  color: #522a12;
   border: none;
   border-right: 1px solid #522a12;
-  border-radius: 2px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
 }
 
 .tab-button:last-child {
@@ -109,7 +51,7 @@ header h1 {
 /* FAQ Section */
 .faq-section {
   margin: 0 auto;
-  max-width:900px;
+  max-width: 900px;
   padding: 20px;
 }
 
@@ -123,11 +65,10 @@ header h1 {
 
 /* FAQ Item */
 .faq-item {
-  background-color: #b8b880; 
-  border: 2px solid #79b3e6;
+  background-color: #b8b880;
+  border: 1px solid #79b3e6;
   border-radius: 10px;
   margin-bottom: 15px;
-  padding: 15px;
 }
 
 .faq-question {
@@ -135,7 +76,14 @@ header h1 {
   font-weight: bold;
   cursor: pointer;
   position: relative;
-  padding-right: 20px;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.open {
+  .faq-question {
+    padding-bottom: 0;
+  }
 }
 
 .faq-question::after {
@@ -155,115 +103,10 @@ header h1 {
   margin-top: 10px;
   font-size: 16px;
   color: #522a12;
+  background-color: #c8c698;
+  padding: 10px 15px;
 }
 
 .faq-item.open .faq-answer {
   display: block;
-}
-
-/* Footer (copied from Home CSS)*/
-footer {
-  margin-bottom: 30px;
-
-  .keep_in_touch {
-    max-width: 95%;
-    width: 100%;
-    margin: 0 auto;
-
-    .keep_in_touch_top {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      border-bottom: 1px solid #79b3e6;
-      padding-bottom: 10px;
-      position: relative;
-
-      h2 {
-        color: #b8b880;
-      }
-
-      img {
-        position: fixed;
-        bottom: 60px;
-        right: 20px;
-        cursor: pointer;
-        z-index: 2;
-      }
-
-      .keep_in_touch_top_bot {
-        position: fixed;
-        right: 90px;
-        bottom: 80px;
-        width: 415px;
-        height: 350px;
-        padding: 25px;
-        background-color: #f8efdf;
-        border: 6px solid #e7cc61;
-        box-shadow: 0 0 0 1px #522a12;
-        border-radius: 10px;
-
-        h4 {
-          font-size: 30px;
-          text-align: center;
-        }
-
-        input {
-          width: 80%;
-          padding: 10px;
-          border: none;
-          background: #ffffff;
-          border-radius: 15px;
-        }
-
-        .keep_in_touch_top_bot_toggle {
-          position: absolute;
-          top: -35px;
-          right: 0;
-
-          button {
-            background-color: #e7cc61;
-            border-radius: 5px 5px 0 0;
-            padding: 5px 10px;
-            border-width: 1px 1px 0 1px;
-            border-style: solid;
-            border-color: #522a12;
-            cursor: pointer;
-          }
-
-          .active {
-            font-weight: 700;
-          }
-        }
-
-        .keep_in_touch_top_bot_chat {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          height: 100%;
-        }
-
-        .keep_in_touch_top_bot_calc {
-          position: relative;
-          bottom: -20px;
-          right: -100px;
-          width: fit-content;
-        }
-      }
-
-      .close {
-        display: none !important;
-      }
-    }
-
-    .keep_in_touch_bottom {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 10px;
-
-      & > div {
-        display: flex;
-        gap: 15px;
-      }
-    }
-  }
 }
