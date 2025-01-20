@@ -25,42 +25,44 @@
     </script>
   </head>
 
+  <header>
+    <!-- Navigation -->
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="../Home/home.html">recipes</a>
+          </li>
+          <li>
+            <a href="../MealPlan/MealPlan.html">meal plan</a>
+          </li>
+          <li>
+            <a href="../Home/home.html">news</a>
+          </li>
+          <li>
+            <img
+              class="nav_nes_logo"
+              src="../../Assets/Etc/Logo.svg"
+              alt="NotEnoughSalt Logo"
+              href="../Home/home.html"
+            />
+          </li>
+          <li>
+            <a href="../Home/home.html">news</a>
+          </li>
+          <li>
+            <a href="../FAQs/faq.html">faqs</a>
+          </li>
+          <li>
+            <a href="../Home/home.html">profile</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
   <body>
     <main>
-      <!-- Navigation -->
-      <nav>
-        <div class="navbar">
-          <ul>
-            <li>
-              <a href="../Home/home.html">home</a>
-            </li>
-            <li>
-              <a href="../MealPlan/MealPlan.html">meal plan</a>
-            </li>
-            <li>
-              <a href="../Home/home.html">news</a>
-            </li>
-            <li>
-              <img
-                class="nav_nes_logo"
-                src="../../Assets/Etc/Logo.svg"
-                alt="NotEnoughSalt Logo"
-                href="../Home/home.html"
-              />
-            </li>
-            <li>
-              <a href="../Home/home.html">news</a>
-            </li>
-            <li>
-              <a href="../FAQs/faq.html">faqs</a>
-            </li>
-            <li>
-              <a href="../Home/home.html">profile</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
       <!-- Search Bar -->
       <div class="search_bar">
         <input class="search_bar_input" type="text" placeholder="Search..." />
@@ -489,60 +491,56 @@
 
         <div></div>
       </div>
-
-      <!-- Footer (Do not touch) -->
-      <footer>
-        <div class="keep_in_touch">
-          <div class="keep_in_touch_top">
-            <h2>Let's keep in touch!</h2>
-            <img
-              src="/Assets/Etc/NeedHelpSalt.svg"
-              alt="Need Help?"
-              onclick="toggleChat()"
-            />
-            <div class="keep_in_touch_top_bot close">
-              <div class="keep_in_touch_top_bot_toggle">
-                <button
-                  class="active"
-                  onclick="toggleChatSelect(event, 'chat')"
-                >
-                  Chat Assistant
-                </button>
-                <button onclick="toggleChatSelect(event, 'calc')">
-                  Calculator
-                </button>
-              </div>
-              <div class="keep_in_touch_top_bot_chat">
-                <h4>It's empty...</h4>
-                <input type="text" placeholder="Ask away..." />
-              </div>
-              <img
-                class="keep_in_touch_top_bot_calc close"
-                src="../../Assets/Etc/Coming.png"
-                width="170px"
-              />
-            </div>
-          </div>
-          <div class="keep_in_touch_bottom">
-            <div class="keep_in_touch_email">
-              <p>Contact Us - support@notenoughsalt.com</p>
-            </div>
-            <div class="keep_in_touch_social">
-              <img src="/Assets/Etc/Media/Instagram Fill.svg" alt="Instagram" />
-              <img src="/Assets/Etc/Media/Google Fill.svg" alt="Google" />
-              <img src="/Assets/Etc/Media/Pinterest Fill.svg" alt="Pinterest" />
-              <img src="/Assets/Etc/Media/Youtube Fill.svg" alt="YouTube" />
-              <p>@NotEnoughSalt</p>
-            </div>
-            <div class="keep_in_touch_etc">
-              <p>about</p>
-              <p>recipes</p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </main>
 
+    <!-- Footer (Do not touch) -->
+    <footer>
+      <div class="keep_in_touch">
+        <div class="keep_in_touch_top">
+          <h2>Let's keep in touch!</h2>
+          <img
+            src="/Assets/Etc/NeedHelpSalt.svg"
+            alt="Need Help?"
+            onclick="toggleChat()"
+          />
+          <div class="keep_in_touch_top_bot close">
+            <div class="keep_in_touch_top_bot_toggle">
+              <button class="active" onclick="toggleChatSelect(event, 'chat')">
+                Chat Assistant
+              </button>
+              <button onclick="toggleChatSelect(event, 'calc')">
+                Calculator
+              </button>
+            </div>
+            <div class="keep_in_touch_top_bot_chat">
+              <h4>It's empty...</h4>
+              <input type="text" placeholder="Ask away..." />
+            </div>
+            <img
+              class="keep_in_touch_top_bot_calc close"
+              src="../../Assets/Etc/Coming.png"
+              width="170px"
+            />
+          </div>
+        </div>
+        <div class="keep_in_touch_bottom">
+          <div class="keep_in_touch_email">
+            <p>Contact Us - support@notenoughsalt.com</p>
+          </div>
+          <div class="keep_in_touch_social">
+            <img src="/Assets/Etc/Media/Instagram Fill.svg" alt="Instagram" />
+            <img src="/Assets/Etc/Media/Google Fill.svg" alt="Google" />
+            <img src="/Assets/Etc/Media/Pinterest Fill.svg" alt="Pinterest" />
+            <img src="/Assets/Etc/Media/Youtube Fill.svg" alt="YouTube" />
+            <p>@NotEnoughSalt</p>
+          </div>
+          <div class="keep_in_touch_etc">
+            <p>about</p>
+            <p>recipes</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./MealPlan.js"></script>
   </body>
 </html>
