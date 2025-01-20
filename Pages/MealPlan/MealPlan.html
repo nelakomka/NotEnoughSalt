@@ -7,7 +7,22 @@
     <!-- Update Template Name -->
     <title>Not Enough Salt - Template</title>
     <link rel="stylesheet" href="./MealPlan.css" />
+    <link rel="stylesheet" href="../../Basics/Template.css" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <script>
+      // fullcalendar library
+      document.addEventListener('DOMContentLoaded', function () {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          headerToolbar: {
+            start: 'dayGridMonth,timeGridWeek',
+          },
+        });
+        calendar.render();
+      });
+    </script>
   </head>
 
   <body>
@@ -17,30 +32,30 @@
         <div class="navbar">
           <ul>
             <li>
-              <a href="home.html">home</a>
+              <a href="../Home/home.html">home</a>
             </li>
             <li>
-              <a href="Meal.html">meal plan</a>
+              <a href="../MealPlan/MealPlan.html">meal plan</a>
             </li>
             <li>
-              <a href="News.html">news</a>
+              <a href="../Home/home.html">news</a>
             </li>
             <li>
               <img
                 class="nav_nes_logo"
                 src="../../Assets/Etc/Logo.svg"
                 alt="NotEnoughSalt Logo"
-                href="#"
+                href="../Home/home.html"
               />
             </li>
             <li>
-              <a href="About.html">about</a>
+              <a href="../Home/home.html">news</a>
             </li>
             <li>
-              <a href="faq.html">faqs</a>
+              <a href="../FAQs/faq.html">faqs</a>
             </li>
             <li>
-              <a href="Profile.html">profile</a>
+              <a href="../Home/home.html">profile</a>
             </li>
           </ul>
         </div>
@@ -51,79 +66,240 @@
         <input class="search_bar_input" type="text" placeholder="Search..." />
       </div>
 
+      <div class="calendar">
+        <h2>Calendar</h2>
+        <div id="calendar"></div>
+
+        <button>Generate Grocery List</button>
+      </div>
+
       <div class="grocery_store_list">
         <div class="grocery_store_list_text">
           <h2>Grocery Store List</h2>
         </div>
 
-        <div class="recipe_grocery_list">
-          <div>
-            <h3>Classic Margherita Pizza</h3>
+        <div class="grocery_ingridients_lists">
+          <!-- Margherita -->
+          <div class="recipe_grocery_list">
+            <div>
+              <h3>Classic Margherita Pizza</h3>
+            </div>
+
+            <div class="recipe_grocery_list_checkboxes">
+              <input
+                type="checkbox"
+                id="grocery1"
+                name="grocery1"
+                value="AllPurposeFLour"
+              />
+              <label for="grocery1"> All Purpose Flour</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery2"
+                name="grocery2"
+                value="InstantYeast"
+              />
+              <label for="InstantYeast"> Instant Yeast</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery3"
+                name="grocery3"
+                value="Salt"
+              />
+              <label for="grocery3"> Salt</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery4"
+                name="grocery4"
+                value="OliveOil"
+              />
+              <label for="grocery4"> Olive Oil</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery5"
+                name="grocery5"
+                value="CrushedTomatoes"
+              />
+              <label for="grocery5"> Crushed Tomatoes</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery6"
+                name="grocery6"
+                value="DriedOregano"
+              />
+              <label for="grocery6"> Dried Oregano</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery7"
+                name="grocery7"
+                value="FreshMozarellaCheese"
+              />
+              <label for="grocery7"> Fresh Mozarella Cheese</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery8"
+                name="grocery8"
+                value="FreshBasilLeaves"
+              />
+              <label for="grocery8"> Fresh Basil Leaves</label><br />
+            </div>
           </div>
 
-          <div class="recipe_grocery_list_checkboxes">
-            <input
-              type="checkbox"
-              id="grocery1"
-              name="grocery1"
-              value="AllPurposeFLour"
-            />
-            <label for="grocery1"> All Purpose Flour</label><br />
+          <!-- Margherita -->
+          <div class="recipe_grocery_list">
+            <div>
+              <h3>Classic Margherita Pizza</h3>
+            </div>
 
-            <input
-              type="checkbox"
-              id="grocery2"
-              name="grocery2"
-              value="InstantYeast"
-            />
-            <label for="InstantYeast"> Instant Yeast</label><br />
+            <div class="recipe_grocery_list_checkboxes">
+              <input
+                type="checkbox"
+                id="grocery1"
+                name="grocery1"
+                value="AllPurposeFLour"
+              />
+              <label for="grocery1"> All Purpose Flour</label><br />
 
-            <input type="checkbox" id="grocery3" name="grocery3" value="Salt" />
-            <label for="grocery3"> Salt</label><br />
+              <input
+                type="checkbox"
+                id="grocery2"
+                name="grocery2"
+                value="InstantYeast"
+              />
+              <label for="InstantYeast"> Instant Yeast</label><br />
 
-            <input
-              type="checkbox"
-              id="grocery4"
-              name="grocery4"
-              value="OliveOil"
-            />
-            <label for="grocery4"> Olive Oil</label><br />
+              <input
+                type="checkbox"
+                id="grocery3"
+                name="grocery3"
+                value="Salt"
+              />
+              <label for="grocery3"> Salt</label><br />
 
-            <input
-              type="checkbox"
-              id="grocery5"
-              name="grocery5"
-              value="CrushedTomatoes"
-            />
-            <label for="grocery5"> Crushed Tomatoes</label><br />
+              <input
+                type="checkbox"
+                id="grocery4"
+                name="grocery4"
+                value="OliveOil"
+              />
+              <label for="grocery4"> Olive Oil</label><br />
 
-            <input
-              type="checkbox"
-              id="grocery6"
-              name="grocery6"
-              value="DriedOregano"
-            />
-            <label for="grocery6"> Dried Oregano</label><br />
+              <input
+                type="checkbox"
+                id="grocery5"
+                name="grocery5"
+                value="CrushedTomatoes"
+              />
+              <label for="grocery5"> Crushed Tomatoes</label><br />
 
-            <input
-              type="checkbox"
-              id="grocery7"
-              name="grocery7"
-              value="FreshMozarellaCheese"
-            />
-            <label for="grocery7"> Fresh Mozarella Cheese</label><br />
+              <input
+                type="checkbox"
+                id="grocery6"
+                name="grocery6"
+                value="DriedOregano"
+              />
+              <label for="grocery6"> Dried Oregano</label><br />
 
-            <input
-              type="checkbox"
-              id="grocery8"
-              name="grocery8"
-              value="FreshBasilLeaves"
-            />
-            <label for="grocery8"> Fresh Basil Leaves</label><br />
-            <br />
+              <input
+                type="checkbox"
+                id="grocery7"
+                name="grocery7"
+                value="FreshMozarellaCheese"
+              />
+              <label for="grocery7"> Fresh Mozarella Cheese</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery8"
+                name="grocery8"
+                value="FreshBasilLeaves"
+              />
+              <label for="grocery8"> Fresh Basil Leaves</label><br />
+            </div>
+          </div>
+
+          <!-- Margherita -->
+          <div class="recipe_grocery_list">
+            <div>
+              <h3>Classic Margherita Pizza</h3>
+            </div>
+
+            <div class="recipe_grocery_list_checkboxes">
+              <input
+                type="checkbox"
+                id="grocery1"
+                name="grocery1"
+                value="AllPurposeFLour"
+              />
+              <label for="grocery1"> All Purpose Flour</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery2"
+                name="grocery2"
+                value="InstantYeast"
+              />
+              <label for="InstantYeast"> Instant Yeast</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery3"
+                name="grocery3"
+                value="Salt"
+              />
+              <label for="grocery3"> Salt</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery4"
+                name="grocery4"
+                value="OliveOil"
+              />
+              <label for="grocery4"> Olive Oil</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery5"
+                name="grocery5"
+                value="CrushedTomatoes"
+              />
+              <label for="grocery5"> Crushed Tomatoes</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery6"
+                name="grocery6"
+                value="DriedOregano"
+              />
+              <label for="grocery6"> Dried Oregano</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery7"
+                name="grocery7"
+                value="FreshMozarellaCheese"
+              />
+              <label for="grocery7"> Fresh Mozarella Cheese</label><br />
+
+              <input
+                type="checkbox"
+                id="grocery8"
+                name="grocery8"
+                value="FreshBasilLeaves"
+              />
+              <label for="grocery8"> Fresh Basil Leaves</label><br />
+            </div>
           </div>
         </div>
-        <input type="clearList" value="Clear List" />
+
+        <button>Clear list</button>
       </div>
 
       <div class="recipes_added_toMealPrep">
@@ -342,7 +518,7 @@
               </div>
               <img
                 class="keep_in_touch_top_bot_calc close"
-                src="./Assets/Etc/Cooming.png"
+                src="../../Assets/Etc/Coming.png"
                 width="170px"
               />
             </div>
