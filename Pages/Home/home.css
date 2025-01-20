@@ -142,7 +142,7 @@
   background-color: #c9c79a;
   width: 100%;
   max-width: 95%;
-  margin: 90px auto;
+  margin: 70px auto;
   border-radius: 10px;
 
   display: flex;
@@ -185,6 +185,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-bottom: 25px;
 
   h2 {
     position: absolute;
@@ -195,6 +196,17 @@
     padding: 0 10px;
   }
 
+  button {
+    background-color: #e3c341;
+    color: rgb(248, 248, 248);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #522a12;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
   .newsletter_text_input {
     display: flex;
     flex-direction: column;
@@ -202,7 +214,7 @@
     gap: 10px;
     border: 2px solid #522a12;
     border-radius: 10px;
-    padding: 50px 150px;
+    padding: 35px 150px;
 
     p {
       font-size: 20px;
