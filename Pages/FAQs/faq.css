@@ -110,3 +110,79 @@
 .faq-item.open .faq-answer {
   display: block;
 }
+
+/* Feedback Section(Can I just say, I hate CSS) REVIEW */
+.feedback-section {
+  background-color: #f8efdf;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 10px;
+  border: 1px solid #79b3e6;
+  max-width: 860px;
+  font-family: 'Arial', sans-serif;
+}
+
+.feedback-section h3 {
+  font-size: 20px;
+  color: #522a12;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.feedback-form label {
+  font-size: 14px;
+  color: #522a12;
+  margin-bottom: 5px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #e3f5f9;
+}
+
+.feedback-form .feedback-row {
+  display: flex;
+  flex: 1 1 100%;
+  gap: 15px;
+}
+
+.feedback-form .feedback-row input[type="text"],
+.feedback-form .feedback-row input[type="email"],
+.feedback-form .feedback-row textarea {
+  flex: 1;
+}
+
+.feedback-form .feedback-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.feedback-form button {
+  background-color: #b8b880;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.feedback-form button:hover {
+  background-color: #d1ad2f;
+}
