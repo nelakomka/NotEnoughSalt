@@ -44,3 +44,15 @@
     }
   }
 }
+
+.user_recipes_card {
+  .user_recipes_card_background {
+    color: #b8b880;
+    width: 100px;
+    height: 100px;
+  }
+
+  p {
+    color: #522a12;
+  }
+}
