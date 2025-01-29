@@ -10,6 +10,35 @@
     color: #e3c341;
   }
 
+  .recipes_filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 15px 0;
+
+    select {
+      appearance: none;
+      padding: 3px 10px;
+      background-color: #f17e37;
+      cursor: pointer;
+      border: 1px solid black;
+    }
+
+    select:nth-child(2) {
+      border-radius: 10px 0 0 10px;
+      margin-left: 20px;
+    }
+
+    select:not(:last-child) {
+      border-right: none;
+    }
+
+    select:last-child {
+      border-radius: 0 10px 10px 0;
+    }
+  }
+
   .recipes_grid {
     display: flex;
     flex-wrap: wrap;
@@ -42,5 +71,17 @@
         }
       }
     }
+  }
+}
+
+.user_recipes_card {
+  .user_recipes_card_background {
+    color: #b8b880;
+    width: 100px;
+    height: 100px;
+  }
+
+  p {
+    color: #522a12;
   }
 }

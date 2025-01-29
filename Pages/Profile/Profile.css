@@ -1,0 +1,266 @@
+/* Profile */
+.buttons_controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: 40px 0;
+
+  button {
+    appearance: none;
+    padding: 3px 10px;
+    background-color: #ffa771;
+    cursor: pointer;
+  }
+
+  .tab-button:hover,
+  .tab-button.active {
+    background-color: #e46414;
+  }
+
+  button:not(:last-child) {
+    border-right: none;
+  }
+
+  button:first-child {
+    border-radius: 10px 0 0 10px;
+  }
+
+  button:last-child {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+.profile-section {
+  .profile-category {
+    display: none;
+  }
+
+  .profile-category.active {
+    display: block;
+  }
+}
+
+/* Settings */
+.container_settings_profile {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .change_form_and_picture {
+    display: flex;
+    gap: 175px;
+
+    .change_image {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        height: 200px;
+        width: auto;
+      }
+
+      button {
+        background-color: #b8b880;
+        color: #522a12;
+        padding: 3px 15px;
+        border-radius: 5px;
+        border: 1px solid #522a12;
+        align-self: center;
+        margin: 30px 0;
+        cursor: pointer;
+
+        font-size: 15px;
+      }
+    }
+
+    .change_settings {
+      form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          background-color: white;
+          border-radius: 3px;
+          border-style: none;
+          width: 200px;
+          height: 27px;
+          padding: 10px;
+          margin-top: 10px;
+          box-shadow: #522b1217 2px 3px 15px;
+          cursor: pointer;
+        }
+
+        input[type='submit'] {
+          width: fit-content;
+          background-color: #b8b880;
+          color: #522a12;
+          padding: 3px 10px;
+          border-radius: 5px;
+          border: 1px solid #522a12;
+          align-self: center;
+          cursor: pointer;
+          font-size: 15px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.recipe_preferences {
+  background-color: #b8b880;
+  border: solid 1px #79b3e6;
+  border-radius: 5px;
+  margin-top: 50px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    color: #522a12;
+    text-align: center;
+    margin: 15px;
+    font-family: 'Oleo Script Swash Caps', serif;
+    font-size: 30px;
+  }
+
+  .recipe_prefrence_lists {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    .recipe_preference_list {
+      background-color: #e7cc61;
+      width: 250px;
+      border-radius: 5px;
+      border: 1px solid #522a12;
+      color: #522a12;
+
+      & > div:first-child {
+        padding: 5px 15px;
+        border-bottom: 1px solid #f8efdf;
+
+        h3 {
+          color: #522a12;
+          font-size: 25px;
+        }
+      }
+
+      .recipe_prefrence_lists_checkboxes {
+        padding: 5px 15px;
+      }
+    }
+  }
+
+  button {
+    background-color: #e7cc61;
+    color: #522a12;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid #522a12;
+    align-self: center;
+    margin: 30px 0;
+    cursor: pointer;
+
+    font-size: 15px;
+  }
+}
+
+.delete_account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    background-color: #e23b32;
+    color: #522a12;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid #522a12;
+    align-self: center;
+    margin: 30px 0;
+    cursor: pointer;
+
+    font-size: 20px;
+  }
+}
+
+/* Saved Recipes */
+.recipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 10px;
+
+  h2 {
+    color: #e3c341;
+  }
+
+  .recipes_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1300px;
+
+    .recipe_card {
+      display: flex;
+
+      a {
+        text-decoration: none;
+        color: #522a12;
+      }
+
+      img {
+        border-radius: 3px;
+      }
+
+      .recipe_card_info {
+        display: flex;
+        justify-content: center;
+
+        gap: 10px;
+
+        .recipe_card_time {
+          display: flex;
+
+          gap: 3px;
+        }
+      }
+    }
+  }
+}
+
+/* Your Recipes */
+
+.recipes_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload_recipe_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    background-color: #f17e37;
+    color: #522a12;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid #522a12;
+    align-self: center;
+    margin: 30px 0;
+    cursor: pointer;
+
+    font-size: 20px;
+  }
+}

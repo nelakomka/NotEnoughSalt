@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>NES - Registration</title>
     <link rel="stylesheet" href="../../Basics/Template.css" />
-    <link rel="icon" href="../../Assets/Etc/Saltshaker.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../../Pages/Registration/Registration.css" />
+    <link
+      rel="icon"
+      href="../../Assets/Etc/Saltshaker.svg"
+      type="image/x-icon"
+    />
   </head>
 
   <header>
@@ -47,60 +52,54 @@
   </header>
   <body>
     <main>
-      <!-- Search Bar -->
-      <div class="search_bar">
-        <input class="search_bar_input" type="text" placeholder="Search..." />
-      </div>
-    </main>
-
-    <!-- Footer (Do not touch) -->
-    <footer>
-      <div class="keep_in_touch">
-        <div class="keep_in_touch_top">
-          <h2>Let's keep in touch!</h2>
-          <img
-            src="/Assets/Etc/NeedHelpSalt.svg"
-            alt="Need Help?"
-            onclick="toggleChat()"
+      <!-- Registration Form -->
+      <form action="../Profile/Profile.html">
+        <div class="container">
+          <!-- Email -->
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            id="email"
+            required
           />
-          <div class="keep_in_touch_top_bot close">
-            <div class="keep_in_touch_top_bot_toggle">
-              <button class="active" onclick="toggleChatSelect(event, 'chat')">
-                Chat Assistant
-              </button>
-              <button onclick="toggleChatSelect(event, 'calc')">
-                Calculator
-              </button>
-            </div>
-            <div class="keep_in_touch_top_bot_chat">
-              <h4>It's empty...</h4>
-              <input type="text" placeholder="Ask away..." />
-            </div>
-            <img
-              class="keep_in_touch_top_bot_calc close"
-              src="../../Assets/Etc/Coming.png"
-              width="170px"
-            />
-          </div>
+          <br />
+
+          <input
+            type="text"
+            placeholder="Enter Name"
+            name="NAME"
+            id="name"
+            required
+          />
+          <br />
+          <!--Password  -->
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            id="psw"
+            required
+          />
+          <br />
+          <!--  Repeat password -->
+          <input
+            type="password"
+            placeholder="Repeat Password"
+            name="psw-repeat"
+            id="psw-repeat"
+            required
+          />
+          <br />
+
+          <button type="submit" class="registerbtn"><b>Register</b></button>
         </div>
-        <div class="keep_in_touch_bottom">
-          <div class="keep_in_touch_email">
-            <p>Contact Us - support@notenoughsalt.com</p>
-          </div>
-          <div class="keep_in_touch_social">
-            <img src="/Assets/Etc/Media/Instagram Fill.svg" alt="Instagram" />
-            <img src="/Assets/Etc/Media/Google Fill.svg" alt="Google" />
-            <img src="/Assets/Etc/Media/Pinterest Fill.svg" alt="Pinterest" />
-            <img src="/Assets/Etc/Media/Youtube Fill.svg" alt="YouTube" />
-            <p>@NotEnoughSalt</p>
-          </div>
-          <div class="keep_in_touch_etc">
-            <p>about</p>
-            <p>recipes</p>
-          </div>
+
+        <div class="container signin">
+          <p>Returning user? <a href="../Login/Login.html">Login here</a>!</p>
         </div>
-      </div>
-    </footer>
+      </form>
+    </main>
 
     <script src="../../Basics/Chat.js"></script>
   </body>
