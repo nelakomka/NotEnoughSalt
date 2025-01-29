@@ -7,7 +7,11 @@
     <title>NES - Login</title>
     <link rel="stylesheet" href="../../Basics/Template.css" />
     <link rel="stylesheet" href="../../Pages/Login/Login.css" />
-    <link rel="icon" href="../../Assets/Etc/Saltshaker.svg" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="../../Assets/Etc/Saltshaker.svg"
+      type="image/x-icon"
+    />
   </head>
 
   <header>
@@ -52,30 +56,41 @@
       <input class="search_bar_input" type="text" placeholder="Search..." />
     </div>
     <main>
-    
-    <form action="/action_page.php">
-      <div class="container">
-      
-        <!-- Email -->
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
-        <br>
-       
-        <!--Password  -->
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-         <br>
-        <!--  Repeat password -->
-    
-        <button type="submit" class="loginbtn"><b>Login</b></button>
-      </div>
-      
-      <div class="container signin">
-        <p>New user? <a href="#">Register here</a>!</p>
-        <p>Forgot your password? <a href="#">Click here!</a>!</p>
+      <form action="../Profile/Profile.html">
+        <div class="container">
+          <!-- Email -->
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            id="email"
+            required
+          />
+          <br />
 
-      </div>
-    </form>
+          <!--Password  -->
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            id="psw"
+            required
+          />
+          <br />
 
-    <script src="../../Basics/Chat.js"></script>
-  </main>
+          <button type="submit" class="loginbtn"><b>Login</b></button>
+        </div>
+
+        <div class="container signin">
+          <p>
+            New user?
+            <a href="../Registration/Registration.html">Register here</a>!
+          </p>
+          <p>Forgot your password? <a href="#">Click here!</a>!</p>
+        </div>
+      </form>
+
+      <script src="../../Basics/Chat.js"></script>
+    </main>
   </body>
 </html>

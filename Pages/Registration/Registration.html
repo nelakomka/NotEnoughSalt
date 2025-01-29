@@ -7,7 +7,11 @@
     <title>NES - Registration</title>
     <link rel="stylesheet" href="../../Basics/Template.css" />
     <link rel="stylesheet" href="../../Pages/Registration/Registration.css" />
-    <link rel="icon" href="../../Assets/Etc/Saltshaker.svg" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="../../Assets/Etc/Saltshaker.svg"
+      type="image/x-icon"
+    />
   </head>
 
   <header>
@@ -48,32 +52,54 @@
   </header>
   <body>
     <main>
-    
-<!-- Registration Form -->
-    <form action="/action_page.php">
-      <div class="container">
-      
-        <!-- Email -->
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
-        <br>
-       
-       <input type="text" placeholder="Enter Name" name="NAME" id="name" required>
-       <br>
-        <!--Password  -->
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-         <br>
-        <!--  Repeat password -->
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-        <br>
-    
-        <button type="submit" class="registerbtn"><b>Register</b></button>
-      </div>
-      
-      <div class="container signin">
-        <p>Returning user? <a href="#">Login here</a>!</p>
-      </div>
-    </form>
-  </main>
+      <!-- Registration Form -->
+      <form action="../Profile/Profile.html">
+        <div class="container">
+          <!-- Email -->
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            id="email"
+            required
+          />
+          <br />
+
+          <input
+            type="text"
+            placeholder="Enter Name"
+            name="NAME"
+            id="name"
+            required
+          />
+          <br />
+          <!--Password  -->
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            id="psw"
+            required
+          />
+          <br />
+          <!--  Repeat password -->
+          <input
+            type="password"
+            placeholder="Repeat Password"
+            name="psw-repeat"
+            id="psw-repeat"
+            required
+          />
+          <br />
+
+          <button type="submit" class="registerbtn"><b>Register</b></button>
+        </div>
+
+        <div class="container signin">
+          <p>Returning user? <a href="../Login/Login.html">Login here</a>!</p>
+        </div>
+      </form>
+    </main>
 
     <script src="../../Basics/Chat.js"></script>
   </body>
