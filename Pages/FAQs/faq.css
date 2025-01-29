@@ -6,6 +6,7 @@
   margin: auto;
   max-width: 900px;
   padding: 20px;
+  
 }
 
 .header h1 {
@@ -53,6 +54,7 @@
   margin: 0 auto;
   max-width: 900px;
   padding: 20px;
+  font: #522a12;
 }
 
 .faq-category {
@@ -69,6 +71,7 @@
   border: 1px solid #79b3e6;
   border-radius: 10px;
   margin-bottom: 15px;
+  
 }
 
 .faq-question {
@@ -78,6 +81,8 @@
   position: relative;
   padding: 10px;
   margin: 0 10px;
+  color: #522a12;
+  
 }
 
 .open {
@@ -127,6 +132,7 @@
   color: #522a12;
   text-align: center;
   margin-bottom: 20px;
+  
 }
 
 .feedback-form {
@@ -153,6 +159,7 @@
   font-size: 14px;
   box-sizing: border-box;
   background-color: #e3f5f9;
+  
 }
 
 .feedback-form .feedback-row {
