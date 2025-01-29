@@ -8,7 +8,11 @@
     <title>NES - Find Recipes</title>
     <link rel="stylesheet" href="../../Basics/Template.css" />
     <link rel="stylesheet" href="FindRecipes.css" />
-    <link rel="icon" href="../../Assets/Etc/Saltshaker.svg" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="../../Assets/Etc/Saltshaker.svg"
+      type="image/x-icon"
+    />
   </head>
 
   <header>
@@ -58,6 +62,53 @@
       <div class="recipes">
         <div class="recipes_text">
           <h2>Recipes</h2>
+        </div>
+
+        <div class="recipes_filter">
+          <p>Filter:</p>
+          <select name="courses">
+            <option value="courses">Courses</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="dessert">Dessert</option>
+            <option value="snack">Snack</option>
+          </select>
+          <select name="difficulty">
+            <option value="difficulty">Difficulty</option>
+            <option value="basic">Basic</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+          <select name="spice">
+            <option value="spice">Spice Level</option>
+            <option value="mild">Mild</option>
+            <option value="medium">Medium</option>
+            <option value="hot">Hot</option>
+            <option value="extra_hot">Extra Hot</option>
+          </select>
+          <select name="region">
+            <option value="region">Region</option>
+            <option value="africa">Africa</option>
+            <option value="americas">Americas</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+          </select>
+          <select name="diet">
+            <option value="diet">Diet</option>
+            <option value="gluten_free">Gluten Free</option>
+            <option value="high_protein">High Protein</option>
+            <option value="keto">Keto</option>
+            <option value="low_carb">Low Carb</option>
+            <option value="vegan">Vegan</option>
+            <option value="vegetarian">Vegeterian</option>
+          </select>
+          <select name="time">
+            <option value="time">Time</option>
+            <option value="under_30_minutes">Under 30 minutes</option>
+            <option value="under_1_hour">Under 1 hour</option>
+            <option value="over_1_hour">Over 1 hour</option>
+          </select>
         </div>
 
         <div class="recipes_grid">

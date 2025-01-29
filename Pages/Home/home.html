@@ -7,7 +7,11 @@
     <title>NES - Home</title>
     <link rel="stylesheet" href="./home.css" />
     <link rel="stylesheet" href="../../Basics/Template.css" />
-    <link rel="icon" href="../../Assets/Etc/Saltshaker.svg" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="../../Assets/Etc/Saltshaker.svg"
+      type="image/x-icon"
+    />
   </head>
 
   <header>
@@ -218,8 +222,18 @@
               special offers, and the latest insights delivered straight to your
               inbox. Be the first to know about new recipes. Don’t miss out!
             </p>
-            <input type="text" placeholder="Email" />
-            <button>Sign up!</button>
+
+            <label for="email"></label>
+            <input
+              type="email"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+
+            <a href="../ThankYou/ThankYou.html">
+              <button type="submit" class="signupbtn">Sign Up</button>
+            </a>
           </div>
         </div>
       </div>

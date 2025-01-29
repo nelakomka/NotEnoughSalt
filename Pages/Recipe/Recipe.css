@@ -1,0 +1,235 @@
+/* Reset some default styles */
+  /* General Layout */
+  .recipe-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* General Layout */
+  .recipe-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  /* Recipe Header */
+  .recipe-header {
+    margin-top: 100px; /* Add space at the top of the header */
+  }
+  
+  .recipe-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #4b3715;
+  }
+  
+  .recipe-meta {
+    font-size: 1.9rem;
+    color: #4b3715;
+  }
+  
+  .country,
+  .meal-time {
+    display: inline-block;
+    margin-right: 10px;;
+  }
+  
+  /* Icons Section */
+.recipe-icons {
+    display: flex;
+    gap: 50px; /* Space between icons */
+    margin-top: 1px;
+    align-items: center; /* Ensure icons stay aligned horizontally */
+  }
+  
+  /* Individual Icon Container */
+  .recipe-icons .icon {
+    display: flex;
+    flex-direction: column;  /* Stack icon and text vertically */
+    align-items: center;     /* Center text under the icon */
+    text-align: center;      /* Center align the text */
+  }
+  
+  /* Icon Style */
+  .recipe-icons img {
+    width: 40px; /* Adjust the icon size */
+    height: 40px;
+    margin-bottom: 1px; /* Increase space between icon and text */
+  }
+  
+  /* Text Style */
+  .recipe-icons span {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-top: 5px; /* Optional: add some space between the text and the next icon */
+  }
+  
+  /* Recipe Image and Ingredients Section (Flexbox layout) */
+  .recipe-image {
+    flex: 1;                       /* Take up available space */
+    display: flex;                  /* Use Flexbox */
+    justify-content: flex-end;      /* Align the content to the right side */
+    align-items: center;            /* Vertically center the image */
+    margin-bottom: 20px;            /* Add space below the image */
+  }
+  
+  .recipe-image img {
+    width: 650px;                   /* Set your image width */
+    max-height: 400px;              /* Optional: Set max height */
+    object-fit: cover;              /* Ensure the image covers its area without stretching */
+    border-radius: 15px;            /* Round the corners */
+    margin-left: 20px;              /* Adds a slight margin from the left to keep some space */
+  }
+  
+  /* Optional: Adjust the wrapper container to prevent constraints */
+  .content-wrapper {
+    display: flex;
+    justify-content: flex-start;     /* Align content to the left by default */
+    gap: 30px;                       /* Add space between the content */
+    flex-wrap: wrap;                 /* Allow content to wrap on smaller screens */
+    width: 100%;                     /* Ensure the wrapper takes up full width */
+  }
+  
+  
+  /* Ingredients Section */
+  .recipe-ingredients {
+    flex: 1; /* Take up available space */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack ingredients vertically */
+    order: -1; /* This places the ingredients on the left side of the image */
+
+    margin-top: 60px; /* Add spacing between the ingredients and the header */
+  }
+  
+  .recipe-ingredients h1 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+    color: #4b3715;
+    
+  }
+  
+  .recipe-ingredients ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .recipe-ingredients ul li {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #4b3715;
+  }
+  
+  /* Recipe Instructions Section */
+  .recipe-instructions {
+    margin-top: 25px; /* Add space above instructions */
+    margin-bottom: 30px;
+  }
+  
+  .recipe-instructions h4 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+    color: #4b3715;
+  }
+  
+  .recipe-instructions ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  
+  .recipe-instructions ol li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #4b3715;
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column; /* Stack image and ingredients vertically */
+      align-items: center; /* Center both image and ingredients */
+    }
+  
+    .recipe-image {
+      justify-content: center; /* Center the image on smaller screens */
+      margin-bottom: 20px; /* Add space between the image and ingredients */
+    }
+  
+    .recipe-image img {
+      width: 90%; /* Adjust image size for smaller screens */
+      max-height: 400px; /* Adjust max height for smaller screens */
+    }
+  
+    .recipe-ingredients {
+      width: 90%; /* Ensure ingredients section takes up full width */
+    }
+  
+    .recipe-instructions {
+      width: 90%;
+    }
+  }
+  
+  .recipes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 10px;
+  }
+  
+    h2 {
+      color: #e3c341;
+    }
+  
+    .recipes_grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      max-width: 1300px;
+      border: 2px solid #e3c341; /* Thin border with the same color as your heading */
+    padding: 20px; /* Optional, to give some space between the content and the border */
+    border-radius: 10px; /* Optional, to round the corners of the border */
+    }
+  
+      .recipe_card {
+        display: flex;
+  
+        a {
+          text-decoration: none;
+          color: #522a12;
+        }
+  
+        img {
+          border-radius: 3px;
+        }
+  
+        .recipe_card_info {
+          display: flex;
+          justify-content: center;
+  
+          gap: 10px;
+  
+          .recipe_card_time {
+            display: flex;
+  
+            gap: 3px;
+          }
+        }
+      }
+
+  
