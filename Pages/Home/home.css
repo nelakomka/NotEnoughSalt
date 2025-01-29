@@ -5,17 +5,20 @@
 }
 
 .picks_of_the_week_images {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 55px;
   gap: 10px;
 
+  .picks_of_the_week_image {
+    position: relative;
+  }
+
   .picks_of_the_week_text {
     position: absolute;
-    top: -60px;
-    left: 80px;
+    top: -50px;
+    left: -70px;
     rotate: -10.45deg;
     line-height: 45px;
   }
