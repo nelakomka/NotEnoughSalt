@@ -1,12 +1,4 @@
-/* Reset some default styles */
-  /* General Layout */
-  .recipe-page {
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
-  }
-  
-body, h1, h2, h3, p, ul, ol {
+  body, h1, h2, h3, p, ul, ol {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,170 +6,170 @@ body, h1, h2, h3, p, ul, ol {
   
   body {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #522A12;
     line-height: 1.6;
   }
   
-  /* General Layout */
-  .recipe-page {
+  .recipe_page {
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
   }
   
-  /* Recipe Header */
-  .recipe-header {
-    margin-top: 100px; /* Add space at the top of the header */
+  .recipe_header {
+    margin-top: 75px;
   }
   
-  .recipe-title {
+  .recipe_title {
     font-size: 4rem;
     font-weight: bold;
-    color: #4b3715;
+    color: #522A12;
   }
   
-  .recipe-meta {
+  .recipe_meta {
     font-size: 1.9rem;
-    color: #4b3715;
+    color: #522A12;
+    padding-top: 0px;
+    padding-bottom: 20px;
   }
   
   .country,
-  .meal-time {
+  .meal_time {
     display: inline-block;
     margin-right: 10px;;
   }
   
-  /* Icons Section */
-.recipe-icons {
+
+.recipe_icons {
     display: flex;
-    gap: 50px; /* Space between icons */
+    gap: 50px; 
     margin-top: 1px;
-    align-items: center; /* Ensure icons stay aligned horizontally */
+    align-items: center;
   }
   
-  /* Individual Icon Container */
-  .recipe-icons .icon {
+  .recipe_icons .icon {
     display: flex;
-    flex-direction: column;  /* Stack icon and text vertically */
-    align-items: center;     /* Center text under the icon */
-    text-align: center;      /* Center align the text */
+    flex-direction: column;  
+    align-items: center;     
+    text-align: center;      
   }
   
   /* Icon Style */
-  .recipe-icons img {
-    width: 40px; /* Adjust the icon size */
+  .recipe_icons img {
+    width: 40px; 
     height: 40px;
-    margin-bottom: 1px; /* Increase space between icon and text */
+    margin-bottom: 1px; 
   }
   
   /* Text Style */
-  .recipe-icons span {
+  .recipe_icons span {
     font-size: 1rem;
-    color: #2c3e50;
-    margin-top: 5px; /* Optional: add some space between the text and the next icon */
+    color: #522A12;
+    margin-top: 5px;
   }
   
-  /* Recipe Image and Ingredients Section (Flexbox layout) */
-  .recipe-image {
-    flex: 1;                       /* Take up available space */
-    display: flex;                  /* Use Flexbox */
-    justify-content: flex-end;      /* Align the content to the right side */
-    align-items: center;            /* Vertically center the image */
-    margin-bottom: 20px;            /* Add space below the image */
+  .recipe_image {
+    flex: 1;
+    display: flex;               
+    justify-content: flex-end;      
+    align-items: center;            
+    margin-bottom: 20px;           
   }
   
-  .recipe-image img {
-    width: 650px;                   /* Set your image width */
-    max-height: 400px;              /* Optional: Set max height */
-    object-fit: cover;              /* Ensure the image covers its area without stretching */
-    border-radius: 15px;            /* Round the corners */
-    margin-left: 20px;              /* Adds a slight margin from the left to keep some space */
+  .recipe_image img {
+    width: 650px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-left: 20px;
   }
   
-  /* Optional: Adjust the wrapper container to prevent constraints */
-  .content-wrapper {
+  .content_wrapper {
     display: flex;
-    justify-content: flex-start;     /* Align content to the left by default */
-    gap: 30px;                       /* Add space between the content */
-    flex-wrap: wrap;                 /* Allow content to wrap on smaller screens */
-    width: 100%;                     /* Ensure the wrapper takes up full width */
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
   }
   
   
   /* Ingredients Section */
-  .recipe-ingredients {
-    flex: 1; /* Take up available space */
+  .recipe_ingredients {
+    flex: 1;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Stack ingredients vertically */
-    order: -1; /* This places the ingredients on the left side of the image */
-
-    margin-top: 60px; /* Add spacing between the ingredients and the header */
+    flex-direction: column;
+    order: -1;
+    margin-top: 60px;
   }
   
-  .recipe-ingredients h1 {
+  .recipe_ingredients h1 {
     font-size: 2.3rem;
     margin-bottom: 10px;
-    color: #4b3715;
+    color: #522A12;
     
   }
   
-  .recipe-ingredients ul {
+  .recipe_ingredients ul {
     list-style-type: none;
     padding-left: 0;
   }
   
-  .recipe-ingredients ul li {
+  .recipe_ingredients ul li {
     font-size: 1.2rem;
     margin-bottom: 8px;
-    color: #4b3715;
+    color: #522A12;
+  }
+
+  .recipe_ingredients input {
+    margin-right: 10px;
   }
   
   /* Recipe Instructions Section */
-  .recipe-instructions {
-    margin-top: 25px; /* Add space above instructions */
+  .recipe_instructions {
+    margin-top: 25px;
     margin-bottom: 30px;
   }
   
-  .recipe-instructions h4 {
+  .recipe_instructions h4 {
     font-size: 2.3rem;
     margin-bottom: 10px;
-    color: #4b3715;
+    color: #522A12;
   }
   
-  .recipe-instructions ol {
+  .recipe_instructions ol {
     list-style-type: decimal;
     padding-left: 20px;
   }
   
-  .recipe-instructions ol li {
+  .recipe_instructions ol li {
     font-size: 1.1rem;
     margin-bottom: 12px;
-    color: #4b3715;
+    color: #522A12;
   }
   
-  /* Media Query for Smaller Screens */
+  /* Reponsive to fit smaller screens */
   @media (max-width: 768px) {
-    .content-wrapper {
-      flex-direction: column; /* Stack image and ingredients vertically */
-      align-items: center; /* Center both image and ingredients */
+    .content_wrapper {
+      flex-direction: column;
+      align-items: center;
     }
   
-    .recipe-image {
-      justify-content: center; /* Center the image on smaller screens */
-      margin-bottom: 20px; /* Add space between the image and ingredients */
+    .recipe_image {
+      justify-content: center;
+      margin-bottom: 20px;
     }
   
-    .recipe-image img {
-      width: 90%; /* Adjust image size for smaller screens */
-      max-height: 400px; /* Adjust max height for smaller screens */
+    .recipe_image img {
+      width: 90%;
+      max-height: 400px;
     }
   
-    .recipe-ingredients {
-      width: 90%; /* Ensure ingredients section takes up full width */
+    .recipe_ingredients {
+      width: 90%;
     }
   
-    .recipe-instructions {
+    .recipe_instructions {
       width: 90%;
     }
   }
@@ -201,9 +193,9 @@ body, h1, h2, h3, p, ul, ol {
       justify-content: center;
       gap: 25px;
       max-width: 1300px;
-      border: 2px solid #e3c341; /* Thin border with the same color as your heading */
-    padding: 20px; /* Optional, to give some space between the content and the border */
-    border-radius: 10px; /* Optional, to round the corners of the border */
+      border: 2px solid #f19e29;
+      padding: 100px 30px 30px 30px;
+      border-radius: 5px;
     }
   
       .recipe_card {
@@ -232,4 +224,7 @@ body, h1, h2, h3, p, ul, ol {
         }
       }
 
-  
+
+      
+
+     
