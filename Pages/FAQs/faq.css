@@ -140,11 +140,13 @@
   font-size: 14px;
   color: #522a12;
   margin-bottom: 5px;
+  
+  
 }
 
 .feedback-form input,
 .feedback-form textarea {
-  width: 100%;
+  width: auto;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;

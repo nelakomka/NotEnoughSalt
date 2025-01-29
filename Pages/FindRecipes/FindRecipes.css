@@ -23,6 +23,7 @@
       background-color: #f17e37;
       cursor: pointer;
       border: 1px solid black;
+      padding: 7px;
     }
 
     select:nth-child(2) {
