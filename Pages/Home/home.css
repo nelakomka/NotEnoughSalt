@@ -17,8 +17,13 @@
 
   .picks_of_the_week_text {
     position: absolute;
+<<<<<<< HEAD
     top: -50px;
     left: -70px;
+=======
+    top: -1vh;
+    left: 2vh;
+>>>>>>> 38b4887 (Profile defaults to settings and changed page to create/upload a recipe)
     rotate: -10.45deg;
     line-height: 45px;
   }
