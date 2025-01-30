@@ -110,6 +110,7 @@
   color: #522a12;
   background-color: #c8c698;
   padding: 10px 15px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .faq-item.open .faq-answer {
