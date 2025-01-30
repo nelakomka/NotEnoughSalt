@@ -1,5 +1,4 @@
-
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,32 +11,34 @@ main{
   justify-content: center;
   align-items: center;
 
-  input{
+  h2 {
+    margin-bottom: 20px;
+    font-size: 62px;;
+  }
+
+  input {
     width: auto;
     padding: 15px;
 
     border-radius: 12px;
-    border: 2px solid #522A12;
+    border: 2px solid #522a12;
     text-align: center;
     background-color: transparent;
   }
 
-    .loginbtn {
-      width: auto;
-      background-color: #B8B880;
-      border-radius: 12px;
-      border:1px solid #522A12;
-      padding: 8px 70px;
-      text-align: center;
-      cursor: pointer;
-      opacity: 0.9;
-      font-size: 20px;  
-      margin-bottom: 10%;    
-      
-    } 
-    .containersignin
-    a {
-      color: #522A12;
-    }
-    
+  .loginbtn {
+    width: auto;
+    background-color: #b8b880;
+    border-radius: 12px;
+    border: 1px solid #522a12;
+    padding: 8px 70px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 20px;
+    margin-bottom: 10%;
+  }
+  .containersignin a {
+    color: #522a12;
+  }
 }
