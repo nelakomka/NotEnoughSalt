@@ -1,302 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>NES - FAQs</title>
-    <link rel="stylesheet" href="./faq.css" />
-    <link rel="stylesheet" href="../../Basics/Template.css" />
-    <link
-      rel="icon"
-      href="../../Assets/Etc/Saltshaker.svg"
-      type="image/x-icon"
-    />
-  </head>
 
-  <header>
-    <!-- Navigation -->
-    <nav>
-      <div class="navbar">
-        <ul>
-          <li>
-            <a href="../FindRecipes/FindRecipes.html">recipes</a>
-          </li>
-          <li>
-            <a href="../MealPlan/MealPlan.html">meal plan</a>
-          </li>
-          <li>
-            <a href="../Newsletter/Newsletter.html">news</a>
-          </li>
-          <li>
-            <a href="../Home/Home.html">
-              <img
-                class="nav_nes_logo"
-                src="../../Assets/Etc/Logo.svg"
-                alt="NotEnoughSalt Logo"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="../About/About.html">about</a>
-          </li>
-          <li>
-            <a href="../FAQs/faq.html">faqs</a>
-          </li>
-          <li>
-            <a href="../Login/Login.html">profile</a>
-          </li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>NES - FAQs</title>
+  <link rel="stylesheet" href="./faq.css" />
+  <link rel="stylesheet" href="../../Basics/Template.css" />
+  <link rel="icon" href="../../Assets/Etc/Saltshaker.svg" type="image/x-icon" />
+</head>
+
+<header>
+  <!-- Navigation -->
+  <nav>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="../FindRecipes/FindRecipes.html">recipes</a>
+        </li>
+        <li>
+          <a href="../MealPlan/MealPlan.html">meal plan</a>
+        </li>
+        <li>
+          <a href="../Newsletter/Newsletter.html">news</a>
+        </li>
+        <li>
+          <a href="../Home/Home.html">
+            <img class="nav_nes_logo" src="../../Assets/Etc/Logo.svg" alt="NotEnoughSalt Logo" />
+          </a>
+        </li>
+        <li>
+          <a href="../About/About.html">about</a>
+        </li>
+        <li>
+          <a href="../FAQs/faq.html">faqs</a>
+        </li>
+        <li>
+          <a href="../Login/Login.html">profile</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <main>
+    <!-- Search Bar -->
+    <div class="search_bar">
+      <input class="search_bar_input" type="text" placeholder="Search..." />
+    </div>
+
+    <!-- FAQ Header -->
+    <div class="header">
+      <h1>Frequently Asked Questions</h1>
+      <div class="tabs">
+        <button class="tab-button active" data-category="general">
+          General
+        </button>
+        <button class="tab-button" data-category="account">
+          Account Issues
+        </button>
+        <button class="tab-button" data-category="recipe">
+          Recipe Questions
+        </button>
       </div>
-    </nav>
-  </header>
+    </div>
 
-  <body>
-    <main>
-      <!-- Search Bar -->
-      <div class="search_bar">
-        <input class="search_bar_input" type="text" placeholder="Search..." />
-      </div>
-
-      <!-- FAQ Header -->
-      <div class="header">
-        <h1>Frequently Asked Questions</h1>
-        <div class="tabs">
-          <button class="tab-button active" data-category="general">
-            General
-          </button>
-          <button class="tab-button" data-category="account">
-            Account Issues
-          </button>
-          <button class="tab-button" data-category="recipe">
-            Recipe Questions
-          </button>
-        </div>
-      </div>
-
-      <!-- FAQ Section -->
-      <section class="faq-section">
-        <div class="faq-category active" id="general">
-          <div class="faq-item">
-            <div class="faq-question">How do I get started with cooking</div>
-            <div class="faq-answer">
-              If you're a beginner, we recommend starting with simple,
-              beginner-friendly recipes. Look for recipes that don’t require too
-              many ingredients or complicated techniques. You can also check out
-              our basic difficulty filter on the recipes page to easily find
-              dishes that are perfect for novice cooks.
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">How do I submit a recipe?</div>
-            <div class="faq-answer">
-              To submit your recipe, go to User Profile > Your Recipes > Upload
-              a Recipe. Please include the following: Ingredients: List all
-              necessary ingredients. Instructions: Provide step-by-step cooking
-              directions. Photo: Upload a photo of your finished dish to inspire
-              others.
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">How do I contact you?</div>
-            <div class="faq-answer">
-              Our email is: support@notenoughsalt.com or you can do so through
-              your account settings!
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">How do I add my dietary preferences?</div>
-            <div class="faq-answer">
-              To add your dietary preferences, navigate to User Profile >
-              Settings > Customization > Dietary Preferences. Here, you can
-              specify your dietary needs to receive tailored recipe suggestions.
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">
-              How do I prevent food from sticking to the pan when cooking?
-            </div>
-            <div class="faq-answer">
-              To prevent food from sticking, preheat your pan before adding oil
-              or butter. Once the oil is hot (but not smoking), add your
-              ingredients. Non-stick pans help, but with stainless steel, make
-              sure the pan is hot. Don't overcrowd the pan, as it can cause food
-              to steam and stick.
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">
-              What’s the best way to store fresh herbs to keep them from
-              wilting?
-            </div>
-            <div class="faq-answer">
-              To keep herbs fresh, trim the ends and place them in a jar with
-              some water, like a bouquet. Cover loosely with a plastic bag and
-              store in the fridge. You can also wrap them in a damp paper towel
-              and store in an airtight container. For basil, keep it in water at
-              room temperature since it doesn’t like the cold.
-            </div>
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="faq-category active" id="general">
+        <div class="faq-item">
+          <div class="faq-question">How do I get started with cooking</div>
+          <div class="faq-answer">
+            If you're a beginner, we recommend starting with simple,
+            beginner-friendly recipes. Look for recipes that don’t require too
+            many ingredients or complicated techniques. You can also check out
+            our basic difficulty filter on the recipes page to easily find
+            dishes that are perfect for novice cooks.
           </div>
         </div>
-
-        <div class="faq-category" id="account">
-          <div class="faq-item">
-            <div class="faq-question">How do I reset my password?</div>
-            <div class="faq-answer">
-              Go to the account settings page and click on "Forgot Password."
-              Follow the instructions sent to your email.
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">Can I delete my account?</div>
-            <div class="faq-answer">
-              Yes, you can delete your account from the account settings page
-              under "Delete Account."
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">How do I delete my account?</div>
-            <div class="faq-answer">
-              Sorry to see you go :( Go to your Account > Settings > scroll all
-              the way down and click "Delete my Account."
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">I forgot my password</div>
-            <div class="faq-answer">
-              Go to User Profile in navigation > click on Settings and
-              Customization tab > click "Forgot Password" under the reset
-              password button.
-            </div>
+        <div class="faq-item">
+          <div class="faq-question">How do I submit a recipe?</div>
+          <div class="faq-answer">
+            To submit your recipe, go to User Profile > Your Recipes > Upload
+            a Recipe. Please include the following: Ingredients: List all
+            necessary ingredients. Instructions: Provide step-by-step cooking
+            directions. Photo: Upload a photo of your finished dish to inspire
+            others.
           </div>
         </div>
-
-        <div class="faq-category" id="recipe">
-          <div class="faq-item">
-            <div class="faq-question">How do I save a recipe?</div>
-            <div class="faq-answer">
-              To save a recipe, click the "Save" button on the recipe page. You
-              can find your saved recipes in the "Profile" section.
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">Can I submit my own recipes?</div>
-            <div class="faq-answer">
-              Yes! Go to the "Submit Recipe" page under your profile and follow
-              the form to upload your recipe.
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">How do I submit a recipe?</div>
-            <div class="faq-answer">
-              To submit your recipe, go to User Profile > Upload Recipe. Please
-              include the following:
-              
-                <li>Ingredients: List all necessary ingredients.</li>
-                <li>Instructions: Provide step-by-step cooking directions.</li>
-                <li>
-                  Photo: Upload a photo of your finished dish to inspire others.
-                </li>
-              
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">How do I access my meal plan?</div>
-            <div class="faq-answer">User Profile > Meal Planning</div>
+        <div class="faq-item">
+          <div class="faq-question">How do I contact you?</div>
+          <div class="faq-answer">
+            Our email is: support@notenoughsalt.com or you can do so through
+            your account settings!
           </div>
         </div>
-      </section>
-
-      <!-- Feedback Section (IN PROGRESS)-->
-      <section class="feedback-section">
-        <h3>Leave a Comment or Question!</h3>
-        <form class="feedback-form">
-          <div class="feedback-row">
-            <input
-              type="text"
-              id="feedback-name"
-              name="feedback-name"
-              placeholder="Name"
-              required
-            />
-            <input
-              type="email"
-              id="feedback-email"
-              name="feedback-email"
-              placeholder="Email"
-              required
-            />
-            <textarea
-              id="feedback-comment"
-              name="feedback-comment"
-              rows="1"
-              placeholder="Leave your comment..."
-              required
-            ></textarea>
-          </div>
-          <div class="feedback-options">
-            <label>
-              <input
-                type="checkbox"
-                id="feedback-notification"
-                name="feedback-notification"
-              />
-              Notify me of responses
-            </label>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <div class="keep_in_touch">
-        <div class="keep_in_touch_top">
-          <h2>Let's keep in touch!</h2>
-          <img
-            src="/Assets/Etc/NeedHelpSalt.svg"
-            alt="Need Help?"
-            onclick="toggleChat()"
-          />
-          <div class="keep_in_touch_top_bot close">
-            <div class="keep_in_touch_top_bot_toggle">
-              <button class="active" onclick="toggleChatSelect(event, 'chat')">
-                Chat Assistant
-              </button>
-              <button onclick="toggleChatSelect(event, 'calc')">
-                Calculator
-              </button>
-            </div>
-            <div class="keep_in_touch_top_bot_chat">
-              <h4>It's empty...</h4>
-              <input type="text" placeholder="Ask away..." />
-            </div>
-            <img
-              class="keep_in_touch_top_bot_calc close"
-              src="../../Assets/Etc/Coming.png"
-              width="170px"
-            />
+        <div class="faq-item">
+          <div class="faq-question">How do I add my dietary preferences?</div>
+          <div class="faq-answer">
+            To add your dietary preferences, navigate to User Profile >
+            Settings > Customization > Dietary Preferences. Here, you can
+            specify your dietary needs to receive tailored recipe suggestions.
           </div>
         </div>
-        <div class="keep_in_touch_bottom">
-          <div class="keep_in_touch_email">
-            <p>Contact Us - support@notenoughsalt.com</p>
+        <div class="faq-item">
+          <div class="faq-question">
+            How do I prevent food from sticking to the pan when cooking?
           </div>
-          <div class="keep_in_touch_social">
-            <img src="/Assets/Etc/Media/Instagram Fill.svg" alt="Instagram" />
-            <img src="/Assets/Etc/Media/Google Fill.svg" alt="Google" />
-            <img src="/Assets/Etc/Media/Pinterest Fill.svg" alt="Pinterest" />
-            <img src="/Assets/Etc/Media/Youtube Fill.svg" alt="YouTube" />
-            <p>@NotEnoughSalt</p>
+          <div class="faq-answer">
+            To prevent food from sticking, preheat your pan before adding oil
+            or butter. Once the oil is hot (but not smoking), add your
+            ingredients. Non-stick pans help, but with stainless steel, make
+            sure the pan is hot. Don't overcrowd the pan, as it can cause food
+            to steam and stick.
           </div>
-          <div class="keep_in_touch_etc">
-            <p>about</p>
-            <p>recipes</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            What’s the best way to store fresh herbs to keep them from
+            wilting?
+          </div>
+          <div class="faq-answer">
+            To keep herbs fresh, trim the ends and place them in a jar with
+            some water, like a bouquet. Cover loosely with a plastic bag and
+            store in the fridge. You can also wrap them in a damp paper towel
+            and store in an airtight container. For basil, keep it in water at
+            room temperature since it doesn’t like the cold.
           </div>
         </div>
       </div>
-    </footer>
-    <script src="./faq.js"></script>
-    <script src="../../Basics/Chat.js"></script>
-  </body>
+
+      <div class="faq-category" id="account">
+        <div class="faq-item">
+          <div class="faq-question">How do I reset my password?</div>
+          <div class="faq-answer">
+            Go to the account settings page and click on "Forgot Password."
+            Follow the instructions sent to your email.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Can I delete my account?</div>
+          <div class="faq-answer">
+            Yes, you can delete your account from the account settings page
+            under "Delete Account."
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How do I delete my account?</div>
+          <div class="faq-answer">
+            Sorry to see you go :( Go to your Account > Settings > scroll all
+            the way down and click "Delete my Account."
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">I forgot my password</div>
+          <div class="faq-answer">
+            Go to User Profile in navigation > click on Settings and
+            Customization tab > click "Forgot Password" under the reset
+            password button.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-category" id="recipe">
+        <div class="faq-item">
+          <div class="faq-question">How do I save a recipe?</div>
+          <div class="faq-answer">
+            To save a recipe, click the "Save" button on the recipe page. You
+            can find your saved recipes in the "Profile" section.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Can I submit my own recipes?</div>
+          <div class="faq-answer">
+            Yes! Go to the "Submit Recipe" page under your profile and follow
+            the form to upload your recipe.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How do I submit a recipe?</div>
+          <div class="faq-answer">
+            To submit your recipe, go to User Profile > Upload Recipe. Please
+            include the following:
+            <li>Ingredients: List all necessary ingredients.</li>
+            <li>Instructions: Provide step-by-step cooking directions.</li>
+            <li>
+              Photo: Upload a photo of your finished dish to inspire others.
+            </li>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How do I access my meal plan?</div>
+          <div class="faq-answer">User Profile > Meal Planning</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback Section (IN PROGRESS)-->
+    <section class="feedback-section">
+      <h3>Leave a Comment or Question!</h3>
+      <form class="feedback-form">
+        <div class="feedback-row">
+          <input type="text" id="feedback-name" name="feedback-name" placeholder="Name" required />
+          <input type="email" id="feedback-email" name="feedback-email" placeholder="Email" required />
+          <textarea id="feedback-comment" name="feedback-comment" rows="1" placeholder="Leave your comment..."
+            required></textarea>
+        </div>
+        <div class="feedback-options">
+          <label>
+            <input type="checkbox" id="feedback-notification" name="feedback-notification" />
+            Notify me of responses
+          </label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="keep_in_touch">
+      <div class="keep_in_touch_top">
+        <h2>Let's keep in touch!</h2>
+        <img src="/Assets/Etc/NeedHelpSalt.svg" alt="Need Help?" onclick="toggleChat()" />
+        <div class="keep_in_touch_top_bot close">
+          <div class="keep_in_touch_top_bot_toggle">
+            <button class="active" onclick="toggleChatSelect(event, 'chat')">
+              Chat Assistant
+            </button>
+            <button onclick="toggleChatSelect(event, 'calc')">
+              Calculator
+            </button>
+          </div>
+          <div class="keep_in_touch_top_bot_chat">
+            <h4>It's empty...</h4>
+            <input type="text" placeholder="Ask away..." />
+          </div>
+          <img class="keep_in_touch_top_bot_calc close" src="../../Assets/Etc/Coming.png" width="170px" />
+        </div>
+      </div>
+      <div class="keep_in_touch_bottom">
+        <div class="keep_in_touch_email">
+          <p>Contact Us - support@notenoughsalt.com</p>
+        </div>
+        <div class="keep_in_touch_social">
+          <img src="/Assets/Etc/Media/Instagram Fill.svg" alt="Instagram" />
+          <img src="/Assets/Etc/Media/Google Fill.svg" alt="Google" />
+          <img src="/Assets/Etc/Media/Pinterest Fill.svg" alt="Pinterest" />
+          <img src="/Assets/Etc/Media/Youtube Fill.svg" alt="YouTube" />
+          <p>@NotEnoughSalt</p>
+        </div>
+        <div class="keep_in_touch_etc">
+          <p>about</p>
+          <p>recipes</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./faq.js"></script>
+  <script src="../../Basics/Chat.js"></script>
+</body>
+
 </html>

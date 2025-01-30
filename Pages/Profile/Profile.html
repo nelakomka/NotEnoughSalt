@@ -59,42 +59,39 @@
       </div>
 
       <div class="buttons_controls">
+        <button class="tab-button active" data-category="settings">
+          Settings
+        </button>
         <button class="tab-button" data-category="saved">Saved Recipes</button>
         <button class="tab-button" data-category="recepies">
           Create a Recipe
         </button>
-        <button class="tab-button active" data-category="settings">
-          Settings
-        </button>
+
       </div>
 
       <section class="profile-section">
         <div class="profile-category active" id="settings">
-          <div class="wrap">
-            <div class="container_settings_profile">
-              <h2>Settings</h2>
-              <div class="change_form_and_picture">
-                <div class="change_image">
-                  <img
-                    src="../../Assets/Etc/SaltshakerFinger.svg"
-                    alt="saltshaker image"
-                  />
-                  <button>Change Profile Picture</button>
-                </div>
-                <div class="change_settings">
-                  <form>
-                    <label for="name">Edit name:</label>
-                    <input type="text" id="name" name="name" value="" />
-                    <input type="submit" value="Save" />
-                    <label for="password">Reset Password:</label>
-                    <input
-                      type="password"
-                      id="password"
-                      name="password"
-                      value=""
-                    />
-                    <input type="submit" value="Save" />
-                  </form>
+            <div class="wrap">
+                <div class="container_settings_profile">
+                    <h2>Settings</h2>
+                    <div class="change_form_and_picture">
+                        <div class="change_image">
+                            <img src="../../Assets/Etc/SaltshakerFinger.svg" alt="saltshaker image" />
+                            <button>Change Profile Picture</button>
+                        </div>
+                        <div class="change_settings">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Edit name:</label>
+                                    <input type="text" id="name" name="name" value="" />
+                                    <input type="submit" value="Save" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Reset Password:</label>
+                                    <input type="password" id="password" name="password" value="" />
+                                    <input type="submit" value="Save" />
+                                </div>
+                            </form> 
                 </div>
               </div>
             </div>
