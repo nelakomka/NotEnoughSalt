@@ -54,7 +54,8 @@
 
 .change_form_and_picture {
   display: flex;
-  gap: 175px;
+  
+  justify-content: center;
   border: 1px solid #79b3e6;
     border-radius: 5px;
     padding: 25px 25px;
