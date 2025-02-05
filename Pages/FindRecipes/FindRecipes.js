@@ -9,12 +9,14 @@ const displayRecipes = async () => {
 
     recipe.classList.add('recipe_card');
 
+    //recipe card displays
     recipe.innerHTML = `
             <a href="../Recipe/Recipe.html">
               <img
-                src="/Assets/Food/MamalygaMujdei.png"
+                src=${element.image}
                 alt=${element.name}
-                height="260px"
+                height="230px"
+                width="230px"
               />
               <div class="recipe_card_info">
                 <div class="recipe_card_name_time">
@@ -24,6 +26,7 @@ const displayRecipes = async () => {
                     <p>${element.tags.cookingTime}</p>
                   </div>
                 </div>
+                <div>
                 <div class="recipe_card_difficulty">
                 ${
                   element.tags.difficulty === 1
@@ -66,6 +69,8 @@ const displayRecipes = async () => {
                     : ''
                 }
                 </div>
+                </div>
+                
               </div>
             </a>
           `;

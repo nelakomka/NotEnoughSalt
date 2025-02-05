@@ -5,6 +5,7 @@
   "recipes": [
     {
       "name": "Pasta Carbonara",
+      "image": "/Assets/Food/PastaCarbonara.jpg",
       "history": null,
       "tags": {
         "cuisine": "Italian",
@@ -58,6 +59,7 @@
     },
     {
       "name": "Mamalyga with Mujdei",
+      "image": "/Assets/Food/MamalygaMujdei.png",
       "history": "Traditional dish from Moldova, with deep personal connection.",
       "tags": {
         "cuisine": "Romanian",
@@ -113,6 +115,7 @@
     },
     {
       "name": "Briyani",
+      "image": "/Assets/Food/Briyani.jpg",
       "history": null,
       "tags": {
         "cuisine": "Pakistani",
@@ -175,6 +178,7 @@
     },
     {
       "name": "Crepes (Blini)",
+      "image": "/Assets/Food/Crepes.jpg",
       "history": null,
       "tags": {
         "cuisine": "Russian",
@@ -223,6 +227,7 @@
     },
     {
       "name": "Classic Margherita Pizza",
+      "image": "/Assets/Food/Pizza.jpg",
       "history": "The Classic Margherita Pizza originated in Naples in 1889, created by pizzaiolo Raffaele Esposito to honor Queen Margherita of Savoy. He used red tomatoes, white mozzarella, and green basil to represent the Italian flag. The queen loved it, and the pizza was named in her honor, becoming a beloved symbol of Italian cuisine.",
       "tags": {
         "cuisine": "Italian",
@@ -295,6 +300,7 @@
     },
     {
       "name": "Sauerbraten",
+      "image": "/Assets/Food/Sauerbraten.jpg",
       "history": "Sauerbraten is often considered Germany’s national dish. Its origins date back to the Middle Ages when meat was marinated to preserve it. The dish varies by region, with different marinades and accompaniments, reflecting local traditions.",
       "tags": {
         "cuisine": "German",
@@ -364,6 +370,7 @@
     },
     {
       "name": "Bibimbap",
+      "image": "/Assets/Food/Bibimbap.png",
       "history": "Bibimbap translates to 'mixed rice.' It originated as a way to use up leftover vegetables and meat, served over rice. It's a colorful, nutritious dish that showcases seasonal ingredients and is often topped with a fried egg and gochujang (Korean chili paste).",
       "tags": {
         "cuisine": "Korean",
@@ -437,6 +444,7 @@
     },
     {
       "name": "Mediterranean Chickpea Salad",
+      "image": "/Assets/Food/ChickpeaSalad.jpg",
       "history": "This vibrant salad is a staple in Mediterranean cuisine, showcasing fresh ingredients and flavors. It's often enjoyed as a light meal or side dish and is a great example of the region's emphasis on vegetables, legumes, and healthy fats.",
       "tags": {
         "cuisine": "Mediterranean",
@@ -505,6 +513,7 @@
     },
     {
       "name": "Simple Shrimp Bowl",
+      "image": "/Assets/Food/RiceShrimp.jpeg",
       "tags": {
         "cuisine": "Chinese",
         "region": "Asia",
@@ -557,6 +566,7 @@
     },
     {
       "name": "Cuban Picadillo",
+      "image": "/Assets/Food/CubanPicadillo.jpg",
       "history": "Cuban picadillo is a traditional dish, beloved across the Caribbean and Latin America. It has Spanish origins but was adapted with local ingredients in Cuba. Picadillo is a versatile, savory ground beef filling that includes a mix of sweet and salty flavors from raisins and olives. It’s often served with rice, used in empanadas, or as a filling for stuffed peppers or pastries.",
       "tags": {
         "cuisine": "Cuban",
@@ -639,6 +649,7 @@
     },
     {
       "name": "Grilled Cheese and Tomato Soup",
+      "image": "/Assets/Food/GrilledCheeseAndTomatoSoup.jpg",
       "history": "Grilled cheese and tomato soup is a classic comfort food pairing, particularly popular in American cuisine. The dish gained prominence in the mid-20th century, often served in homes and school cafeterias. The combination of buttery, crispy grilled bread with melted cheese and a rich, tangy tomato soup creates a cozy, nostalgic meal perfect for any time of year.",
       "tags": {
         "cuisine": "American",
@@ -731,6 +742,7 @@
     },
     {
       "name": "Baja Shrimp Tacos",
+      "image": "/Assets/Food/BajaShrimpTacos.jpg",
       "history": "Baja shrimp tacos are inspired by the fresh, coastal cuisine of Baja California, Mexico. Known for their combination of seasoned shrimp, a crisp cabbage slaw, and a tangy crema sauce, these tacos capture the essence of surf-side Mexican street food. They're typically served in warm corn tortillas with a fresh squeeze of lime, offering a perfect balance of flavors and textures.",
       "tags": {
         "cuisine": "Mexican",
@@ -841,6 +853,7 @@
     },
     {
       "name": "Tuna Salad",
+      "image": "/Assets/Food/TunaSalad.png",
       "history": "A quick and easy meal perfect for lunch or a light dinner.",
       "tags": {
         "cuisine": "American",
@@ -870,6 +883,7 @@
     },
     {
       "name": "Avocado Toast",
+      "image": "/Assets/Food/TunaSalad.png",
       "history": "A trendy breakfast or snack option that's healthy and satisfying.",
       "tags": {
         "cuisine": "Australian",
@@ -904,6 +918,7 @@
     },
     {
       "name": "Air Fryer Steak",
+      "image": "/Assets/Food/LoMein.jpg",
       "history": "A flavorful and juicy steak cooked quickly in an air fryer.",
       "tags": {
         "cuisine": "American, European",
@@ -943,6 +958,7 @@
     },
     {
       "name": "Stir-Fried Lo Mein with Beef and Broccoli",
+      "image": "/Assets/Food/LoMein.jpg",
       "history": "Lo Mein, a Cantonese-inspired dish, became popular in Western countries due to its balance of flavors and versatility. Traditionally made with soft egg noodles, this dish incorporates a mix of protein, vegetables, and soy-based sauces, making it a satisfying one-pan meal. The combination of beef and broccoli is a favorite variation in Chinese-American cuisine, offering rich umami and nutritious greens.",
       "tags": {
         "cuisine": "Chinese-American",
@@ -1029,6 +1045,7 @@
     },
     {
       "name": "Classic Smashed Burger",
+      "image": "/Assets/Food/ClassicSmashedBurger.jpg",
       "history": "The smashed burger originated in American diners during the Great Depression as an affordable way to serve flavorful food quickly. Popularized in the Midwest by places like Steak 'n Shake and Sid’s Diner, the technique involved pressing ground beef onto a hot surface to create a crispy crust through the Maillard reaction.",
       "tags": {
         "cuisine": "American",

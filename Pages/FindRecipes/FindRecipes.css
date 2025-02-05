@@ -60,8 +60,7 @@
 
       .recipe_card_info {
         display: flex;
-        justify-content: space-between;
-        gap: 10px;
+
 
         .recipe_card_name_time > p {
           text-overflow: ellipsis;
