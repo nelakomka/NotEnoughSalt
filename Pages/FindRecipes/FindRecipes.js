@@ -45,6 +45,27 @@ const displayRecipes = async () => {
                     : ''
                 }
                 </div>
+                <div class="recipe_card_spicy>
+                ${
+                  element.tags.spicyLevel === 1
+                    ? `<img src="/Assets/Etc/flame.svg" alt="Flame" />`
+                    : ''
+                }
+                ${
+                  element.tags.spicyLevel === 2
+                    ? `<img src="/Assets/Etc/flame.svg" alt="Flame" />
+                  <img src="/Assets/Etc/flame.svg" alt="Flame" />
+                  `
+                    : ''
+                }
+                ${
+                  element.tags.spicyLevel === 3
+                    ? `<img src="/Assets/Etc/flame.svg" alt="Flame" />
+                  <img src="/Assets/Etc/flame.svg" alt="Flame" />
+                  <img src="/Assets/Etc/flame.svg" alt="Flame" />`
+                    : ''
+                }
+                </div>
               </div>
             </a>
           `;
