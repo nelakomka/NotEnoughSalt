@@ -16,7 +16,6 @@
     justify-content: center;
     gap: 0;
     margin: 15px 0;
-    
 
     select {
       appearance: none;
@@ -24,7 +23,6 @@
       background-color: #f17e37;
       cursor: pointer;
       border: 1px solid black;
- 
     }
 
     select:nth-child(2) {
@@ -42,14 +40,14 @@
   }
 
   .recipes_grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     max-width: 1300px;
 
     .recipe_card {
-      display: flex;
+      color: currentColor;
+      text-decoration: none;
 
       a {
         text-decoration: none;
@@ -62,14 +60,26 @@
 
       .recipe_card_info {
         display: flex;
-        justify-content: center;
-
+        justify-content: space-between;
         gap: 10px;
+
+        .recipe_card_name_time > p {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          width: 150px;
+        }
 
         .recipe_card_time {
           display: flex;
-
           gap: 3px;
+
+          p {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100px;
+          }
         }
       }
     }
