@@ -84,71 +84,67 @@
       },
       "ingredients": [
         {
-          "category": "Mamalyga",
-          "items": [
-            {
-              "name": "Corn Grits",
-              "quantity": "200g"
-            },
-            {
-              "name": "Hot Water",
-              "quantity": "450ml"
-            },
-            {
-              "name": "Butter/Lard",
-              "quantity": "1.5 tbsp"
-            },
-            {
-              "name": "Salt",
-              "quantity": "4 pinches"
-            }
-          ]
+          "name": "Corn Grits",
+          "quantity": "200g"
         },
         {
-          "category": "Mujdei",
-          "items": [
-            {
-              "name": "Sunflower Oil",
-              "quantity": "3 tbsp"
-            },
-            {
-              "name": "Water",
-              "quantity": "1 cup"
-            },
-            {
-              "name": "Garlic",
-              "quantity": "3 cloves"
-            },
-            {
-              "name": "Parsley and Dill",
-              "quantity": "100g"
-            },
-            {
-              "name": "Salt",
-              "quantity": "a pinch"
-            }
-          ]
+          "name": "Hot Water",
+          "quantity": "450ml"
         },
         {
-          "category": "Extras",
-          "items": ["Fish", "Feta cheese", "Sour cream"]
-        }
+          "name": "Butter/Lard",
+          "quantity": "1.5 tbsp"
+        },
+        {
+          "name": "Salt",
+          "quantity": "4 pinches"
+        },
+        {
+          "name": "Sunflower Oil",
+          "quantity": "3 tbsp"
+        },
+        {
+          "name": "Water",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Garlic",
+          "quantity": "3 cloves"
+        },
+        {
+          "name": "Parsley and Dill",
+          "quantity": "100g"
+        },
+        {
+          "name": "Salt",
+          "quantity": "a pinch"
+        },
+        { "name": ["Extra: Fish", " Feta cheese", " Sour cream"] }
       ],
       "steps": [
         {
-          "section": "Mamalyga",
-          "instructions": [
-            "Boil water in a non-stick pot, add salt and butter/lard.",
-            "Rinse corn grits, add to pot, and cook for 18-20 minutes.",
-            "Steam for 30-40 minutes. Refrigerate overnight if desired."
-          ]
+          "step": 1,
+          "instruction": "For Mamalyga"
         },
         {
-          "section": "Mujdei",
-          "instructions": [
-            "Mix sunflower oil, garlic, salt, and herbs.",
-            "Add water and stir well. Serve with Mamalyga and extras."
-          ]
+          "step": 2,
+          "instruction": "Boil water in a non-stick pot, add salt and butter/lard. Rinse corn grits, add to pot, and cook for 18-20 minutes."
+        },
+        {
+          "step": 3,
+          "instruction": "Steam for 30-40 minutes. Refrigerate overnight if desired.."
+        },
+        {
+          "step": 4,
+          "instruction": "For Mujdei"
+        },
+        {
+          "step": 5,
+          "instruction": "Mix sunflower oil, garlic, salt, and herbs. Add water and stir well. Serve with Mamalyga and extras."
+        },
+        {
+          "step": 6,
+          "instruction": "Optional: for extra taste use the oil from the fish frying."
         }
       ],
       "id": 2
@@ -378,85 +374,98 @@
       },
       "ingredients": [
         {
-          "category": "Dough",
-          "items": [
-            {
-              "name": "All-Purpose Flour",
-              "quantity": "2 cups"
-            },
-            {
-              "name": "Instant Yeast",
-              "quantity": "1 teaspoon"
-            },
-            {
-              "name": "Salt",
-              "quantity": "1/2 teaspoon"
-            },
-            {
-              "name": "Warm Water",
-              "quantity": "3/4 cup"
-            },
-            {
-              "name": "Olive Oil",
-              "quantity": "1 tablespoon"
-            }
-          ]
+          "name": "All-Purpose Flour",
+          "quantity": "2 cups"
         },
         {
-          "category": "Topping",
-          "items": [
-            {
-              "name": "Crushed Tomatoes",
-              "quantity": "1 cup",
-              "note": "canned or fresh"
-            },
-            {
-              "name": "Dried Oregano",
-              "quantity": "1 teaspoon"
-            },
-            {
-              "name": "Fresh Mozzarella Cheese",
-              "quantity": "1 cup"
-            },
-            {
-              "name": "Fresh Basil Leaves",
-              "quantity": "a couple"
-            },
-            {
-              "name": "Olive Oil",
-              "quantity": "1 tablespoon",
-              "note": "for drizzling"
-            }
-          ]
+          "name": "Instant Yeast",
+          "quantity": "1 teaspoon"
+        },
+        {
+          "name": "Salt",
+          "quantity": "1/2 teaspoon"
+        },
+        {
+          "name": "Warm Water",
+          "quantity": "3/4 cup"
+        },
+        {
+          "name": "Olive Oil",
+          "quantity": "1 tablespoon"
+        },
+        {
+          "name": "Crushed Tomatoes (canned or fresh)",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Dried Oregano",
+          "quantity": "1 teaspoon"
+        },
+        {
+          "name": "Fresh Mozzarella Cheese",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Fresh Basil Leaves",
+          "quantity": "a couple"
+        },
+        {
+          "name": "Olive Oil (for drizzling)",
+          "quantity": "1 tablespoon"
         }
       ],
       "steps": [
         {
-          "section": "Make the Dough",
-          "instructions": [
-            "In a mixing bowl, combine the flour, yeast, and salt.",
-            "Gradually add warm water and olive oil, mixing until dough forms.",
-            "Knead on a floured surface for about 5-7 minutes until smooth.",
-            "Place the dough in a greased bowl, cover with a towel, and let it rise in a warm place for about 1 hour or until doubled in size."
-          ]
+          "step": 1,
+          "instruction": "Make the Dough"
         },
         {
-          "section": "Prepare the Pizza",
-          "instructions": [
-            "Preheat the oven to 475\u00b0F (245\u00b0C). If you have a pizza stone, place it in the oven to heat.",
-            "In a bowl, mix crushed tomatoes with oregano, salt, and pepper. Adjust seasoning to taste.",
-            "Punch down the risen dough and roll it out on a floured surface to your desired thickness.",
-            "Transfer the dough to a parchment-lined baking sheet or a pizza peel if using a stone.",
-            "Spread the tomato sauce evenly over the dough. Arrange slices of mozzarella cheese on top and drizzle with olive oil.",
-            "Carefully transfer the pizza to the preheated oven (or onto the pizza stone) and bake for 10-12 minutes or until the crust is golden and the cheese is bubbling."
-          ]
+          "step": 2,
+          "instruction": "In a mixing bowl, combine the flour, yeast, and salt. Gradually add warm water and olive oil, mixing until dough forms."
         },
         {
-          "section": "Finish and Serve",
-          "instructions": [
-            "Remove the pizza from the oven and top with fresh basil leaves.",
-            "Let it cool for a couple of minutes, then slice and enjoy!"
-          ]
+          "step": 3,
+          "instruction": "Knead on a floured surface for about 5-7 minutes until smooth."
+        },
+        {
+          "step": 4,
+          "instruction": "Place the dough in a greased bowl, cover with a towel, and let it rise in a warm place for about 1 hour or until doubled in size."
+        },
+        {
+          "step": 5,
+          "instruction": "Prepare the Pizza:"
+        },
+        {
+          "step": 6,
+          "instruction": "Preheat the oven to 475\u00b0F (245\u00b0C). If you have a pizza stone, place it in the oven to heat."
+        },
+        {
+          "step": 7,
+          "instruction": "In a bowl, mix crushed tomatoes with oregano, salt, and pepper. Adjust seasoning to taste."
+        },
+        {
+          "step": 8,
+          "instruction": "Punch down the risen dough and roll it out on a floured surface to your desired thickness."
+        },
+        {
+          "step": 9,
+          "instruction": "Transfer the dough to a parchment-lined baking sheet or a pizza peel if using a stone."
+        },
+        {
+          "step": 10,
+          "instruction": "Spread the tomato sauce evenly over the dough. Arrange slices of mozzarella cheese on top and drizzle with olive oil."
+        },
+        {
+          "step": 11,
+          "instruction": "Carefully transfer the pizza to the preheated oven (or onto the pizza stone) and bake for 10-12 minutes or until the crust is golden and the cheese is bubbling."
+        },
+        {
+          "step": 12,
+          "instruction": "Remove the pizza from the oven and top with fresh basil leaves."
+        },
+        {
+          "step": 13,
+          "instruction": "Let it cool for a couple of minutes, then slice and enjoy!"
         }
       ],
       "id": 5
@@ -532,40 +541,60 @@
       ],
       "steps": [
         {
-          "section": "Prepare the Marinade",
-          "instructions": [
-            "In a large bowl, combine red wine vinegar, water, sliced onion, chopped carrots, minced garlic, bay leaves, peppercorns, sugar, and salt. Stir well."
-          ]
+          "step": 1,
+          "instruction": "Prepare the Marinade"
         },
         {
-          "section": "Marinate the Meat",
-          "instructions": [
-            "Place the beef roast in a large resealable plastic bag or a deep dish.",
-            "Pour the marinade over the meat, ensuring it's fully submerged.",
-            "Seal the bag or cover the dish and refrigerate for 72 to 120 hours, turning the meat occasionally."
-          ]
+          "step": 2,
+          "instruction": "In a large bowl, combine red wine vinegar, water, sliced onion, chopped carrots, minced garlic, bay leaves, peppercorns, sugar, and salt. Stir well."
         },
         {
-          "section": "Cook the Roast",
-          "instructions": [
-            "After marinating, remove the beef from the marinade and pat it dry with paper towels. Reserve the marinade for later use.",
-            "In a large pot or Dutch oven, heat vegetable oil over medium-high heat. Add the beef and sear on all sides until browned.",
-            "Once the meat is browned, add the reserved marinade and beef broth to the pot. Bring to a simmer.",
-            "Cover the pot and reduce the heat to low. Let the roast braise for about 2 to 3 hours or until the meat is tender and easily shreds with a fork."
-          ]
+          "step": 3,
+          "instruction": "Marinate the Meat"
         },
         {
-          "section": "Make the Gravy",
-          "instructions": [
-            "Once the roast is done, remove it from the pot and let it rest for a few minutes.",
-            "Strain the cooking liquid into a saucepan. If desired, mix cornstarch with cold water to create a slurry, then add it to the strained liquid to thicken the gravy. Simmer until thickened."
-          ]
+          "step": 4,
+          "instruction": "Place the beef roast in a large resealable plastic bag or a deep dish. Pour the marinade over the meat, ensuring it's fully submerged."
         },
         {
-          "section": "Serve",
-          "instructions": [
-            "Slice the Sauerbraten and serve it with the gravy, along with traditional sides like red cabbage and potato dumplings or noodles."
-          ]
+          "step": 5,
+          "instruction": "Seal the bag or cover the dish and refrigerate for 72 to 120 hours, turning the meat occasionally."
+        },
+        {
+          "step": 5,
+          "instruction": "Cook the Roast"
+        },
+        {
+          "step": 5,
+          "instruction": "After marinating, remove the beef from the marinade and pat it dry with paper towels. Reserve the marinade for later use."
+        },
+        {
+          "step": 6,
+          "instruction": "In a large pot or Dutch oven, heat vegetable oil over medium-high heat. Add the beef and sear on all sides until browned."
+        },
+        {
+          "step": 7,
+          "instruction": "Once the meat is browned, add the reserved marinade and beef broth to the pot. Bring to a simmer."
+        },
+        {
+          "step": 8,
+          "instruction": "Cover the pot and reduce the heat to low. Let the roast braise for about 2 to 3 hours or until the meat is tender and easily shreds with a fork."
+        },
+        {
+          "step": 10,
+          "instruction": "Make the Gravy"
+        },
+        {
+          "step": 11,
+          "instruction": "Once the roast is done, remove it from the pot and let it rest for a few minutes."
+        },
+        {
+          "step": 12,
+          "instruction": "Strain the cooking liquid into a saucepan. If desired, mix cornstarch with cold water to create a slurry, then add it to the strained liquid to thicken the gravy. Simmer until thickened."
+        },
+        {
+          "step": 13,
+          "instruction": "Slice the Sauerbraten and serve it with the gravy, along with traditional sides like red cabbage and potato dumplings or noodles."
         }
       ],
       "id": 6
@@ -628,34 +657,48 @@
       ],
       "steps": [
         {
-          "section": "Prepare the Vegetables",
-          "instructions": [
-            "Blanch or saut\u00e9 each vegetable separately until tender.",
-            "Season with a little salt and sesame oil. Set aside."
-          ]
+          "step": 1,
+          "instruction": "Prepare the Vegetables"
         },
         {
-          "section": "Cook the Meat",
-          "instructions": [
-            "If using beef or chicken, marinate in soy sauce, garlic, and sesame oil for about 15 minutes.",
-            "Stir-fry until cooked through. For tofu, pan-fry until golden."
-          ]
+          "step": 2,
+          "instruction": "Blanch or saut\u00e9 each vegetable separately until tender. Season with a little salt and sesame oil. Set aside."
         },
         {
-          "section": "Assemble the Bowl",
-          "instructions": [
-            "Place cooked rice in the center of each bowl.",
-            "Arrange the prepared vegetables and meat around the rice.",
-            "Top with a fried egg."
-          ]
+          "step": 3,
+          "instruction": "Cook the Meat"
         },
         {
-          "section": "Garnish and Serve",
-          "instructions": [
-            "Drizzle gochujang over the top and add a drizzle of sesame oil.",
-            "Sprinkle with sesame seeds and serve with soy sauce on the side.",
-            "Mix all the ingredients together thoroughly before eating."
-          ]
+          "step": 4,
+          "instruction": "If using beef or chicken, marinate in soy sauce, garlic, and sesame oil for about 15 minutes."
+        },
+        {
+          "step": 5,
+          "instruction": "Stir-fry until cooked through. For tofu, pan-fry until golden."
+        },
+        {
+          "step": 6,
+          "instruction": "Assemble the Bowl"
+        },
+        {
+          "step": 7,
+          "instruction": "Place cooked rice in the center of each bowl."
+        },
+        {
+          "step": 8,
+          "instruction": "Arrange the prepared vegetables and meat around the rice. Top with a fried egg."
+        },
+        {
+          "step": 9,
+          "instruction": "Drizzle gochujang over the top and add a drizzle of sesame oil."
+        },
+        {
+          "step": 10,
+          "instruction": "Sprinkle with sesame seeds and serve with soy sauce on the side."
+        },
+        {
+          "step": 11,
+          "instruction": "Mix all the ingredients together thoroughly before eating."
         }
       ],
       "id": 7
@@ -724,29 +767,36 @@
       ],
       "steps": [
         {
-          "section": "Combine Ingredients",
-          "instructions": [
-            "In a large bowl, add chickpeas, cherry tomatoes, cucumber, red onion, bell pepper, parsley, and feta cheese (if using)."
-          ]
+          "step": 1,
+          "instruction": "Combine Ingredients"
         },
         {
-          "section": "Make the Dressing",
-          "instructions": [
-            "In a small bowl, whisk together lemon juice, olive oil, salt, pepper, and oregano."
-          ]
+          "step": 2,
+          "instruction": "In a large bowl, add chickpeas, cherry tomatoes, cucumber, red onion, bell pepper, parsley, and feta cheese (if using)."
         },
         {
-          "section": "Dress the Salad",
-          "instructions": [
-            "Pour the dressing over the salad and toss gently to combine."
-          ]
+          "step": 3,
+          "instruction": "Dressing"
         },
         {
-          "section": "Serve",
-          "instructions": [
-            "Let the salad sit for about 10 minutes to allow the flavors to meld.",
-            "Serve chilled or at room temperature."
-          ]
+          "step": 4,
+          "instruction": "In a small bowl, whisk together lemon juice, olive oil, salt, pepper, and oregano."
+        },
+        {
+          "step": 5,
+          "instruction": "Pour the dressing over the salad and toss gently to combine."
+        },
+        {
+          "step": 6,
+          "instruction": "Serve"
+        },
+        {
+          "step": 7,
+          "instruction": "Let the salad sit for about 10 minutes to allow the flavors to meld."
+        },
+        {
+          "step": 8,
+          "instruction": "Serve chilled or at room temperature."
         }
       ],
       "id": 8
@@ -808,30 +858,40 @@
       ],
       "steps": [
         {
-          "section": "Cook the Rice",
-          "instructions": [
-            "Cook the jasmine rice in a separate saucepan according to package instructions."
-          ]
+          "step": 1,
+          "instruction": "Cook the Rice"
         },
         {
-          "section": "Prepare the Shrimp",
-          "instructions": [
-            "Heat a wok and add sesame oil.",
-            "Lightly fry the finely chopped garlic, being careful not to overcook it.",
-            "Squeeze the juice of two lemons into the wok, and add fish sauce, rice vinegar, sugar, and shrimp.",
-            "Simmer until the broth starts to boil, then reduce the heat."
-          ]
+          "step": 2,
+          "instruction": "Cook the jasmine rice in a separate saucepan according to package instructions."
         },
         {
-          "section": "Combine Ingredients",
-          "instructions": [
-            "Add arugula, cilantro, and rice to the boiling broth.",
-            "Mix well, cover, and let it sit for 2-3 minutes to allow the rice to absorb the flavors."
-          ]
+          "step": 3,
+          "instruction": "Prepare the Shrimp"
         },
         {
-          "section": "Serve",
-          "instructions": ["Serve hot and enjoy!"]
+          "step": 4,
+          "instruction": "Heat a wok and add sesame oil. Lightly fry the finely chopped garlic, being careful not to overcook it."
+        },
+        {
+          "step": 5,
+          "instruction": "Squeeze the juice of two lemons into the wok, and add fish sauce, rice vinegar, sugar, and shrimp."
+        },
+        {
+          "step": 6,
+          "instruction": "Simmer until the broth starts to boil, then reduce the heat."
+        },
+        {
+          "step": 7,
+          "instruction": "Combine Ingredients"
+        },
+        {
+          "step": 8,
+          "instruction": "Add arugula, cilantro, and rice to the boiling broth."
+        },
+        {
+          "step": 9,
+          "instruction": "Mix well, cover, and let it sit for 2-3 minutes to allow the rice to absorb the flavors."
         }
       ],
       "id": 9
@@ -979,112 +1039,118 @@
       },
       "ingredients": [
         {
-          "category": "Grilled Cheese",
-          "items": [
-            {
-              "name": "Bread",
-              "quantity": "8 slices",
-              "note": "sourdough or white bread preferred"
-            },
-            {
-              "name": "Cheddar Cheese",
-              "quantity": "8 slices",
-              "note": "or cheese of your choice"
-            },
-            {
-              "name": "Butter",
-              "quantity": "4 tbsp",
-              "note": "softened"
-            },
-            {
-              "name": "Garlic Powder",
-              "quantity": "1 tsp",
-              "optional": true
-            },
-            {
-              "name": "Italian Seasoning",
-              "quantity": "1 tsp",
-              "optional": true
-            }
-          ]
+          "name": "Bread (sourdough or white bread preferred)",
+          "quantity": "8 slices"
         },
         {
-          "category": "Tomato Soup",
-          "items": [
-            {
-              "name": "Olive Oil",
-              "quantity": "1 tbsp"
-            },
-            {
-              "name": "Small Onion",
-              "quantity": "1",
-              "note": "diced"
-            },
-            {
-              "name": "Garlic",
-              "quantity": "2 cloves",
-              "note": "minced"
-            },
-            {
-              "name": "Crushed Tomatoes",
-              "quantity": "1 can (28 oz)"
-            },
-            {
-              "name": "Vegetable Broth",
-              "quantity": "2 cups"
-            },
-            {
-              "name": "Tomato Paste",
-              "quantity": "1 tbsp"
-            },
-            {
-              "name": "Sugar",
-              "quantity": "1 tsp",
-              "note": "to balance acidity"
-            },
-            {
-              "name": "Dried Basil",
-              "quantity": "1/2 tsp",
-              "alternatives": ["1 tbsp fresh basil, chopped"]
-            },
-            {
-              "name": "Salt and Pepper",
-              "quantity": "pinch to taste"
-            },
-            {
-              "name": "Heavy Cream or Milk",
-              "quantity": "1/2 cup",
-              "optional": true,
-              "note": "for creamier soup"
-            }
-          ]
+          "name": "Cheddar Cheese (or cheese of your choice)",
+          "quantity": "8 slices"
+        },
+        {
+          "name": "Butter (softened)",
+          "quantity": "4 tbsp"
+        },
+        {
+          "name": "Garlic Powder (optional)",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "Italian Seasoning (optional)",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "Olive Oil",
+          "quantity": "1 tbsp"
+        },
+        {
+          "name": "Small Onion (diced)",
+          "quantity": "1"
+        },
+        {
+          "name": "Garlic (minced)",
+          "quantity": "2 cloves"
+        },
+        {
+          "name": "Crushed Tomatoes",
+          "quantity": "1 can (28 oz)"
+        },
+        {
+          "name": "Vegetable Broth",
+          "quantity": "2 cups"
+        },
+        {
+          "name": "Tomato Paste",
+          "quantity": "1 tbsp"
+        },
+        {
+          "name": "Sugar (to balance acidity)",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "Dried Basil (1 tbsp fresh basil, chopped)",
+          "quantity": "1/2 tsp"
+        },
+        {
+          "name": "Salt and Pepper",
+          "quantity": "pinch to taste"
+        },
+        {
+          "name": "Heavy Cream or Milk (optional for creamier soup)",
+          "quantity": "1/2 cup"
         }
       ],
       "steps": [
         {
-          "section": "Prepare the Tomato Soup",
-          "instructions": [
-            "Heat olive oil in a medium pot over medium heat. Add the diced onion and saut\u00e9 for 4-5 minutes, until softened.",
-            "Add the minced garlic and cook for 1 minute until fragrant.",
-            "Stir in the crushed tomatoes, vegetable broth, tomato paste, sugar, and dried basil. Season with salt and pepper.",
-            "Bring the mixture to a simmer and let it cook for about 15 minutes, allowing the flavors to meld.",
-            "For a smoother texture, use an immersion blender or transfer the soup to a blender to pur\u00e9e until smooth. Be careful with hot liquids!"
-          ]
+          "step": 1,
+          "instruction": "Prepare the Tomato Soup"
         },
         {
-          "section": "Prepare the Grilled Cheese",
-          "instructions": [
-            "Heat a skillet or griddle over medium heat. Butter one side of each slice of bread. Optionally, sprinkle with garlic powder or Italian seasoning.",
-            "Place a slice of cheese between two slices of bread, with the buttered sides facing out.",
-            "Cook the sandwiches in the skillet for 2-3 minutes per side, pressing down gently with a spatula, until the bread is golden brown and crispy, and the cheese is melted."
-          ]
+          "step": 2,
+          "instruction": "Heat olive oil in a medium pot over medium heat. Add the diced onion and saut\u00e9 for 4-5 minutes, until softened."
         },
         {
-          "section": "Serve",
-          "instructions": [
-            "Ladle the tomato soup into bowls, garnish with fresh basil or croutons if desired.",
-            "Cut the grilled cheese sandwiches in halves or quarters and serve alongside the soup for dipping."
-          ]
+          "step": 3,
+          "instruction": "Add the minced garlic and cook for 1 minute until fragrant."
+        },
+        {
+          "step": 4,
+          "instruction": "Stir in the crushed tomatoes, vegetable broth, tomato paste, sugar, and dried basil. Season with salt and pepper."
+        },
+        {
+          "step": 5,
+          "instruction": "Bring the mixture to a simmer and let it cook for about 15 minutes, allowing the flavors to meld."
+        },
+        {
+          "step": 6,
+          "instruction": "For a smoother texture, use an immersion blender or transfer the soup to a blender to pur\u00e9e until smooth. Be careful with hot liquids!"
+        },
+        {
+          "step": 7,
+          "instruction": "Prepare the Grilled Cheese"
+        },
+        {
+          "step": 8,
+          "instruction": "Heat a skillet or griddle over medium heat. Butter one side of each slice of bread. Optionally, sprinkle with garlic powder or Italian seasoning."
+        },
+        {
+          "step": 9,
+          "instruction": "Place a slice of cheese between two slices of bread, with the buttered sides facing out."
+        },
+        {
+          "step": 10,
+          "instruction": "Cook the sandwiches in the skillet for 2-3 minutes per side, pressing down gently with a spatula, until the bread is golden brown and crispy, and the cheese is melted."
+        },
+        {
+          "step": 11,
+          "instruction": "Serve"
+        },
+        {
+          "step": 12,
+          "instruction": "Ladle the tomato soup into bowls, garnish with fresh basil or croutons if desired."
+        },
+        {
+          "step": 13,
+          "instruction": "Cut the grilled cheese sandwiches in halves or quarters and serve alongside the soup for dipping."
         }
       ],
       "id": 11
@@ -1104,155 +1170,153 @@
       },
       "ingredients": [
         {
-          "category": "Shrimp",
-          "items": [
-            {
-              "name": "Large Shrimp",
-              "quantity": "1 lb",
-              "note": "peeled and deveined"
-            },
-            {
-              "name": "Garlic Powder",
-              "quantity": "1 tsp"
-            },
-            {
-              "name": "Smoked Paprika",
-              "quantity": "1 tsp"
-            },
-            {
-              "name": "Cumin",
-              "quantity": "1/2 tsp"
-            },
-            {
-              "name": "Chili Powder or Cayenne",
-              "quantity": "1/2 tsp",
-              "optional": true,
-              "note": "for heat"
-            },
-            {
-              "name": "Olive Oil",
-              "quantity": "2 tbsp"
-            },
-            {
-              "name": "Lime Juice",
-              "quantity": "1 tbsp"
-            },
-            {
-              "name": "Salt and Pepper",
-              "quantity": "pinch to taste"
-            }
-          ]
+          "name": "Large Shrimp (peeled and deveined)",
+          "quantity": "1 lb"
         },
         {
-          "category": "Slaw",
-          "items": [
-            {
-              "name": "Shredded Green Cabbage",
-              "quantity": "2 cups"
-            },
-            {
-              "name": "Red Onion",
-              "quantity": "1/4 cup",
-              "note": "thinly sliced"
-            },
-            {
-              "name": "Cilantro",
-              "quantity": "1/4 cup",
-              "note": "chopped"
-            },
-            {
-              "name": "Lime Juice",
-              "quantity": "1 tbsp"
-            },
-            {
-              "name": "Olive Oil",
-              "quantity": "1 tbsp"
-            },
-            {
-              "name": "Salt and Pepper",
-              "quantity": "pinch to taste"
-            }
-          ]
+          "name": "Garlic Powder",
+          "quantity": "1 tsp"
         },
         {
-          "category": "Baja Sauce",
-          "items": [
-            {
-              "name": "Mayonnaise",
-              "quantity": "1/4 cup"
-            },
-            {
-              "name": "Sour Cream",
-              "quantity": "1/4 cup"
-            },
-            {
-              "name": "Lime Juice",
-              "quantity": "1 tbsp"
-            },
-            {
-              "name": "Hot Sauce",
-              "quantity": "1 tsp",
-              "optional": true
-            },
-            {
-              "name": "Garlic Powder",
-              "quantity": "1 tsp"
-            },
-            {
-              "name": "Salt",
-              "quantity": "pinch to taste"
-            }
-          ]
+          "name": "Smoked Paprika",
+          "quantity": "1 tsp"
         },
         {
-          "category": "Tacos",
-          "items": [
-            {
-              "name": "Small Corn Tortillas",
-              "quantity": "8"
-            },
-            {
-              "name": "Lime Wedges",
-              "quantity": "for serving",
-              "optional": true
-            },
-            {
-              "name": "Cilantro",
-              "quantity": "extra for garnish",
-              "optional": true
-            }
-          ]
+          "name": "Cumin",
+          "quantity": "1/2 tsp"
+        },
+        {
+          "name": "Chili Powder or Cayenne (optional, for heat)",
+          "quantity": "1/2 tsp"
+        },
+        {
+          "name": "Olive Oil",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "Lime Juice",
+          "quantity": "1 tbsp"
+        },
+        {
+          "name": "Salt and Pepper",
+          "quantity": "pinch to taste"
+        },
+
+        {
+          "name": "Shredded Green Cabbage",
+          "quantity": "2 cups"
+        },
+        {
+          "name": "Red Onion (thinly sliced)",
+          "quantity": "1/4 cup"
+        },
+        {
+          "name": "Cilantro (chopped)",
+          "quantity": "1/4 cup"
+        },
+        {
+          "name": "Lime Juice",
+          "quantity": "1 tbsp"
+        },
+        {
+          "name": "Olive Oil",
+          "quantity": "1 tbsp"
+        },
+        {
+          "name": "Salt and Pepper",
+          "quantity": "pinch to taste"
+        },
+
+        {
+          "name": "Mayonnaise",
+          "quantity": "1/4 cup"
+        },
+        {
+          "name": "Sour Cream",
+          "quantity": "1/4 cup"
+        },
+        {
+          "name": "Lime Juice",
+          "quantity": "1 tbsp"
+        },
+        {
+          "name": "Hot Sauce (optional)",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "Garlic Powder",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "Salt",
+          "quantity": "pinch to taste"
+        },
+
+        {
+          "name": "Small Corn Tortillas",
+          "quantity": "8"
+        },
+        {
+          "name": "Lime Wedges (optional)",
+          "quantity": "for serving"
+        },
+        {
+          "name": "Cilantro (optional)",
+          "quantity": "extra for garnish"
         }
       ],
       "steps": [
         {
-          "section": "Prepare the Shrimp",
-          "instructions": [
-            "In a bowl, toss the shrimp with garlic powder, smoked paprika, cumin, chili powder (if using), olive oil, lime juice, salt, and pepper.",
-            "Let the shrimp marinate for about 10 minutes while preparing the slaw and sauce."
-          ]
+          "step": 1,
+          "instruction": "Prepare the Shrimp"
         },
         {
-          "section": "Make the Slaw",
-          "instructions": [
-            "In a separate bowl, combine shredded cabbage, red onion, cilantro, lime juice, olive oil, salt, and pepper.",
-            "Toss well and set aside to let the flavors meld."
-          ]
+          "step": 2,
+          "instruction": "In a bowl, toss the shrimp with garlic powder, smoked paprika, cumin, chili powder (if using), olive oil, lime juice, salt, and pepper."
         },
         {
-          "section": "Cook the Shrimp",
-          "instructions": [
-            "Grilled version: Preheat a grill or grill pan over medium-high heat. Thread the shrimp onto skewers or place directly on the grill. Cook for 2-3 minutes per side, until the shrimp are opaque and slightly charred.",
-            "Saut\u00e9ed version: Heat a non-stick skillet over medium-high heat. Add a drizzle of olive oil and cook the shrimp in batches for 2-3 minutes per side, until cooked through."
-          ]
+          "step": 3,
+          "instruction": "Let the shrimp marinate for about 10 minutes while preparing the slaw and sauce."
         },
         {
-          "section": "Assemble and Serve",
-          "instructions": [
-            "Warm the corn tortillas in a dry skillet or wrap in foil and heat in a low oven.",
-            "Place a few cooked shrimp on each tortilla, top with a spoonful of slaw, and drizzle generously with Baja sauce.",
-            "Garnish with extra cilantro and a squeeze of fresh lime. Serve immediately."
-          ]
+          "step": 1,
+          "instruction": "Make the Slaw"
+        },
+        {
+          "step": 4,
+          "instruction": "In a separate bowl, combine shredded cabbage, red onion, cilantro, lime juice, olive oil, salt, and pepper."
+        },
+        {
+          "step": 5,
+          "instruction": "Toss well and set aside to let the flavors meld."
+        },
+        {
+          "step": 6,
+          "instruction": "Cook the Shrimp"
+        },
+        {
+          "step": 7,
+          "instruction": "Grilled version: Preheat a grill or grill pan over medium-high heat. Thread the shrimp onto skewers or place directly on the grill. Cook for 2-3 minutes per side, until the shrimp are opaque and slightly charred."
+        },
+        {
+          "step": 8,
+          "instruction": "Saut\u00e9ed version: Heat a non-stick skillet over medium-high heat. Add a drizzle of olive oil and cook the shrimp in batches for 2-3 minutes per side, until cooked through."
+        },
+        {
+          "step": 9,
+          "instruction": "Assemble and Serve"
+        },
+        {
+          "step": 10,
+          "instruction": "Warm the corn tortillas in a dry skillet or wrap in foil and heat in a low oven."
+        },
+        {
+          "step": 11,
+          "instruction": "Place a few cooked shrimp on each tortilla, top with a spoonful of slaw, and drizzle generously with Baja sauce."
+        },
+        {
+          "step": 11,
+          "instruction": "Garnish with extra cilantro and a squeeze of fresh lime. Serve immediately."
         }
       ],
       "id": 12
@@ -1275,6 +1339,10 @@
         {
           "name": "Salted Tuna",
           "quantity": "1 can"
+        },
+        {
+          "name": "Salad",
+          "quantity": "a bowl"
         },
         {
           "name": "Mayonnaise",
