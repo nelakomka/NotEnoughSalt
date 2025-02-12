@@ -50,7 +50,6 @@
   <body>
     <main>
       <!-- Search Bar -->
-      <main>
         <!-- Search Bar -->
         <div class="search_bar">
           <input class="search_bar_input" type="text" placeholder="Search..." />
@@ -72,11 +71,11 @@
 <div class="recipe_icons">
   <div class="icon">
     <img src="/Assets/Etc/RecipeIcons/Timer.svg" />
-    <span>20 min</span>
+    <span class="recipe_time">20 min</span>
   </div>
   <div class="icon">
     <img src="/Assets/Etc/RecipeIcons/Cutlery.svg" />
-    <span>4 People</span>
+    <span class="recipe_people">4 People</span>
   </div>
   <div class="icon">
     <img src="/Assets/Etc/RecipeIcons/Heart.svg" />
@@ -93,21 +92,11 @@
           <div class="content_wrapper">
             <!-- Recipe Image Section -->
             <section class="recipe_image">
-              <img src= "/Assets/Food/MamalygaMujdei_Full.jpeg" alt="Mamalyga with Mujdei Image" />
+              <img class="recipe_image_img"  />          
             </section>
       
             <!-- Ingredients Section -->
             <section class="recipe_ingredients">
-              <h1>Ingredients</h1>
-              <ul>
-                <li><input type="checkbox">1 cup cornmeal</input></li>
-                <li><input type="checkbox">4 cups water</input></li>
-                <li><input type="checkbox">1 tsp salt</input></li>
-                <li><input type="checkbox">3 cloves garlic, minced</input></li>
-                <li><input type="checkbox">2 tbsp vegetable oil</input></li>
-                <li><input type="checkbox">1/4 cup vinegar</input></li>
-                <li><input type="checkbox">Fresh parsley (optional, for garnish)</input></li>
-              </ul>
             </section>
       
             <!-- Instructions Section -->
@@ -246,5 +235,7 @@
     </footer>
 
     <script src="../../Basics/Chat.js"></script>
+    <script src="./Recipe.js"></script>
+
   </body>
 </html>

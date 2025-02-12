@@ -1,17 +1,17 @@
 const getRecipeContainer = document.querySelector('.recipes_grid');
 
 const displayRecipes = async () => {
-  const response = await fetch('./../../RecipeCollection.json');
+  const response = await fetch('http://localhost:3000/recipes');
   const recipes = await response.json();
 
-  for (const element of recipes.recipes) {
+  for (const element of recipes) {
     const recipe = document.createElement('div');
 
     recipe.classList.add('recipe_card');
 
     //recipe card displays
     recipe.innerHTML = `
-            <a href="../Recipe/Recipe.html">
+            <a href="../Recipe/Recipe.html?recipeId=${element.id}">
               <img
                 src=${element.image}
                 alt=${element.name}
