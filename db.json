@@ -1,4 +1,14 @@
 {
+  "emails": [
+    {
+      "id": "05cf",
+      "email": "dcasd@mail.rr"
+    },
+    {
+      "id": "7c42",
+      "email": "cdsd@mail.rr"
+    }
+  ],
   "recipes": [
     {
       "name": "Pasta Carbonara",
@@ -7,7 +17,10 @@
       "tags": {
         "cuisine": "Italian",
         "region": "Europe",
-        "mealTypes": ["Lunch", "Dinner"],
+        "mealTypes": [
+          "Lunch",
+          "Dinner"
+        ],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "Under 30 minutes",
@@ -76,7 +89,10 @@
       "tags": {
         "cuisine": "Romanian",
         "region": "Eastern Europe",
-        "mealTypes": ["Lunch", "Dinner"],
+        "mealTypes": [
+          "Lunch",
+          "Dinner"
+        ],
         "spicyLevel": 0,
         "difficulty": 2,
         "cookingTime": "1 hour",
@@ -119,7 +135,13 @@
           "name": "Salt",
           "quantity": "a pinch"
         },
-        { "name": ["Extra: Fish", " Feta cheese", " Sour cream"] }
+        {
+          "name": [
+            "Extra: Fish",
+            " Feta cheese",
+            " Sour cream"
+          ]
+        }
       ],
       "steps": [
         {
@@ -156,7 +178,10 @@
       "tags": {
         "cuisine": "Pakistani",
         "region": "Asia",
-        "mealTypes": ["Lunch", "Dinner"],
+        "mealTypes": [
+          "Lunch",
+          "Dinner"
+        ],
         "spicyLevel": 3,
         "difficulty": 2,
         "cookingTime": "1 hour 30 minutes",
@@ -283,7 +308,7 @@
         },
         {
           "step": 7,
-          "instruction": "Bake at 350\u00b0F for 20 minutes."
+          "instruction": "Bake at 350°F for 20 minutes."
         }
       ],
       "id": 3
@@ -295,7 +320,11 @@
       "tags": {
         "cuisine": "Russian",
         "region": "Eastern Europe",
-        "mealTypes": ["Breakfast", "Lunch", "Dessert"],
+        "mealTypes": [
+          "Breakfast",
+          "Lunch",
+          "Dessert"
+        ],
         "spicyLevel": 0,
         "difficulty": 2,
         "cookingTime": "35 minutes",
@@ -366,7 +395,10 @@
       "tags": {
         "cuisine": "Italian",
         "region": "Europe",
-        "mealTypes": ["Lunch", "Dinner"],
+        "mealTypes": [
+          "Lunch",
+          "Dinner"
+        ],
         "spicyLevel": 0,
         "difficulty": 2,
         "cookingTime": "1 hour 30 minutes",
@@ -437,7 +469,7 @@
         },
         {
           "step": 6,
-          "instruction": "Preheat the oven to 475\u00b0F (245\u00b0C). If you have a pizza stone, place it in the oven to heat."
+          "instruction": "Preheat the oven to 475°F (245°C). If you have a pizza stone, place it in the oven to heat."
         },
         {
           "step": 7,
@@ -473,11 +505,13 @@
     {
       "name": "Sauerbraten",
       "image": "/Assets/Food/Sauerbraten.jpg",
-      "history": "Sauerbraten is often considered Germany\u2019s national dish. Its origins date back to the Middle Ages when meat was marinated to preserve it. The dish varies by region, with different marinades and accompaniments, reflecting local traditions.",
+      "history": "Sauerbraten is often considered Germany’s national dish. Its origins date back to the Middle Ages when meat was marinated to preserve it. The dish varies by region, with different marinades and accompaniments, reflecting local traditions.",
       "tags": {
         "cuisine": "German",
         "region": "Europe",
-        "mealTypes": ["Dinner"],
+        "mealTypes": [
+          "Dinner"
+        ],
         "spicyLevel": 0,
         "difficulty": 3,
         "cookingTime": "~3-4 hours (plus overnight marinating 72-120 hours)",
@@ -606,7 +640,10 @@
       "tags": {
         "cuisine": "Korean",
         "region": "Asia",
-        "mealTypes": ["Lunch", "Dinner"],
+        "mealTypes": [
+          "Lunch",
+          "Dinner"
+        ],
         "spicyLevel": 2,
         "difficulty": 2,
         "cookingTime": "40 minutes",
@@ -631,7 +668,11 @@
         {
           "name": "Meat",
           "quantity": "1 cup",
-          "examples": ["beef", "chicken", "tofu"]
+          "examples": [
+            "beef",
+            "chicken",
+            "tofu"
+          ]
         },
         {
           "name": "Fried Eggs",
@@ -662,7 +703,7 @@
         },
         {
           "step": 2,
-          "instruction": "Blanch or saut\u00e9 each vegetable separately until tender. Season with a little salt and sesame oil. Set aside."
+          "instruction": "Blanch or sauté each vegetable separately until tender. Season with a little salt and sesame oil. Set aside."
         },
         {
           "step": 3,
@@ -709,7 +750,10 @@
       "history": "This vibrant salad is a staple in Mediterranean cuisine, showcasing fresh ingredients and flavors. It's often enjoyed as a light meal or side dish and is a great example of the region's emphasis on vegetables, legumes, and healthy fats.",
       "tags": {
         "cuisine": "Mediterranean",
-        "mealTypes": ["Lunch", "Dinner"],
+        "mealTypes": [
+          "Lunch",
+          "Dinner"
+        ],
         "dietaryPreference": "Vegan",
         "spicyLevel": 0,
         "difficulty": 1,
@@ -807,7 +851,10 @@
       "tags": {
         "cuisine": "Chinese",
         "region": "Asia",
-        "mealTypes": ["Lunch", "Dinner"],
+        "mealTypes": [
+          "Lunch",
+          "Dinner"
+        ],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "25 minutes",
@@ -899,11 +946,15 @@
     {
       "name": "Cuban Picadillo",
       "image": "/Assets/Food/CubanPicadillo.jpg",
-      "history": "Cuban picadillo is a traditional dish, beloved across the Caribbean and Latin America. It has Spanish origins but was adapted with local ingredients in Cuba. Picadillo is a versatile, savory ground beef filling that includes a mix of sweet and salty flavors from raisins and olives. It\u2019s often served with rice, used in empanadas, or as a filling for stuffed peppers or pastries.",
+      "history": "Cuban picadillo is a traditional dish, beloved across the Caribbean and Latin America. It has Spanish origins but was adapted with local ingredients in Cuba. Picadillo is a versatile, savory ground beef filling that includes a mix of sweet and salty flavors from raisins and olives. It’s often served with rice, used in empanadas, or as a filling for stuffed peppers or pastries.",
       "tags": {
         "cuisine": "Cuban",
         "region": "North America",
-        "mealTypes": ["Appetizer", "Lunch", "Dinner"],
+        "mealTypes": [
+          "Appetizer",
+          "Lunch",
+          "Dinner"
+        ],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "35 minutes",
@@ -987,7 +1038,7 @@
       "steps": [
         {
           "step": 1,
-          "instruction": "Heat the olive oil in a large skillet over medium heat. Add the chopped onion and green bell pepper, and saut\u00e9 for about 3-4 minutes, until softened."
+          "instruction": "Heat the olive oil in a large skillet over medium heat. Add the chopped onion and green bell pepper, and sauté for about 3-4 minutes, until softened."
         },
         {
           "step": 2,
@@ -1031,7 +1082,10 @@
       "tags": {
         "cuisine": "American",
         "region": "North America",
-        "mealTypes": ["Lunch", "Dinner"],
+        "mealTypes": [
+          "Lunch",
+          "Dinner"
+        ],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "30 minutes",
@@ -1106,7 +1160,7 @@
         },
         {
           "step": 2,
-          "instruction": "Heat olive oil in a medium pot over medium heat. Add the diced onion and saut\u00e9 for 4-5 minutes, until softened."
+          "instruction": "Heat olive oil in a medium pot over medium heat. Add the diced onion and sauté for 4-5 minutes, until softened."
         },
         {
           "step": 3,
@@ -1122,7 +1176,7 @@
         },
         {
           "step": 6,
-          "instruction": "For a smoother texture, use an immersion blender or transfer the soup to a blender to pur\u00e9e until smooth. Be careful with hot liquids!"
+          "instruction": "For a smoother texture, use an immersion blender or transfer the soup to a blender to purée until smooth. Be careful with hot liquids!"
         },
         {
           "step": 7,
@@ -1162,7 +1216,10 @@
       "tags": {
         "cuisine": "Mexican",
         "region": "North America",
-        "mealTypes": ["Lunch", "Dinner"],
+        "mealTypes": [
+          "Lunch",
+          "Dinner"
+        ],
         "spicyLevel": 1,
         "difficulty": 2,
         "cookingTime": "25 minutes",
@@ -1201,7 +1258,6 @@
           "name": "Salt and Pepper",
           "quantity": "pinch to taste"
         },
-
         {
           "name": "Shredded Green Cabbage",
           "quantity": "2 cups"
@@ -1226,7 +1282,6 @@
           "name": "Salt and Pepper",
           "quantity": "pinch to taste"
         },
-
         {
           "name": "Mayonnaise",
           "quantity": "1/4 cup"
@@ -1251,7 +1306,6 @@
           "name": "Salt",
           "quantity": "pinch to taste"
         },
-
         {
           "name": "Small Corn Tortillas",
           "quantity": "8"
@@ -1300,7 +1354,7 @@
         },
         {
           "step": 8,
-          "instruction": "Saut\u00e9ed version: Heat a non-stick skillet over medium-high heat. Add a drizzle of olive oil and cook the shrimp in batches for 2-3 minutes per side, until cooked through."
+          "instruction": "Sautéed version: Heat a non-stick skillet over medium-high heat. Add a drizzle of olive oil and cook the shrimp in batches for 2-3 minutes per side, until cooked through."
         },
         {
           "step": 9,
@@ -1328,8 +1382,15 @@
       "tags": {
         "cuisine": "American",
         "region": "North America",
-        "mealTypes": ["Lunch", "Snack"],
-        "dietaryPreference": ["Under 30 Minutes", "Gluten-Free", "Simple"],
+        "mealTypes": [
+          "Lunch",
+          "Snack"
+        ],
+        "dietaryPreference": [
+          "Under 30 Minutes",
+          "Gluten-Free",
+          "Simple"
+        ],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "10 minutes",
@@ -1372,8 +1433,13 @@
       "tags": {
         "cuisine": "Australian",
         "region": "Oceania",
-        "mealTypes": ["Breakfast", "Snack"],
-        "dietaryPreference": ["Under 30 Minutes"],
+        "mealTypes": [
+          "Breakfast",
+          "Snack"
+        ],
+        "dietaryPreference": [
+          "Under 30 Minutes"
+        ],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "10 minutes",
@@ -1422,8 +1488,13 @@
       "tags": {
         "cuisine": "American, European",
         "region": "North America, Europe",
-        "mealTypes": ["Lunch", "Dinner"],
-        "dietaryPreference": ["Under 30 Minutes"],
+        "mealTypes": [
+          "Lunch",
+          "Dinner"
+        ],
+        "dietaryPreference": [
+          "Under 30 Minutes"
+        ],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "15 minutes",
@@ -1457,7 +1528,7 @@
       "steps": [
         {
           "step": 1,
-          "instruction": "Preheat the air fryer to 400\u00b0F (200\u00b0C)."
+          "instruction": "Preheat the air fryer to 400°F (200°C)."
         },
         {
           "step": 2,
@@ -1477,8 +1548,12 @@
       "tags": {
         "cuisine": "Chinese-American",
         "region": "Asia",
-        "mealTypes": ["Dinner"],
-        "dietaryPreference": ["Quick Meals"],
+        "mealTypes": [
+          "Dinner"
+        ],
+        "dietaryPreference": [
+          "Quick Meals"
+        ],
         "spicyLevel": 1,
         "difficulty": 1,
         "cookingTime": "25 minutes",
@@ -1488,7 +1563,9 @@
         {
           "name": "Lo Mein Noodles",
           "quantity": "8 oz",
-          "alternatives": ["spaghetti"]
+          "alternatives": [
+            "spaghetti"
+          ]
         },
         {
           "name": "Beef",
@@ -1574,7 +1651,7 @@
         },
         {
           "step": 5,
-          "instruction": "In the same skillet, heat another 1 tbsp oil. Saut\u00e9 garlic and ginger until fragrant (about 30 seconds)."
+          "instruction": "In the same skillet, heat another 1 tbsp oil. Sauté garlic and ginger until fragrant (about 30 seconds)."
         },
         {
           "step": 6,
@@ -1598,12 +1675,18 @@
     {
       "name": "Classic Smashed Burger",
       "image": "/Assets/Food/ClassicSmashedBurger.jpg",
-      "history": "The smashed burger originated in American diners during the Great Depression as an affordable way to serve flavorful food quickly. Popularized in the Midwest by places like Steak 'n Shake and Sid\u2019s Diner, the technique involved pressing ground beef onto a hot surface to create a crispy crust through the Maillard reaction.",
+      "history": "The smashed burger originated in American diners during the Great Depression as an affordable way to serve flavorful food quickly. Popularized in the Midwest by places like Steak 'n Shake and Sid’s Diner, the technique involved pressing ground beef onto a hot surface to create a crispy crust through the Maillard reaction.",
       "tags": {
         "cuisine": "American",
         "region": "North America",
-        "mealTypes": ["Lunch", "Dinner"],
-        "dietaryPreference": ["Quick", "Beginner-Friendly"],
+        "mealTypes": [
+          "Lunch",
+          "Dinner"
+        ],
+        "dietaryPreference": [
+          "Quick",
+          "Beginner-Friendly"
+        ],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "20 minutes",
