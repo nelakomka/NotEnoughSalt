@@ -13,13 +13,17 @@ main {
 
   h2 {
     margin-bottom: 20px;
-    font-size: 62px;;
+    font-size: 62px;
+  }
+
+  #my-login-form {
+    display: flex;
+    flex-direction: column;
   }
 
   input {
     width: auto;
     padding: 15px;
-
     border-radius: 12px;
     border: 2px solid #522a12;
     text-align: center;
