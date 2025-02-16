@@ -53,44 +53,36 @@
 
   <body>
     <main>
-      <form action="../Profile/Profile.html">
-        <div class="container">
+      <div class="container">
+        <h2>Welcome back Chef!</h2>
 
-          <h2>Welcome back Chef!</h2>
-
+        <form id="my-login-form">
           <!-- Email -->
-          <input
-            type="text"
-            placeholder="Enter Email"
-            name="email"
-            id="email"
-            required
-          />
+          <input placeholder="Enter Email" name="email" autocomplete="email" />
           <br />
 
           <!--Password  -->
           <input
             type="password"
             placeholder="Enter Password"
-            name="psw"
-            id="psw"
-            required
+            name="password"
+            autocomplete="current-password"
           />
           <br />
+          <button type="submit" class="loginbtn">Login</button>
+        </form>
+      </div>
 
-          <button type="submit" class="loginbtn"><b>Login</b></button>
-        </div>
-
-        <div class="container signin">
-          <p>
-            New user?
-            <a href="../Registration/Registration.html">Register here</a>!
-          </p>
-          <p>Forgot your password? <a href="#">Click here!</a>!</p>
-        </div>
-      </form>
+      <div class="container signin">
+        <p>
+          New user?
+          <a href="../Registration/Registration.html">Register here</a>!
+        </p>
+        <p>Forgot your password? <a href="#">Click here!</a>!</p>
+      </div>
 
       <script src="../../Basics/Chat.js"></script>
+      <script src="./Login.js"></script>
     </main>
   </body>
 </html>

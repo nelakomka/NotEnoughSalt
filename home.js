@@ -1,5 +1,3 @@
-const form = document.getElementById('myForm');
-
 const sendEmail = (event) => {
   event.preventDefault();
 

@@ -53,46 +53,22 @@
   <body>
     <main>
       <!-- Registration Form -->
-      <form action="../Profile/Profile.html">
+      <form id="my-register-form">
         <div class="container">
-
-          <h2>
-            "A pinch of salt - a world of flavor"
-          </h2>
+          <h2>"A pinch of salt - a world of flavor"</h2>
           <h3>Join Us!</h3>
+
           <!-- Email -->
-          <input
-            type="text"
-            placeholder="Enter Email"
-            name="email"
-            id="email"
-            required
-          />
+          <input type="email" placeholder="Enter Email" name="email" required />
           <br />
 
-          <input
-            type="text"
-            placeholder="Enter Name"
-            name="NAME"
-            id="name"
-            required
-          />
+          <input type="text" placeholder="Enter Name" name="name" required />
           <br />
           <!--Password  -->
           <input
             type="password"
             placeholder="Enter Password"
-            name="psw"
-            id="psw"
-            required
-          />
-          <br />
-          <!--  Repeat password -->
-          <input
-            type="password"
-            placeholder="Repeat Password"
-            name="psw-repeat"
-            id="psw-repeat"
+            name="password"
             required
           />
           <br />
@@ -107,5 +83,6 @@
     </main>
 
     <script src="../../Basics/Chat.js"></script>
+    <script src="./Registration.js"></script>
   </body>
 </html>
