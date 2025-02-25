@@ -19,7 +19,10 @@ const login = async (event) => {
       throw new Error('Login failed. Please try again.');
     }
 
-    // window.location.assign('../Profile/Profile.html'); // Redirect to profile page
+  // window.location.assign('../Profile/Profile.html'); // Redirect to profile page
+
+  //window.location.assign('../MealPlan/MealPlan.html');  // Redirect to the meal plan page
+
   } catch (error) {
     console.error(error);
   }
