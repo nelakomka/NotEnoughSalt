@@ -19,9 +19,11 @@ const login = async (event) => {
       throw new Error("Login failed. Please try again.");
     }
 
-    window.location.assign("../Profile/Profile.html"); // Redirect to profile page
+    //Set login flag in localStorage after successful login
+    localStorage.setItem("isLoggedIn", "true");
 
-    //window.location.assign('../MealPlan/MealPlan.html');  // Redirect to the meal plan page
+    //Redirect to Profile Page
+    window.location.assign("../Profile/Profile.html");
   } catch (error) {
     console.error(error);
   }

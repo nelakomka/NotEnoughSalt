@@ -276,3 +276,13 @@
     font-size: 20px;
   }
 }
+
+.delete-recipe {
+  background-color: #e23b32;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}

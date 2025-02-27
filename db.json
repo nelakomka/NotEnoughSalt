@@ -6,6 +6,12 @@
       "password": "$2a$10$DfkGNSFYkJMW0YNlkKU9hewc1aPuNnnEzOMXNmY1N1LUa.lM0vCXG",
       "name": "vsdfvds@mail.ru",
       "id": 1
+    },
+    {
+      "email": "th667247@ucf.edu",
+      "password": "$2a$10$62QfpE0FWAaCtWGOqAQmi.oxS6EC.hySyGkescidQsK51nOt1dfPy",
+      "name": "Thrisha Armstrong",
+      "id": 2
     }
   ],
   "recipes": [
