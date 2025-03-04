@@ -1,3 +1,15 @@
+
+/* Testing a background color for the footer */
+footer {
+  background-color: #b8b880;  
+  padding: 20px;
+  text-align: center;
+  color: #522a12; 
+
+}
+
+
+
 .picks_of_the_week {
   img {
     border-radius: 20px;

@@ -89,7 +89,7 @@
     },
     {
       "name": "Mamalyga with Mujdei",
-      "image": "/Assets/Food/MamalygaMujdei.png",
+      "image": "/Assets/Food/Mamalyga with Mujdei.jpeg",
       "history": "Traditional dish from Moldova, with deep personal connection.",
       "tags": {
         "cuisine": "Romanian",
@@ -178,7 +178,7 @@
     },
     {
       "name": "Briyani",
-      "image": "/Assets/Food/Briyani.jpg",
+      "image": "/Assets/Food/Briyani.jpeg",
       "history": null,
       "tags": {
         "cuisine": "Pakistani",
@@ -640,7 +640,7 @@
     },
     {
       "name": "Bibimbap",
-      "image": "/Assets/Food/Bibimbap.png",
+      "image": "/Assets/Food/Bibimbap.jpeg",
       "history": "Bibimbap translates to 'mixed rice.' It originated as a way to use up leftover vegetables and meat, served over rice. It's a colorful, nutritious dish that showcases seasonal ingredients and is often topped with a fried egg and gochujang (Korean chili paste).",
       "tags": {
         "cuisine": "Korean",
@@ -852,7 +852,7 @@
     },
     {
       "name": "Simple Shrimp Bowl",
-      "image": "/Assets/Food/RiceShrimp.jpeg",
+      "image": "/Assets/Food/Simple_shrimp_bowl.jpeg",
       "tags": {
         "cuisine": "Chinese",
         "region": "Asia",
@@ -1382,7 +1382,7 @@
     },
     {
       "name": "Tuna Salad",
-      "image": "/Assets/Food/TunaSalad.png",
+      "image": "/Assets/Food/Tuna_Salad.jpeg",
       "history": "A quick and easy meal perfect for lunch or a light dinner.",
       "tags": {
         "cuisine": "American",
@@ -1433,7 +1433,7 @@
     },
     {
       "name": "Avocado Toast",
-      "image": "/Assets/Food/AvocadoToast.jpg",
+      "image": "/Assets/Food/Avocado_Toast.jpeg",
       "history": "A trendy breakfast or snack option that's healthy and satisfying.",
       "tags": {
         "cuisine": "Australian",
@@ -1488,7 +1488,7 @@
     },
     {
       "name": "Air Fryer Steak",
-      "image": "/Assets/Food/LoMein.jpg",
+      "image": "/Assets/Food/Air_fried_Steak.jpeg",
       "history": "A flavorful and juicy steak cooked quickly in an air fryer.",
       "tags": {
         "cuisine": "American, European",

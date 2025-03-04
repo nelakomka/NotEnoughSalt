@@ -12,16 +12,22 @@ Patch (1.1.1) – Bug fixes, security patches.
 
 ### Added
 
-- Implemented a profile dropdown menu that displays Login/Logout options dynamically.
+- Implemented a profile dropdown menu that displays Login/Logout options.
 - Updated Profile.js to show the correct option based on login status.
+- Updated Profile page, users can now upload a profile picture, save name and password.
 - Modified Profile.css to style the dropdown for smooth hover functionality.
 - Adjusted Profile.html to include the profile dropdown structure in the navigation bar.
+- Updated logic on the home page, when user clicks on recipe, system pulls the recipe ID.
+- Updated filter logic on the recipe search page, filters are connected to the db.json file
+- Created logic for the Recipe Preferences (needs addtional review)
+- Created logic for the filters on the home page, but this doesn't seem to be working correctly//NEEDS REVIEW
 
 ### Fixed
 
 - Optimized Profile.js by removing duplicate event listeners and improving structure.
 - Ensured Logout properly clears localStorage and redirects to the login page.
-- Improved saved recipes UI handling in Profile.js.
+- Corrected the recipe images
+- Improved the UI features in the Profile page, centered text, removed unneed headers.
 
 ## [1.1.0] - 2025-02-26, TA
 

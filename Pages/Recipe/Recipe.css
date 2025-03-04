@@ -304,35 +304,3 @@
   cursor: pointer;
   color: #522a12;
 }
-
-/* Profile Dropdown Menu */
-.profile-dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.profile-dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f8efdf;
-  min-width: 120px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  z-index: 1;
-}
-
-.profile-dropdown-content a {
-  color: #522a12;
-  padding: 10px 15px;
-  text-decoration: none;
-  display: block;
-}
-
-.profile-dropdown-content a:hover {
-  background-color: #e7cc61;
-}
-
-/* Show dropdown when hovering */
-.profile-dropdown:hover .profile-dropdown-content {
-  display: block;
-}

@@ -18,19 +18,26 @@ const displayRecipe = async (recipeId) => {
   }
 
   try {
+    // Fetch the recipe data dynamically
     const response = await fetch("/db.json");
     const data = await response.json();
-    const recipe = data.recipes.find((r) => r.id === recipeId);
+
+    // Ensure recipe ID comparison matches expected type (string vs. number issue)
+    const recipe = data.recipes.find(
+      (r) => r.id.toString() === recipeId.toString()
+    );
 
     if (!recipe) {
       console.error("Recipe not found.");
       return;
     }
 
-    getRecipeName.innerHTML = recipe.name;
-    getRecipeCountry.innerHTML = recipe.tags.cuisine;
-    getRecipeTime.innerHTML = recipe.tags.cookingTime;
-    getRecipePeople.innerHTML = `${recipe.tags.servings} people`;
+    // Populate Recipe Details
+    getRecipeName.textContent = recipe.name;
+    getRecipeCountry.textContent = recipe.tags.cuisine;
+    getRecipeMealType.textContent = recipe.tags.mealTypes.join(", ");
+    getRecipeTime.textContent = recipe.tags.cookingTime;
+    getRecipePeople.textContent = `${recipe.tags.servings} servings`;
     getRecipeImage.setAttribute("src", recipe.image);
 
     getRecipeIngredients.innerHTML = `
@@ -39,7 +46,7 @@ const displayRecipe = async (recipeId) => {
         ${recipe.ingredients
           ?.map(
             (ingredient) =>
-              `<li><input type="checkbox">${ingredient.name}</input></li>`
+              `<li><input type="checkbox"> ${ingredient.name}</li>`
           )
           .join("")}
       </ul>
@@ -66,19 +73,19 @@ const handleSaveRecipe = (recipe) => {
   // Check if the recipe is already saved
   const isSaved = savedRecipes.some((r) => r.id === recipe.id);
   heartIcon.src = isSaved
-    ? "/Assets/Etc/RecipeIcons/heart-solid.svg"
-    : "/Assets/Etc/RecipeIcons/heart-regular.svg";
+    ? "./Assets/Etc/RecipeIcons/heart-solid.svg"
+    : "./Assets/Etc/RecipeIcons/heart-regular.svg";
 
   heartIcon.addEventListener("click", () => {
     let savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
 
     if (!savedRecipes.some((r) => r.id === recipe.id)) {
       savedRecipes.push({ id: recipe.id, name: recipe.name });
-      heartIcon.src = "/Assets/Etc/RecipeIcons/heart-solid.svg";
+      heartIcon.src = "./Assets/Etc/RecipeIcons/heart-solid.svg";
       alert("Recipe saved!");
     } else {
       savedRecipes = savedRecipes.filter((r) => r.id !== recipe.id);
-      heartIcon.src = "/Assets/Etc/RecipeIcons/heart-regular.svg";
+      heartIcon.src = "./Assets/Etc/RecipeIcons/heart-regular.svg";
       alert("Recipe removed from saved recipes.");
     }
 

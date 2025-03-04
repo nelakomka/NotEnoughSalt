@@ -1,4 +1,10 @@
-/* Profile */
+/* Profile: General CSS */
+h2 {
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+
 .buttons_controls {
   display: flex;
   align-items: center;
@@ -211,13 +217,11 @@
   max-width: 1300px;
   margin: 0 auto;
 }
-
-/* Ensure cards are limited to 5 per row */
 .recipe_card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(20% - 20px); /* 5 cards per row with spacing */
+  width: calc(25% - 25px); 
   background-color: #f8efdf;
   padding: 10px;
   border-radius: 5px;
@@ -269,7 +273,43 @@
   background-color: #c91f1f;
 }
 
-/* Responsive layout for smaller screens */
+/* Create a recipe */
+
+#recepies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh; /* Adjust to fit the section properly */
+  width: 100%;
+}
+
+.recipes_text h2 {
+margin-bottom: 20px; /* Adds space between title and button */
+}
+
+.upload_recipe_button {
+  display: flex;
+  justify-content: center;
+}
+
+.upload_recipe_button button {
+  background-color: #ffa771;
+  color: #522a12;
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: 1px solid #522a12;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.upload_recipe_button button:hover {
+  background-color: #e46414;
+}
+
+
+/* Testing: Responsive layout for smaller screens */
 @media (max-width: 1200px) {
   .recipe_card {
     width: calc(33.33% - 20px); /* 3 cards per row */

@@ -14,48 +14,38 @@
     />
   </head>
 
-  <header>
-    <!-- Navigation -->
-    <nav>
-      <div class="navbar">
-        <ul>
-          <li>
-            <a href="../FindRecipes/FindRecipes.html">recipes</a>
-          </li>
-          <li>
-            <a href="../MealPlan/MealPlan.html">meal plan</a>
-          </li>
-          <li>
-            <a href="../Newsletter/Newsletter.html">news</a>
-          </li>
-          <li>
-            <a href="/">
-              <img
-                class="nav_nes_logo"
-                src="../../Assets/Etc/Logo.svg"
-                alt="NotEnoughSalt Logo"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="../About/About.html">about</a>
-          </li>
-          <li>
-            <a href="../FAQs/faq.html">faqs</a>
-          </li>
-          <li class="profile-dropdown">
-            <a href="../Profile/Profile.html">profile</a>
-            <div class="profile-dropdown-content">
-              <a id="login-option" href="../Login/Login.html">login</a>
-              <a id="logout-option" href="#">logout</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
   <body>
+    <header>
+      <!-- Navigation -->
+      <nav>
+        <div class="navbar">
+          <ul>
+            <li><a href="../FindRecipes/FindRecipes.html">Recipes</a></li>
+            <li><a href="../MealPlan/MealPlan.html">Meal Plan</a></li>
+            <li><a href="../Newsletter/Newsletter.html">News</a></li>
+            <li>
+              <a href="/">
+                <img
+                  class="nav_nes_logo"
+                  src="../../Assets/Etc/Logo.svg"
+                  alt="NotEnoughSalt Logo"
+                />
+              </a>
+            </li>
+            <li><a href="../About/About.html">About</a></li>
+            <li><a href="../FAQs/faq.html">FAQs</a></li>
+            <li class="profile-dropdown">
+              <a href="../Profile/Profile.html">Profile</a>
+              <div class="profile-dropdown-content">
+                <a id="login-option" href="../Login/Login.html">Login</a>
+                <a id="logout-option" href="#">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
     <main>
       <!-- Search Bar -->
       <div class="search_bar">
@@ -67,12 +57,13 @@
           Settings
         </button>
         <button class="tab-button" data-category="saved">Saved Recipes</button>
-        <button class="tab-button" data-category="recepies">
+        <button class="tab-button" data-category="recipes">
           Create a Recipe
         </button>
       </div>
 
       <section class="profile-section">
+        <!-- Settings Section -->
         <div class="profile-category active" id="settings">
           <div class="wrap">
             <div class="container_settings_profile">
@@ -81,7 +72,7 @@
                 <div class="change_image">
                   <img
                     src="../../Assets/Etc/SaltshakerFinger.svg"
-                    alt="saltshaker image"
+                    alt="Saltshaker Image"
                   />
                   <button>Change Profile Picture</button>
                 </div>
@@ -114,18 +105,13 @@
               </div>
             </div>
 
+            <!-- Recipe Preferences -->
             <div class="recipe_preferences">
-              <div class="recipe_preferences_text">
-                <h3>Recipe Preferences</h3>
-              </div>
-
+              <h3>Recipe Preferences</h3>
               <div class="recipe_prefrence_lists">
-                <!-- Dietary -->
+                <!-- Dietary Preferences -->
                 <div class="recipe_preference_list">
-                  <div>
-                    <h3>Dietary</h3>
-                  </div>
-
+                  <h3>Dietary</h3>
                   <div class="recipe_prefrence_lists_checkboxes">
                     <input
                       type="checkbox"
@@ -134,10 +120,8 @@
                       value="vegan"
                     />
                     <label for="vegan"> Vegan</label><br />
-
                     <input type="checkbox" id="keto" name="keto" value="keto" />
                     <label for="keto"> Keto</label><br />
-
                     <input
                       type="checkbox"
                       id="paleo"
@@ -145,7 +129,6 @@
                       value="paleo"
                     />
                     <label for="paleo"> Paleo</label><br />
-
                     <input
                       type="checkbox"
                       id="vegetarian"
@@ -153,7 +136,6 @@
                       value="vegetarian"
                     />
                     <label for="vegetarian"> Vegetarian</label><br />
-
                     <input
                       type="checkbox"
                       id="lactose"
@@ -161,7 +143,6 @@
                       value="lactose"
                     />
                     <label for="lactose"> Lactose</label><br />
-
                     <input
                       type="checkbox"
                       id="glutenfree"
@@ -171,13 +152,9 @@
                     <label for="glutenfree"> Gluten Free</label><br />
                   </div>
                 </div>
-
-                <!-- Measurments -->
+                <!-- Measurement Preferences -->
                 <div class="recipe_preference_list">
-                  <div>
-                    <h3>Measurments</h3>
-                  </div>
-
+                  <h3>Measurements</h3>
                   <div class="recipe_prefrence_lists_checkboxes">
                     <input
                       type="checkbox"
@@ -186,7 +163,6 @@
                       value="empirical"
                     />
                     <label for="empirical"> Empirical</label><br />
-
                     <input
                       type="checkbox"
                       id="metric"
@@ -199,272 +175,26 @@
               </div>
               <button>Save</button>
             </div>
-
-            <div class="delete_account">
-              <button>Delete Account</button>
-            </div>
           </div>
         </div>
 
+        <!-- Saved Recipes Section -->
         <div class="profile-category" id="saved">
           <div class="wrap">
-            <div class="recipes">
-              <div class="recipes_text">
-                <h2>Saved Recipes</h2>
-              </div>
-
-              <div class="recipes_grid">
-                <div class="recipe_card">
-                  <a href="#">
-                    <img
-                      src="/Assets/Food/MamalygaMujdei.png"
-                      alt="Mamalyga with Mujdei Image"
-                      height="260px"
-                    />
-                    <div class="recipe_card_info">
-                      <div class="recipe_card_nametime">
-                        <p>Mamalyga with Mujdei</p>
-                        <div class="recipe_card_time">
-                          <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                          <p>90 minutes</p>
-                        </div>
-                      </div>
-                      <div class="recipe_card_difficulty">
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="recipe_card">
-                  <a href="#">
-                    <img
-                      src="/Assets/Food/MamalygaMujdei.png"
-                      alt="Mamalyga with
-                    Mujdei Image"
-                      height="260px"
-                    />
-                    <div class="recipe_card_info">
-                      <div class="recipe_card_nametime">
-                        <p>Mamalyga with Mujdei</p>
-                        <div class="recipe_card_time">
-                          <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                          <p>90 minutes</p>
-                        </div>
-                      </div>
-                      <div class="recipe_card_difficulty">
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="recipe_card">
-                  <a href="#">
-                    <img
-                      src="/Assets/Food/MamalygaMujdei.png"
-                      alt="Mamalyga with Mujdei Image"
-                      height="260px"
-                    />
-                    <div class="recipe_card_info">
-                      <div class="recipe_card_nametime">
-                        <p>Mamalyga with Mujdei</p>
-                        <div class="recipe_card_time">
-                          <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                          <p>90 minutes</p>
-                        </div>
-                      </div>
-                      <div class="recipe_card_difficulty">
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="recipe_card">
-                  <a href="#">
-                    <img
-                      src="/Assets/Food/MamalygaMujdei.png"
-                      alt="Mamalyga with Mujdei Image"
-                      height="260px"
-                    />
-                    <div class="recipe_card_info">
-                      <div class="recipe_card_nametime">
-                        <p>Mamalyga with Mujdei</p>
-                        <div class="recipe_card_time">
-                          <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                          <p>90 minutes</p>
-                        </div>
-                      </div>
-                      <div class="recipe_card_difficulty">
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="recipe_card">
-                  <a href="#">
-                    <img
-                      src="/Assets/Food/MamalygaMujdei.png"
-                      alt="Mamalyga with Mujdei Image"
-                      height="260px"
-                    />
-                    <div class="recipe_card_info">
-                      <div class="recipe_card_nametime">
-                        <p>Mamalyga with Mujdei</p>
-                        <div class="recipe_card_time">
-                          <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                          <p>90 minutes</p>
-                        </div>
-                      </div>
-                      <div class="recipe_card_difficulty">
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="recipe_card">
-                  <a href="#">
-                    <img
-                      src="/Assets/Food/MamalygaMujdei.png"
-                      alt="Mamalyga with Mujdei Image"
-                      height="260px"
-                    />
-                    <div class="recipe_card_info">
-                      <div class="recipe_card_nametime">
-                        <p>Mamalyga with Mujdei</p>
-                        <div class="recipe_card_time">
-                          <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                          <p>90 minutes</p>
-                        </div>
-                      </div>
-                      <div class="recipe_card_difficulty">
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="recipe_card">
-                  <a href="#">
-                    <img
-                      src="/Assets/Food/MamalygaMujdei.png"
-                      alt="Mamalyga with Mujdei Image"
-                      height="260px"
-                    />
-                    <div class="recipe_card_info">
-                      <div class="recipe_card_nametime">
-                        <p>Mamalyga with Mujdei</p>
-                        <div class="recipe_card_time">
-                          <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                          <p>90 minutes</p>
-                        </div>
-                      </div>
-                      <div class="recipe_card_difficulty">
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="recipe_card">
-                  <a href="#">
-                    <img
-                      src="/Assets/Food/MamalygaMujdei.png"
-                      alt="Mamalyga with Mujdei Image"
-                      height="260px"
-                    />
-                    <div class="recipe_card_info">
-                      <div class="recipe_card_nametime">
-                        <p>Mamalyga with Mujdei</p>
-                        <div class="recipe_card_time">
-                          <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                          <p>90 minutes</p>
-                        </div>
-                      </div>
-                      <div class="recipe_card_difficulty">
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                        <img
-                          src="/Assets/Etc/Saltshaker.svg"
-                          alt="Saltshaker"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="user_recipes">
-              <div class="user_recipes_text">
-                <h2>Your Recipes</h2>
-              </div>
-              <div class="user_recipes_grid">
-                <div class="user_recipes_card">
-                  <div class="user_recipes_card_background"></div>
-                  <p>Add Recipe</p>
-                </div>
-              </div>
+            <h2>Saved Recipes</h2>
+            <div class="recipes_grid">
+              <p>No saved recipes yet.</p>
             </div>
           </div>
         </div>
 
-        <div class="profile-category" id="recepies">
+        <!-- Upload Recipe Section -->
+        <div class="profile-category" id="recipes">
           <div class="wrap">
-            <div class="recipes_text">
-              <h2>Upload a Recipe</h2>
-            </div>
-
+            <h2>Upload a Recipe</h2>
             <div class="upload_recipe_button">
-              <a href="../CreateRecipe/CreateRecipe.html"
-                ><button>Upload a Recipe Here</button>
+              <a href="../CreateRecipe/CreateRecipe.html">
+                <button>Upload a Recipe Here</button>
               </a>
             </div>
           </div>
@@ -514,13 +244,14 @@
             <p>@NotEnoughSalt</p>
           </div>
           <div class="keep_in_touch_etc">
-            <p>about</p>
-            <p>recipes</p>
+            <a href="./Pages/About/About.html">about</a>
+            <a href="./Pages/FindRecipes/FindRecipes.html">recipes</a>
           </div>
         </div>
       </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="../../Basics/Chat.js"></script>
     <script src="./Profile.js"></script>
     <script src="../../Pages/Login/auth.js"></script>
