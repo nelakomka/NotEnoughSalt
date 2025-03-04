@@ -3,55 +3,88 @@ const getRecipeCountry = document.querySelector(".country");
 const getRecipeMealType = document.querySelector(".meal_time");
 const getRecipeTime = document.querySelector(".recipe_time");
 const getRecipePeople = document.querySelector(".recipe_people");
-const getRecipeIngrediets = document.querySelector(".recipe_ingredients");
+const getRecipeIngredients = document.querySelector(".recipe_ingredients");
 const getRecipeImage = document.querySelector(".recipe_image_img");
 const getRecipeInstructions = document.querySelector(".recipe_instructions");
+const heartIcon = document.querySelector(".heart-icon");
+
+// Retrieve recipe ID from URL
+const recipeId = new URLSearchParams(window.location.search).get("recipeId");
 
 const displayRecipe = async (recipeId) => {
-  const response = await fetch(`http://localhost:3000/recipes/${recipeId}`);
-  const recipes = await response.json();
+  if (!recipeId) {
+    console.error("Recipe ID not provided.");
+    return;
+  }
 
-  getRecipeName.innerHTML = recipes.name;
-  getRecipeCountry.innerHTML = recipes.tags.cuisine;
-  getRecipeTime.innerHTML = recipes.tags.cookingTime;
-  getRecipePeople.innerHTML = `${recipes.tags.servings} people`;
-  getRecipeIngrediets.innerHTML = `
-    <h1>Ingredients</h1>
-    <ul>
-      ${recipes.ingredients
-        ?.map(
-          (element) => `<li><input type="checkbox">${element.name}</input></li>`
-        )
-        .join("")}
-    </ul>
-  `;
-  getRecipeImage.setAttribute("src", recipes.image);
-  getRecipeInstructions.innerHTML = `
-    <h4>Instructions</h4>
-    <ol>
-      ${recipes.steps
-        .map((element) => `<li>${element.instruction}</li>`)
-        .join("")}
-    </ol>
-  `;
+  try {
+    const response = await fetch("/db.json");
+    const data = await response.json();
+    const recipe = data.recipes.find((r) => r.id === recipeId);
+
+    if (!recipe) {
+      console.error("Recipe not found.");
+      return;
+    }
+
+    getRecipeName.innerHTML = recipe.name;
+    getRecipeCountry.innerHTML = recipe.tags.cuisine;
+    getRecipeTime.innerHTML = recipe.tags.cookingTime;
+    getRecipePeople.innerHTML = `${recipe.tags.servings} people`;
+    getRecipeImage.setAttribute("src", recipe.image);
+
+    getRecipeIngredients.innerHTML = `
+      <h1>Ingredients</h1>
+      <ul>
+        ${recipe.ingredients
+          ?.map(
+            (ingredient) =>
+              `<li><input type="checkbox">${ingredient.name}</input></li>`
+          )
+          .join("")}
+      </ul>
+    `;
+
+    getRecipeInstructions.innerHTML = `
+      <h4>Instructions</h4>
+      <ol>
+        ${recipe.steps.map((step) => `<li>${step.instruction}</li>`).join("")}
+      </ol>
+    `;
+
+    // Handle Recipe Saving
+    handleSaveRecipe(recipe);
+  } catch (error) {
+    console.error("Error fetching recipe data:", error);
+  }
 };
 
-displayRecipe(new URLSearchParams(window.location.search).get("recipeId"));
-document.addEventListener("DOMContentLoaded", () => {
-  const heartIcon = document.querySelector(
-    ".recipe_icons .icon img[src*='Heart']"
-  );
-  const recipeTitle = document.querySelector(".recipe_title").innerText;
+// Handle Saving Recipe
+const handleSaveRecipe = (recipe) => {
+  let savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+
+  // Check if the recipe is already saved
+  const isSaved = savedRecipes.some((r) => r.id === recipe.id);
+  heartIcon.src = isSaved
+    ? "/Assets/Etc/RecipeIcons/heart-solid.svg"
+    : "/Assets/Etc/RecipeIcons/heart-regular.svg";
 
   heartIcon.addEventListener("click", () => {
     let savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
 
-    if (!savedRecipes.includes(recipeTitle)) {
-      savedRecipes.push(recipeTitle);
-      localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
+    if (!savedRecipes.some((r) => r.id === recipe.id)) {
+      savedRecipes.push({ id: recipe.id, name: recipe.name });
+      heartIcon.src = "/Assets/Etc/RecipeIcons/heart-solid.svg";
       alert("Recipe saved!");
     } else {
-      alert("Recipe already saved.");
+      savedRecipes = savedRecipes.filter((r) => r.id !== recipe.id);
+      heartIcon.src = "/Assets/Etc/RecipeIcons/heart-regular.svg";
+      alert("Recipe removed from saved recipes.");
     }
+
+    localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
   });
-});
+};
+
+// Load and display the recipe
+document.addEventListener("DOMContentLoaded", () => displayRecipe(recipeId));

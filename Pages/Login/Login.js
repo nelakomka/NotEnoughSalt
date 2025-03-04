@@ -19,10 +19,13 @@ const login = async (event) => {
       throw new Error("Login failed. Please try again.");
     }
 
-    //Set login flag in localStorage after successful login
-    localStorage.setItem("isLoggedIn", "true");
+    const data = await response.json();
 
-    //Redirect to Profile Page
+    // Store login status and user data in localStorage
+    localStorage.setItem("isLoggedIn", "true");
+    localStorage.setItem("userEmail", email); // Optionally store user info
+
+    // Redirect to Profile Page
     window.location.assign("../Profile/Profile.html");
   } catch (error) {
     console.error(error);

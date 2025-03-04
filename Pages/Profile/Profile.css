@@ -203,86 +203,87 @@
 }
 
 /* Saved Recipes */
-.recipes {
+.recipes_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Ensure cards are limited to 5 per row */
+.recipe_card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
-  gap: 10px;
+  width: calc(20% - 20px); /* 5 cards per row with spacing */
+  background-color: #f8efdf;
+  padding: 10px;
+  border-radius: 5px;
 
-  h2 {
-    color: #e3c341;
-  }
-
-  .recipes_grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    max-width: 1300px;
-
-    .recipe_card {
-      display: flex;
-
-      a {
-        text-decoration: none;
-        color: #522a12;
-      }
-
-      img {
-        border-radius: 3px;
-      }
-
-      .recipe_card_info {
-        display: flex;
-        justify-content: center;
-
-        gap: 10px;
-
-        .recipe_card_time {
-          display: flex;
-
-          gap: 3px;
-        }
-      }
-    }
-  }
 }
 
-/* Your Recipes */
-
-.recipes_text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.recipe_card:hover {
+  transform: scale(1.05);
 }
 
-.upload_recipe_button {
+.recipe_card a {
+  text-decoration: none;
+  color: #522a12;
+}
+
+.recipe_card img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 5px;
+}
+
+.recipe_card_info {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  margin-top: 10px;
+  text-align: center;
+}
 
-  button {
-    background-color: #f17e37;
-    color: #522a12;
-    padding: 10px 25px;
-    border-radius: 5px;
-    border: 1px solid #522a12;
-    align-self: center;
-    margin: 30px 0;
-    cursor: pointer;
-
-    font-size: 20px;
-  }
+.recipe_card_info p {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 5px 0;
 }
 
 .delete-recipe {
   background-color: #e23b32;
   color: white;
-  padding: 5px 10px;
+  padding: 8px 12px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+  transition: background 0.3s ease-in-out;
+}
+
+.delete-recipe:hover {
+  background-color: #c91f1f;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 1200px) {
+  .recipe_card {
+    width: calc(33.33% - 20px); /* 3 cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .recipe_card {
+    width: calc(50% - 20px); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe_card {
+    width: 100%; /* Full width on very small screens */
+  }
 }
