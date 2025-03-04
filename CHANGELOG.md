@@ -8,18 +8,29 @@ Major (1.0.0) – Significant updates, breaking changes.
 Minor (1.1.0) – New features, but backward-compatible.
 Patch (1.1.1) – Bug fixes, security patches.
 
+## [1.1.1] - 2025-03-04, TA
+
+### Added
+
+- Implemented a profile dropdown menu that displays Login/Logout options dynamically.
+- Updated Profile.js to show the correct option based on login status.
+- Modified Profile.css to style the dropdown for smooth hover functionality.
+- Adjusted Profile.html to include the profile dropdown structure in the navigation bar.
+
+### Fixed
+
+- Optimized Profile.js by removing duplicate event listeners and improving structure.
+- Ensured Logout properly clears localStorage and redirects to the login page.
+- Improved saved recipes UI handling in Profile.js.
+
 ## [1.1.0] - 2025-02-26, TA
 
 ### Added
 
 - Implemented dropdown selection for adding saved recipes to the meal plan calendar.
-
 - Created a container in MealPlan.js to house the dropdown and "Add to Meal Plan" button for a cleaner UI.
-
 - Updated MealPlan.css with new styles for the dropdown and button.
-
 - Modified Profile.js to include a delete button for each saved recipe.
-
 - Added localStorage persistence for saved recipes, ensuring they remain visible across sessions.
 
 ### Fixed

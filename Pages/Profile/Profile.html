@@ -43,8 +43,12 @@
           <li>
             <a href="../FAQs/faq.html">faqs</a>
           </li>
-          <li>
-            <a href="../Login/Login.html">profile</a>
+          <li class="profile-dropdown">
+            <a href="../Profile/Profile.html">profile</a>
+            <div class="profile-dropdown-content">
+              <a id="login-option" href="../Login/Login.html">login</a>
+              <a id="logout-option" href="#">logout</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -66,32 +70,46 @@
         <button class="tab-button" data-category="recepies">
           Create a Recipe
         </button>
-
       </div>
 
       <section class="profile-section">
         <div class="profile-category active" id="settings">
-            <div class="wrap">
-                <div class="container_settings_profile">
-                    <h2>Settings</h2>
-                    <div class="change_form_and_picture">
-                        <div class="change_image">
-                            <img src="../../Assets/Etc/SaltshakerFinger.svg" alt="saltshaker image" />
-                            <button>Change Profile Picture</button>
-                        </div>
-                        <div class="change_settings">
-                            <form>
-                                <div class="form-group">
-                                    <label for="name"></label>
-                                    <input type="text" id="name" name="name" placeholder="Profile Name" value="" />
-                                    <input type="submit" value="Save" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="password"></label>
-                                    <input type="password" id="password" name="password" placeholder="Reset Password" value="" />
-                                    <input type="submit" value="Save" />
-                                </div>
-                            </form> 
+          <div class="wrap">
+            <div class="container_settings_profile">
+              <h2>Settings</h2>
+              <div class="change_form_and_picture">
+                <div class="change_image">
+                  <img
+                    src="../../Assets/Etc/SaltshakerFinger.svg"
+                    alt="saltshaker image"
+                  />
+                  <button>Change Profile Picture</button>
+                </div>
+                <div class="change_settings">
+                  <form>
+                    <div class="form-group">
+                      <label for="name"></label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Profile Name"
+                        value=""
+                      />
+                      <input type="submit" value="Save" />
+                    </div>
+                    <div class="form-group">
+                      <label for="password"></label>
+                      <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Reset Password"
+                        value=""
+                      />
+                      <input type="submit" value="Save" />
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -505,5 +523,6 @@
 
     <script src="../../Basics/Chat.js"></script>
     <script src="./Profile.js"></script>
+    <script src="../../Pages/Login/auth.js"></script>
   </body>
 </html>

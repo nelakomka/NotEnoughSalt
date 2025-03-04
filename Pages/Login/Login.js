@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+  // If already logged in, redirect to Profile page
+  if (isLoggedIn === "true") {
+    window.location.href = "../Profile/Profile.html";
+  }
+});
+
 const loginForm = document.getElementById("my-login-form");
 
 const login = async (event) => {
@@ -23,7 +32,7 @@ const login = async (event) => {
 
     // Store login status and user data in localStorage
     localStorage.setItem("isLoggedIn", "true");
-    localStorage.setItem("userEmail", email); // Optionally store user info
+    localStorage.setItem("userEmail", email);
 
     // Redirect to Profile Page
     window.location.assign("../Profile/Profile.html");

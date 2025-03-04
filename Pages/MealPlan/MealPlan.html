@@ -14,13 +14,12 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
     <script>
-      // fullcalendar library
-      document.addEventListener('DOMContentLoaded', function () {
-        var calendarEl = document.getElementById('calendar');
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth',
+          initialView: "dayGridMonth",
           headerToolbar: {
-            start: 'dayGridMonth,timeGridWeek',
+            start: "dayGridMonth,timeGridWeek",
           },
         });
         calendar.render();
@@ -28,46 +27,32 @@
     </script>
   </head>
 
-  <header>
-    <!-- Navigation -->
-    <nav>
-      <div class="navbar">
-        <ul>
-          <li>
-            <a href="../FindRecipes/FindRecipes.html">recipes</a>
-          </li>
-          <li>
-            <a href="../MealPlan/MealPlan.html">meal plan</a>
-          </li>
-          <li>
-            <a href="../Newsletter/Newsletter.html">news</a>
-          </li>
-          <li>
-            <a href="/">
-              <img
-                class="nav_nes_logo"
-                src="../../Assets/Etc/Logo.svg"
-                alt="NotEnoughSalt Logo"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="../About/About.html">about</a>
-          </li>
-          <li>
-            <a href="../FAQs/faq.html">faqs</a>
-          </li>
-          <li>
-            <a href="../Login/Login.html">profile</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
   <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <ul>
+            <li><a href="../FindRecipes/FindRecipes.html">recipes</a></li>
+            <li><a href="../MealPlan/MealPlan.html">meal plan</a></li>
+            <li><a href="../Newsletter/Newsletter.html">news</a></li>
+            <li>
+              <a href="/">
+                <img
+                  class="nav_nes_logo"
+                  src="../../Assets/Etc/Logo.svg"
+                  alt="NotEnoughSalt Logo"
+                />
+              </a>
+            </li>
+            <li><a href="../About/About.html">about</a></li>
+            <li><a href="../FAQs/faq.html">faqs</a></li>
+            <li><a href="../Login/Login.html">profile</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
     <main>
-      <!-- Search Bar -->
       <div class="search_bar">
         <input class="search_bar_input" type="text" placeholder="Search..." />
       </div>
@@ -75,8 +60,6 @@
       <div class="calendar">
         <h2>Calendar</h2>
         <div id="calendar"></div>
-
-        <button>Generate Grocery List</button>
       </div>
 
       <div class="grocery_store_list">
@@ -85,417 +68,40 @@
         </div>
 
         <div class="grocery_ingridients_lists">
-          <!-- Margherita -->
           <div class="recipe_grocery_list">
             <div>
-              <h3>Classic Margherita Pizza</h3>
+              <h3>Example Recipe</h3>
             </div>
-
             <div class="recipe_grocery_list_checkboxes">
               <input
                 type="checkbox"
                 id="grocery1"
                 name="grocery1"
-                value="AllPurposeFLour"
+                value="Ingredient1"
               />
-              <label for="grocery1"> All Purpose Flour</label><br />
-
+              <label for="grocery1"> Ingredient 1</label><br />
               <input
                 type="checkbox"
                 id="grocery2"
                 name="grocery2"
-                value="InstantYeast"
+                value="Ingredient2"
               />
-              <label for="InstantYeast"> Instant Yeast</label><br />
-
+              <label for="grocery2"> Ingredient 2</label><br />
               <input
                 type="checkbox"
                 id="grocery3"
                 name="grocery3"
-                value="Salt"
+                value="Ingredient3"
               />
-              <label for="grocery3"> Salt</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery4"
-                name="grocery4"
-                value="OliveOil"
-              />
-              <label for="grocery4"> Olive Oil</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery5"
-                name="grocery5"
-                value="CrushedTomatoes"
-              />
-              <label for="grocery5"> Crushed Tomatoes</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery6"
-                name="grocery6"
-                value="DriedOregano"
-              />
-              <label for="grocery6"> Dried Oregano</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery7"
-                name="grocery7"
-                value="FreshMozarellaCheese"
-              />
-              <label for="grocery7"> Fresh Mozarella Cheese</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery8"
-                name="grocery8"
-                value="FreshBasilLeaves"
-              />
-              <label for="grocery8"> Fresh Basil Leaves</label><br />
-            </div>
-          </div>
-
-          <!-- Margherita -->
-          <div class="recipe_grocery_list">
-            <div>
-              <h3>Classic Margherita Pizza</h3>
-            </div>
-
-            <div class="recipe_grocery_list_checkboxes">
-              <input
-                type="checkbox"
-                id="grocery1"
-                name="grocery1"
-                value="AllPurposeFLour"
-              />
-              <label for="grocery1"> All Purpose Flour</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery2"
-                name="grocery2"
-                value="InstantYeast"
-              />
-              <label for="InstantYeast"> Instant Yeast</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery3"
-                name="grocery3"
-                value="Salt"
-              />
-              <label for="grocery3"> Salt</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery4"
-                name="grocery4"
-                value="OliveOil"
-              />
-              <label for="grocery4"> Olive Oil</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery5"
-                name="grocery5"
-                value="CrushedTomatoes"
-              />
-              <label for="grocery5"> Crushed Tomatoes</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery6"
-                name="grocery6"
-                value="DriedOregano"
-              />
-              <label for="grocery6"> Dried Oregano</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery7"
-                name="grocery7"
-                value="FreshMozarellaCheese"
-              />
-              <label for="grocery7"> Fresh Mozarella Cheese</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery8"
-                name="grocery8"
-                value="FreshBasilLeaves"
-              />
-              <label for="grocery8"> Fresh Basil Leaves</label><br />
-            </div>
-          </div>
-
-          <!-- Margherita -->
-          <div class="recipe_grocery_list">
-            <div>
-              <h3>Classic Margherita Pizza</h3>
-            </div>
-
-            <div class="recipe_grocery_list_checkboxes">
-              <input
-                type="checkbox"
-                id="grocery1"
-                name="grocery1"
-                value="AllPurposeFLour"
-              />
-              <label for="grocery1"> All Purpose Flour</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery2"
-                name="grocery2"
-                value="InstantYeast"
-              />
-              <label for="InstantYeast"> Instant Yeast</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery3"
-                name="grocery3"
-                value="Salt"
-              />
-              <label for="grocery3"> Salt</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery4"
-                name="grocery4"
-                value="OliveOil"
-              />
-              <label for="grocery4"> Olive Oil</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery5"
-                name="grocery5"
-                value="CrushedTomatoes"
-              />
-              <label for="grocery5"> Crushed Tomatoes</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery6"
-                name="grocery6"
-                value="DriedOregano"
-              />
-              <label for="grocery6"> Dried Oregano</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery7"
-                name="grocery7"
-                value="FreshMozarellaCheese"
-              />
-              <label for="grocery7"> Fresh Mozarella Cheese</label><br />
-
-              <input
-                type="checkbox"
-                id="grocery8"
-                name="grocery8"
-                value="FreshBasilLeaves"
-              />
-              <label for="grocery8"> Fresh Basil Leaves</label><br />
+              <label for="grocery3"> Ingredient 3</label><br />
             </div>
           </div>
         </div>
 
         <button>Clear list</button>
       </div>
-
-      <div class="recipes_added_toMealPrep">
-        <div class="recipes_added_toMealPrep_text">
-          <h2>Recipes added to Meal Prep</h2>
-        </div>
-
-        <div class="recipes_added_toMealPrep_cards">
-          <div class="recipe_card">
-            <a href="../Recipe/Recipe.html">
-              <img
-                src="/Assets/Food/MamalygaMujdei.png"
-                alt="Mamalyga with Mujdei Image"
-                height="260px"
-              />
-              <div class="recipe_card_info">
-                <div class="recipe_card_nametime">
-                  <p>Mamalyga with Mujdei</p>
-                  <div class="recipe_card_time">
-                    <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                    <p>90 minutes</p>
-                  </div>
-                </div>
-                <div class="recipe_card_difficulty">
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="recipe_card">
-            <a href="../Recipe/Recipe.html">
-              <img
-                src="/Assets/Food/MamalygaMujdei.png"
-                alt="Mamalyga with
-              Mujdei Image"
-                height="260px"
-              />
-              <div class="recipe_card_info">
-                <div class="recipe_card_nametime">
-                  <p>Mamalyga with Mujdei</p>
-                  <div class="recipe_card_time">
-                    <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                    <p>90 minutes</p>
-                  </div>
-                </div>
-                <div class="recipe_card_difficulty">
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="recipe_card">
-            <a href="../Recipe/Recipe.html">
-              <img
-                src="/Assets/Food/MamalygaMujdei.png"
-                alt="Mamalyga with Mujdei Image"
-                height="260px"
-              />
-              <div class="recipe_card_info">
-                <div class="recipe_card_nametime">
-                  <p>Mamalyga with Mujdei</p>
-                  <div class="recipe_card_time">
-                    <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                    <p>90 minutes</p>
-                  </div>
-                </div>
-                <div class="recipe_card_difficulty">
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="recipe_card">
-            <a href="../Recipe/Recipe.html">
-              <img
-                src="/Assets/Food/MamalygaMujdei.png"
-                alt="Mamalyga with Mujdei Image"
-                height="260px"
-              />
-              <div class="recipe_card_info">
-                <div class="recipe_card_nametime">
-                  <p>Mamalyga with Mujdei</p>
-                  <div class="recipe_card_time">
-                    <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                    <p>90 minutes</p>
-                  </div>
-                </div>
-                <div class="recipe_card_difficulty">
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="recipe_card">
-            <a href="../Recipe/Recipe.html">
-              <img
-                src="/Assets/Food/MamalygaMujdei.png"
-                alt="Mamalyga with Mujdei Image"
-                height="260px"
-              />
-              <div class="recipe_card_info">
-                <div class="recipe_card_nametime">
-                  <p>Mamalyga with Mujdei</p>
-                  <div class="recipe_card_time">
-                    <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                    <p>90 minutes</p>
-                  </div>
-                </div>
-                <div class="recipe_card_difficulty">
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="recipe_card">
-            <a href="../Recipe/Recipe.html">
-              <img
-                src="/Assets/Food/MamalygaMujdei.png"
-                alt="Mamalyga with Mujdei Image"
-                height="260px"
-              />
-              <div class="recipe_card_info">
-                <div class="recipe_card_nametime">
-                  <p>Mamalyga with Mujdei</p>
-                  <div class="recipe_card_time">
-                    <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                    <p>90 minutes</p>
-                  </div>
-                </div>
-                <div class="recipe_card_difficulty">
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="recipe_card">
-            <a href="../Recipe/Recipe.html">
-              <img
-                src="/Assets/Food/MamalygaMujdei.png"
-                alt="Mamalyga with Mujdei Image"
-                height="260px"
-              />
-              <div class="recipe_card_info">
-                <div class="recipe_card_nametime">
-                  <p>Mamalyga with Mujdei</p>
-                  <div class="recipe_card_time">
-                    <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                    <p>90 minutes</p>
-                  </div>
-                </div>
-                <div class="recipe_card_difficulty">
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="recipe_card">
-            <a href="../Recipe/Recipe.html">
-              <img
-                src="/Assets/Food/MamalygaMujdei.png"
-                alt="Mamalyga with Mujdei Image"
-                height="260px"
-              />
-              <div class="recipe_card_info">
-                <div class="recipe_card_nametime">
-                  <p>Mamalyga with Mujdei</p>
-                  <div class="recipe_card_time">
-                    <img src="/Assets/Etc/Time.svg" alt="Clock" />
-                    <p>90 minutes</p>
-                  </div>
-                </div>
-                <div class="recipe_card_difficulty">
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                  <img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
     </main>
 
-    <!-- Footer (Do not touch) -->
     <footer>
       <div class="keep_in_touch">
         <div class="keep_in_touch_top">
@@ -505,44 +111,10 @@
             alt="Need Help?"
             onclick="toggleChat()"
           />
-          <div class="keep_in_touch_top_bot close">
-            <div class="keep_in_touch_top_bot_toggle">
-              <button class="active" onclick="toggleChatSelect(event, 'chat')">
-                Chat Assistant
-              </button>
-              <button onclick="toggleChatSelect(event, 'calc')">
-                Calculator
-              </button>
-            </div>
-            <div class="keep_in_touch_top_bot_chat">
-              <h4>It's empty...</h4>
-              <input type="text" placeholder="Ask away..." />
-            </div>
-            <img
-              class="keep_in_touch_top_bot_calc close"
-              src="../../Assets/Etc/Coming.png"
-              width="170px"
-            />
-          </div>
-        </div>
-        <div class="keep_in_touch_bottom">
-          <div class="keep_in_touch_email">
-            <p>Contact Us - support@notenoughsalt.com</p>
-          </div>
-          <div class="keep_in_touch_social">
-            <img src="/Assets/Etc/Media/Instagram Fill.svg" alt="Instagram" />
-            <img src="/Assets/Etc/Media/Google Fill.svg" alt="Google" />
-            <img src="/Assets/Etc/Media/Pinterest Fill.svg" alt="Pinterest" />
-            <img src="/Assets/Etc/Media/Youtube Fill.svg" alt="YouTube" />
-            <p>@NotEnoughSalt</p>
-          </div>
-          <div class="keep_in_touch_etc">
-            <p>about</p>
-            <p>recipes</p>
-          </div>
         </div>
       </div>
     </footer>
+
     <script src="./MealPlan.js"></script>
     <script src="../../Basics/Chat.js"></script>
   </body>

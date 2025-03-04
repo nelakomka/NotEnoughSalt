@@ -1,11 +1,11 @@
 // Function checks if the user is logged in once the script loads.
-(function () {
+document.addEventListener("DOMContentLoaded", () => {
   const isLoggedIn = localStorage.getItem("isLoggedIn");
 
   if (!isLoggedIn || isLoggedIn !== "true") {
     window.location.href = "../Login/Login.html";
   }
-})();
+});
 
 document.addEventListener("DOMContentLoaded", async () => {
   const calendarEl = document.getElementById("calendar");
@@ -76,7 +76,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     selectable: true,
     dateClick: function (info) {
       selectedDate = info.dateStr;
-      alert(`Selected Date: ${selectedDate}`);
     },
   });
   calendar.render();

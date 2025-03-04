@@ -1,3 +1,27 @@
+/* Styled Alert Pop-ups */
+.alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f8efdf;
+  color: #522a12;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1000;
+  display: none;
+}
+
+.custom-alert.show {
+  display: block;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+
 .recipe-select-container {
   display: flex;
   align-items: flex-end;

@@ -1,9 +1,34 @@
+//Profile
+
 document.addEventListener("DOMContentLoaded", async () => {
-  // Check if user is logged in
   const isLoggedIn = localStorage.getItem("isLoggedIn");
+  const loginOption = document.getElementById("login-option");
+  const logoutOption = document.getElementById("logout-option");
+
+  // Checks if user is logged in
   if (!isLoggedIn || isLoggedIn !== "true") {
-    window.location.href = "../Login/Login.html";
+    document.querySelector(
+      "main"
+    ).innerHTML = `<p>Please <a href="../Login/Login.html">log in</a> to access your profile.</p>`;
+
+    // Show Login, Hide Logout in dropdown
+    if (loginOption && logoutOption) {
+      loginOption.style.display = "block";
+      logoutOption.style.display = "none";
+    }
     return;
+  }
+
+  // If logged in, show Logout option and hide Login
+  if (loginOption && logoutOption) {
+    loginOption.style.display = "none";
+    logoutOption.style.display = "block";
+
+    logoutOption.addEventListener("click", () => {
+      localStorage.removeItem("isLoggedIn");
+      localStorage.removeItem("userEmail");
+      window.location.href = "../Login/Login.html";
+    });
   }
 
   // Profile Page Tabs Logic
@@ -36,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   try {
-    // Fetch all recipes from db.json (adjust path as needed)
+    // Fetch all recipes from database json file
     const response = await fetch("/db.json");
     if (!response.ok) {
       throw new Error("Failed to load recipes.");
