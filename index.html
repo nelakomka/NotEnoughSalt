@@ -16,13 +16,13 @@
       <div class="navbar">
         <ul>
           <li>
-            <a href="./Pages/FindRecipes/FindRecipes.html">recipes</a>
+            <a href="./Pages/FindRecipes/FindRecipes.html">Recipes</a>
           </li>
           <li>
-            <a href="./Pages/MealPlan/MealPlan.html">meal plan</a>
+            <a href="./Pages/MealPlan/MealPlan.html">Meal Plan</a>
           </li>
           <li>
-            <a href="./Pages/Newsletter/Newsletter.html">news</a>
+            <a href="./Pages/Newsletter/Newsletter.html">News</a>
           </li>
           <li>
             <a href="/">
@@ -34,13 +34,13 @@
             </a>
           </li>
           <li>
-            <a href="./Pages/About/About.html">about</a>
+            <a href="./Pages/About/About.html">About</a>
           </li>
           <li>
-            <a href="./Pages/FAQs/faq.html">faqs</a>
+            <a href="./Pages/FAQs/faq.html">FAQs</a>
           </li>
           <li>
-            <a href="./Pages/Login/Login.html">profile</a>
+            <a href="./Pages/Login/Login.html">Profile</a>
           </li>
         </ul>
       </div>
@@ -51,9 +51,10 @@
     <main>
       <div>
         <div class="search_bar">
-          <input class="search_bar_input" type="text" placeholder="Search.." />
+          <input class="search_bar_input" type="text" placeholder="Search..." />
         </div>
 
+      <div class="page_container">
         <div class="picks_of_the_week_images">
           <div class="picks_of_the_week_image">
             <div class="picks_of_the_week_text">
@@ -64,8 +65,8 @@
               <img
                 src="./Assets/Food/Crepes.jpg"
                 alt="Crepes Image"
-                width="550px"
-                height="480px"
+                width="687px"
+                height="590px"
               />
             </a>
           </div>
@@ -74,16 +75,16 @@
               <img
                 src="./Assets/Food/PastaCarbonara.jpg"
                 alt="Carbonara Image"
-                width="250px"
-                height="223px"
+                width="312px"
+                height="278px"
               />
             </a>
             <a href="./Pages/Recipe/Recipe.html?recipeId=12">
               <img
                 src="./Assets/Food/BajaShrimpTacos.jpg"
                 alt="Baja Shrimp Tacos Image"
-                width="250px"
-                height="223px"
+                width="312px"
+                height="278px"
               />
             </a>
           </div>
@@ -174,19 +175,7 @@
         <div class="by_category">
           <h2>By Category!</h2>
  
- 
           <div class="by_category_categories">
-            <div class="by_category_all">
-              <a href="./Pages/Recipe/Recipe.html">
-                <img
-                  src="./Assets/HomeCategories/veggietarian.svg"
-                  alt="Vegetarian Image"
-                />
-              </a>
-              <p>Vegetarian</p>
-            </div>
- 
- 
             <div class="by_category_all">
               <a href="./Pages/Recipe/Recipe.html">
                 <img
@@ -197,6 +186,15 @@
               <p>Breakfast</p>
             </div>
  
+            <div class="by_category_all">
+              <a href="./Pages/Recipe/Recipe.html">
+                <img
+                  src="./Assets/HomeCategories/lunch.svg"
+                  alt="Lunch Image"
+                />
+              </a>
+              <p>Lunch</p>
+            </div>
  
             <div class="by_category_all">
               <a href="./Pages/Recipe/Recipe.html">
@@ -208,7 +206,6 @@
               <p>Dinner</p>
             </div>
  
- 
             <div class="by_category_all">
               <a href="./Pages/Recipe/Recipe.html">
                 <img
@@ -216,9 +213,8 @@
                   alt="Desert Image"
                 />
               </a>
-              <p>Desert</p>
+              <p>Dessert</p>
             </div>
- 
  
             <div class="by_category_all">
               <a href="./Pages/Recipe/Recipe.html">
@@ -235,13 +231,11 @@
  
         <div class="newsletter">
           <h2>Join Our Newsletter!</h2>
-          <div class="newsletter_text_input">
             <p>
               Stay in the loop! Join our newsletter for exclusive updates,
               special offers, and the latest insights delivered straight to your
               inbox. Be the first to know about new recipes. Don't miss out!
             </p>
- 
  
             <form onsubmit="sendEmail(event)">
               <label for="email"></label>
@@ -253,12 +247,12 @@
               />
               <button class="signupbtn" type="submit">Sign Up</button>
             </form>
-          </div>
         </div>
       </div>
     </main>
       </div>
     </main>
+      </div>
 
     <!-- Footer (Do not touch) -->
     <footer>
@@ -302,13 +296,14 @@
             <p>@NotEnoughSalt</p>
           </div>
           <div class="keep_in_touch_etc">
-            <a href="./Pages/About/About.html">about</a>
-            <a href="./Pages/FindRecipes/FindRecipes.html">recipes</a>
+            <a href="./Pages/About/About.html">About</a>
+            <a href="./Pages/FindRecipes/FindRecipes.html">Recipes</a>
           </div>
         </div>
       </div>
     </footer>
 
     <script src="./home.js"></script>
+    <script src="./Basics/Chat.js"></script>
   </body>
 </html>
