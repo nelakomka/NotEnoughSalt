@@ -28,14 +28,9 @@ const login = async (event) => {
       throw new Error("Login failed. Please try again.");
     }
 
-    const data = await response.json();
+    // window.location.assign('../Profile/Profile.html'); // Redirect to profile page
 
-    // Store login status and user data in localStorage
-    localStorage.setItem("isLoggedIn", "true");
-    localStorage.setItem("userEmail", email);
-
-    // Redirect to Profile Page
-    window.location.assign("../Profile/Profile.html");
+    //window.location.assign('../MealPlan/MealPlan.html');  // Redirect to the meal plan page
   } catch (error) {
     console.error(error);
   }

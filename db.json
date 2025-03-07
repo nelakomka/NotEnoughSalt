@@ -1,5 +1,6 @@
 {
   "emails": [],
+  "feedback": [],
   "users": [
     {
       "email": "vsdfvds@mail.ru",
@@ -12,6 +13,12 @@
       "password": "$2a$10$62QfpE0FWAaCtWGOqAQmi.oxS6EC.hySyGkescidQsK51nOt1dfPy",
       "name": "Thrisha Armstrong",
       "id": 2
+    },
+    {
+      "email": "nelakomka@gmail.com",
+      "password": "$2a$10$mjvhQ7zWpYCJ5tCdk9XJbuxXRL6QFQ.dEj/Z3vfpJnwoMUg2Ap086",
+      "name": "nelakomka",
+      "id": 2
     }
   ],
   "recipes": [
@@ -22,10 +29,7 @@
       "tags": {
         "cuisine": "Italian",
         "region": "Europe",
-        "mealTypes": [
-          "Lunch",
-          "Dinner"
-        ],
+        "mealTypes": ["Lunch", "Dinner"],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "Under 30 minutes",
@@ -94,10 +98,7 @@
       "tags": {
         "cuisine": "Romanian",
         "region": "Eastern Europe",
-        "mealTypes": [
-          "Lunch",
-          "Dinner"
-        ],
+        "mealTypes": ["Lunch", "Dinner"],
         "spicyLevel": 0,
         "difficulty": 2,
         "cookingTime": "1 hour",
@@ -141,11 +142,7 @@
           "quantity": "a pinch"
         },
         {
-          "name": [
-            "Extra: Fish",
-            " Feta cheese",
-            " Sour cream"
-          ]
+          "name": ["Extra: Fish", " Feta cheese", " Sour cream"]
         }
       ],
       "steps": [
@@ -183,10 +180,7 @@
       "tags": {
         "cuisine": "Pakistani",
         "region": "Asia",
-        "mealTypes": [
-          "Lunch",
-          "Dinner"
-        ],
+        "mealTypes": ["Lunch", "Dinner"],
         "spicyLevel": 3,
         "difficulty": 2,
         "cookingTime": "1 hour 30 minutes",
@@ -325,11 +319,7 @@
       "tags": {
         "cuisine": "Russian",
         "region": "Eastern Europe",
-        "mealTypes": [
-          "Breakfast",
-          "Lunch",
-          "Dessert"
-        ],
+        "mealTypes": ["Breakfast", "Lunch", "Dessert"],
         "spicyLevel": 0,
         "difficulty": 2,
         "cookingTime": "35 minutes",
@@ -400,10 +390,7 @@
       "tags": {
         "cuisine": "Italian",
         "region": "Europe",
-        "mealTypes": [
-          "Lunch",
-          "Dinner"
-        ],
+        "mealTypes": ["Lunch", "Dinner"],
         "spicyLevel": 0,
         "difficulty": 2,
         "cookingTime": "1 hour 30 minutes",
@@ -514,9 +501,7 @@
       "tags": {
         "cuisine": "German",
         "region": "Europe",
-        "mealTypes": [
-          "Dinner"
-        ],
+        "mealTypes": ["Dinner"],
         "spicyLevel": 0,
         "difficulty": 3,
         "cookingTime": "~3-4 hours (plus overnight marinating 72-120 hours)",
@@ -645,10 +630,7 @@
       "tags": {
         "cuisine": "Korean",
         "region": "Asia",
-        "mealTypes": [
-          "Lunch",
-          "Dinner"
-        ],
+        "mealTypes": ["Lunch", "Dinner"],
         "spicyLevel": 2,
         "difficulty": 2,
         "cookingTime": "40 minutes",
@@ -673,11 +655,7 @@
         {
           "name": "Meat",
           "quantity": "1 cup",
-          "examples": [
-            "beef",
-            "chicken",
-            "tofu"
-          ]
+          "examples": ["beef", "chicken", "tofu"]
         },
         {
           "name": "Fried Eggs",
@@ -755,10 +733,7 @@
       "history": "This vibrant salad is a staple in Mediterranean cuisine, showcasing fresh ingredients and flavors. It's often enjoyed as a light meal or side dish and is a great example of the region's emphasis on vegetables, legumes, and healthy fats.",
       "tags": {
         "cuisine": "Mediterranean",
-        "mealTypes": [
-          "Lunch",
-          "Dinner"
-        ],
+        "mealTypes": ["Lunch", "Dinner"],
         "dietaryPreference": "Vegan",
         "spicyLevel": 0,
         "difficulty": 1,
@@ -856,10 +831,7 @@
       "tags": {
         "cuisine": "Chinese",
         "region": "Asia",
-        "mealTypes": [
-          "Lunch",
-          "Dinner"
-        ],
+        "mealTypes": ["Lunch", "Dinner"],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "25 minutes",
@@ -955,11 +927,7 @@
       "tags": {
         "cuisine": "Cuban",
         "region": "North America",
-        "mealTypes": [
-          "Appetizer",
-          "Lunch",
-          "Dinner"
-        ],
+        "mealTypes": ["Appetizer", "Lunch", "Dinner"],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "35 minutes",
@@ -1087,10 +1055,7 @@
       "tags": {
         "cuisine": "American",
         "region": "North America",
-        "mealTypes": [
-          "Lunch",
-          "Dinner"
-        ],
+        "mealTypes": ["Lunch", "Dinner"],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "30 minutes",
@@ -1221,10 +1186,7 @@
       "tags": {
         "cuisine": "Mexican",
         "region": "North America",
-        "mealTypes": [
-          "Lunch",
-          "Dinner"
-        ],
+        "mealTypes": ["Lunch", "Dinner"],
         "spicyLevel": 1,
         "difficulty": 2,
         "cookingTime": "25 minutes",
@@ -1387,15 +1349,8 @@
       "tags": {
         "cuisine": "American",
         "region": "North America",
-        "mealTypes": [
-          "Lunch",
-          "Snack"
-        ],
-        "dietaryPreference": [
-          "Under 30 Minutes",
-          "Gluten-Free",
-          "Simple"
-        ],
+        "mealTypes": ["Lunch", "Snack"],
+        "dietaryPreference": ["Under 30 Minutes", "Gluten-Free", "Simple"],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "10 minutes",
@@ -1438,13 +1393,8 @@
       "tags": {
         "cuisine": "Australian",
         "region": "Oceania",
-        "mealTypes": [
-          "Breakfast",
-          "Snack"
-        ],
-        "dietaryPreference": [
-          "Under 30 Minutes"
-        ],
+        "mealTypes": ["Breakfast", "Snack"],
+        "dietaryPreference": ["Under 30 Minutes"],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "10 minutes",
@@ -1493,13 +1443,8 @@
       "tags": {
         "cuisine": "American, European",
         "region": "North America, Europe",
-        "mealTypes": [
-          "Lunch",
-          "Dinner"
-        ],
-        "dietaryPreference": [
-          "Under 30 Minutes"
-        ],
+        "mealTypes": ["Lunch", "Dinner"],
+        "dietaryPreference": ["Under 30 Minutes"],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "15 minutes",
@@ -1553,12 +1498,8 @@
       "tags": {
         "cuisine": "Chinese-American",
         "region": "Asia",
-        "mealTypes": [
-          "Dinner"
-        ],
-        "dietaryPreference": [
-          "Quick Meals"
-        ],
+        "mealTypes": ["Dinner"],
+        "dietaryPreference": ["Quick Meals"],
         "spicyLevel": 1,
         "difficulty": 1,
         "cookingTime": "25 minutes",
@@ -1568,9 +1509,7 @@
         {
           "name": "Lo Mein Noodles",
           "quantity": "8 oz",
-          "alternatives": [
-            "spaghetti"
-          ]
+          "alternatives": ["spaghetti"]
         },
         {
           "name": "Beef",
@@ -1684,14 +1623,8 @@
       "tags": {
         "cuisine": "American",
         "region": "North America",
-        "mealTypes": [
-          "Lunch",
-          "Dinner"
-        ],
-        "dietaryPreference": [
-          "Quick",
-          "Beginner-Friendly"
-        ],
+        "mealTypes": ["Lunch", "Dinner"],
+        "dietaryPreference": ["Quick", "Beginner-Friendly"],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "20 minutes",

@@ -33,3 +33,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+//form send to database
+const sendFeedback = (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+
+  fetch('http://localhost:3000/feedback', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' }, // headers in json
+    body: JSON.stringify(data), // all fields in one line
+  });
+
+  window.location.assign('../ThankYou/ThankYou.html');
+};
