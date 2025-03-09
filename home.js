@@ -1,4 +1,5 @@
 const getExploreMore = document.querySelector('.explore_more_images');
+const getByCategoryAll = document.querySelectorAll('.by_category_all');
 
 const sendEmail = (event) => {
   event.preventDefault();
@@ -60,3 +61,43 @@ async function displayRandomRecipe() {
 }
 
 displayRandomRecipe();
+
+//random recipes for ecah category links
+async function getRandomRecipeByCategory() {
+  const response = await fetch('http://localhost:3000/recipes', {
+    method: 'GET',
+  });
+
+  const data = await response.json();
+
+  const breakfast = filtratedMealType('Breakfast', data);
+  const lunch = filtratedMealType('Lunch', data);
+  const dinner = filtratedMealType('Dinner', data);
+  const dessert = filtratedMealType('Dessert', data);
+
+  const randomizedBreakfast = breakfast.toSorted(() => Math.random() - 0.5)[0];
+  const randomizedLunch = lunch.toSorted(() => Math.random() - 0.5)[0];
+  const randomizedDinner = dinner.toSorted(() => Math.random() - 0.5)[0];
+  const randomizedDessert = dessert.toSorted(() => Math.random() - 0.5)[0];
+
+  const arrayIds = [
+    randomizedBreakfast,
+    randomizedLunch,
+    randomizedDinner,
+    randomizedDessert,
+  ];
+
+  for (let i = 0; i < arrayIds.length; i++) {
+    const element = arrayIds[i];
+
+    getByCategoryAll[i]
+      .querySelector('a')
+      .setAttribute('href', `/Pages/Recipe/Recipe.html?recipeId=${element.id}`);
+  }
+}
+
+function filtratedMealType(category, data) {
+  return data.filter((elem) => elem.tags.mealTypes.includes(category));
+}
+
+getRandomRecipeByCategory();

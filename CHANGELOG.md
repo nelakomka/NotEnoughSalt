@@ -8,6 +8,28 @@ Major (1.0.0) – Significant updates, breaking changes.
 Minor (1.1.0) – New features, but backward-compatible.
 Patch (1.1.1) – Bug fixes, security patches.
 
+## [2.0.0] - 2025-03-06, CL
+
+### Added
+
+- Login through token and log out
+- Pages (profile and meal prep) behind a login wall
+- Recipe submission to db.json (no image)
+- Random recipes on home page (explore more, 4 recipes)
+- Random recipe on the home page in the "by category" (when clicked on category linked to a random recipe)
+- Random recipes on the individual recipe page (3 recipes)
+
+### Fixed
+
+- Fixed heart colors (no fill and fill)
+- Each random recipe links to their recipe page
+
+## [1.1.2] - 2025-03-06, CL
+
+### Added
+
+- Feedback now sends to db.json
+
 ## [1.1.1] - 2025-03-04, TA
 
 ### Added
@@ -51,6 +73,14 @@ Patch (1.1.1) – Bug fixes, security patches.
 
 - Created a JavaScript file (MealPlan.js) that restricts access to the Meal Plan page by checking a login flag.
 - Updated Login.js to set a login flag in localStorage upon successful login, ensuring only authenticated users can access protected pages.
+
+## [1.0.2] - 2025-02-13, CL
+
+### Fixed
+
+- Reorganized db.json recipe collection for standardized display
+- Newsletter form position fixed and submission to db.json
+- Auth system
 
 ## [1.0.1] - 2025-02-09, TA
 
