@@ -297,10 +297,10 @@
   }
 }
 }
+
 /* Heart Icon */ 
 .heart-icon {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  color: #522a12;
 }
