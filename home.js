@@ -1,3 +1,5 @@
+const getExploreMore = document.querySelector('.explore_more_images');
+
 const sendEmail = (event) => {
   event.preventDefault();
 
@@ -32,3 +34,29 @@ document.addEventListener('DOMContentLoaded', () => {
     window.location.href = `./Pages/FindRecipes/FindRecipes.html?${queryParams.toString()}`;
   });
 });
+
+//randomizing 4 recipes from db
+async function displayRandomRecipe() {
+  const response = await fetch('http://localhost:3000/recipes', {
+    method: 'GET',
+  });
+
+  const data = await response.json();
+
+  const randomizedRecipes = data
+    .toSorted(() => Math.random() - 0.5)
+    .slice(0, 4);
+
+  randomizedRecipes.forEach((recipe) => {
+    const recipeCard = document.createElement('div');
+    recipeCard.classList.add('recipe_card');
+    recipeCard.innerHTML = `
+            <a href="/Pages/Recipe/Recipe.html?recipeId=${recipe.id}">
+                <img src="${recipe.image}" alt="${recipe.name}" height="230px" width="230px"/>
+            </a>
+        `;
+    getExploreMore.appendChild(recipeCard);
+  });
+}
+
+displayRandomRecipe();
