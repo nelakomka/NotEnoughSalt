@@ -1,9 +1,8 @@
 /* Profile: General CSS */
 h2 {
   text-align: center;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
-
 
 .buttons_controls {
   display: flex;
@@ -54,17 +53,15 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-  
 }
 
 .change_form_and_picture {
   display: flex;
   justify-content: center;
   border: 1px solid #79b3e6;
-    border-radius: 5px;
-    padding: 25px 25px;
-    max-width: 1000px;
+  border-radius: 5px;
+  padding: 25px 25px;
+  max-width: 1000px;
   width: 100%;
   margin: 60px auto;
 }
@@ -95,14 +92,14 @@ h2 {
   form {
     display: flex;
     flex-direction: column;
-    gap: 20px; 
+    gap: 20px;
     padding: 55px 25px;
   }
 
   .form-group {
     display: flex;
-    gap: 10px; 
-    align-items: center; 
+    gap: 10px;
+    align-items: center;
   }
 
   input {
@@ -115,8 +112,8 @@ h2 {
     cursor: pointer;
   }
 
-  input[type="submit"] {
-    width: auto; 
+  input[type='submit'] {
+    width: auto;
     background-color: #b8b880;
     color: #522a12;
     padding: 1px 15px;
@@ -126,7 +123,6 @@ h2 {
     font-size: 15px;
   }
 }
-
 
 .recipe_preferences {
   background-color: #b8b880;
@@ -221,11 +217,10 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(25% - 25px); 
+  width: calc(25% - 25px);
   background-color: #f8efdf;
   padding: 10px;
   border-radius: 5px;
-
 }
 
 .recipe_card:hover {
@@ -285,7 +280,7 @@ h2 {
 }
 
 .recipes_text h2 {
-margin-bottom: 20px; /* Adds space between title and button */
+  margin-bottom: 20px; /* Adds space between title and button */
 }
 
 .upload_recipe_button {
@@ -307,7 +302,6 @@ margin-bottom: 20px; /* Adds space between title and button */
 .upload_recipe_button button:hover {
   background-color: #e46414;
 }
-
 
 /* Testing: Responsive layout for smaller screens */
 @media (max-width: 1200px) {
@@ -342,6 +336,18 @@ margin-bottom: 20px; /* Adds space between title and button */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   z-index: 1;
+
+  span {
+    cursor: pointer;
+    color: #522a12;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      background-color: #e7cc61;
+    }
+  }
 }
 
 .profile-dropdown-content a {

@@ -14,12 +14,12 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var calendarEl = document.getElementById("calendar");
+      document.addEventListener('DOMContentLoaded', function () {
+        var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: "dayGridMonth",
+          initialView: 'dayGridMonth',
           headerToolbar: {
-            start: "dayGridMonth,timeGridWeek",
+            start: 'dayGridMonth,timeGridWeek',
           },
         });
         calendar.render();
@@ -153,5 +153,6 @@
 
     <script src="./MealPlan.js"></script>
     <script src="../../Basics/Chat.js"></script>
+    <script src="../../auth.js"></script>
   </body>
 </html>

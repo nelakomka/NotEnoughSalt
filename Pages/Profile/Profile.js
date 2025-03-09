@@ -1,59 +1,31 @@
-document.addEventListener("DOMContentLoaded", async () => {
-  const isLoggedIn = localStorage.getItem("isLoggedIn");
-  const loginOption = document.getElementById("login-option");
-  const logoutOption = document.getElementById("logout-option");
-
-  // Handle login state
-  if (!isLoggedIn || isLoggedIn !== "true") {
-    document.querySelector(
-      "main"
-    ).innerHTML = `<p>Please <a href="../Login/Login.html">log in</a> to access your profile.</p>`;
-
-    if (loginOption && logoutOption) {
-      loginOption.style.display = "block";
-      logoutOption.style.display = "none";
-    }
-    return;
-  }
-
-  if (loginOption && logoutOption) {
-    loginOption.style.display = "none";
-    logoutOption.style.display = "block";
-
-    logoutOption.addEventListener("click", () => {
-      localStorage.removeItem("isLoggedIn");
-      localStorage.removeItem("userEmail");
-      window.location.href = "../Login/Login.html";
-    });
-  }
-
+document.addEventListener('DOMContentLoaded', async () => {
   // Profile Page Tabs Logic
-  const tabs = document.querySelectorAll(".tab-button");
-  const categories = document.querySelectorAll(".profile-category");
+  const tabs = document.querySelectorAll('.tab-button');
+  const categories = document.querySelectorAll('.profile-category');
 
   tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      tabs.forEach((t) => t.classList.remove("active"));
-      categories.forEach((category) => category.classList.remove("active"));
+    tab.addEventListener('click', () => {
+      tabs.forEach((t) => t.classList.remove('active'));
+      categories.forEach((category) => category.classList.remove('active'));
 
-      tab.classList.add("active");
+      tab.classList.add('active');
 
-      const categoryId = tab.getAttribute("data-category");
+      const categoryId = tab.getAttribute('data-category');
       const activeCategory = document.getElementById(categoryId);
-      if (activeCategory) activeCategory.classList.add("active");
+      if (activeCategory) activeCategory.classList.add('active');
     });
   });
 
   // Load Saved Recipes
-  const savedRecipesContainer = document.querySelector(".recipes_grid");
-  let savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+  const savedRecipesContainer = document.querySelector('.recipes_grid');
+  let savedRecipes = JSON.parse(localStorage.getItem('savedRecipes')) || [];
 
   if (savedRecipes.length === 0) {
-    savedRecipesContainer.innerHTML = "<p>No saved recipes yet.</p>";
+    savedRecipesContainer.innerHTML = '<p>No saved recipes yet.</p>';
   } else {
     try {
-      const response = await fetch("/db.json");
-      if (!response.ok) throw new Error("Failed to load recipes.");
+      const response = await fetch('/db.json');
+      if (!response.ok) throw new Error('Failed to load recipes.');
 
       const data = await response.json();
       const allRecipes = data.recipes;
@@ -61,15 +33,15 @@ document.addEventListener("DOMContentLoaded", async () => {
       savedRecipesContainer.innerHTML = savedRecipes
         .map((savedRecipe) => {
           let recipeData = allRecipes.find(
-            (recipe) => String(recipe.id) === String(savedRecipe.id)
+            (recipe) => String(recipe.id) === String(savedRecipe.id),
           );
 
-          if (!recipeData) return "";
+          if (!recipeData) return '';
 
           return `
             <div class="recipe_card">
               <a href="../Recipe/Recipe.html?recipeId=${encodeURIComponent(
-                recipeData.id
+                recipeData.id,
               )}">
                 <img src="${recipeData.image}" alt="${
             recipeData.name
@@ -84,49 +56,49 @@ document.addEventListener("DOMContentLoaded", async () => {
             </div>
           `;
         })
-        .join("");
+        .join('');
 
-      document.querySelectorAll(".delete-recipe").forEach((btn) => {
-        btn.addEventListener("click", (e) => {
+      document.querySelectorAll('.delete-recipe').forEach((btn) => {
+        btn.addEventListener('click', (e) => {
           const recipeIdToRemove = e.target.dataset.recipeId;
           savedRecipes = savedRecipes.filter(
-            (recipe) => String(recipe.id) !== String(recipeIdToRemove)
+            (recipe) => String(recipe.id) !== String(recipeIdToRemove),
           );
 
-          localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
+          localStorage.setItem('savedRecipes', JSON.stringify(savedRecipes));
           e.target.parentElement.remove();
 
           if (savedRecipes.length === 0) {
-            savedRecipesContainer.innerHTML = "<p>No saved recipes yet.</p>";
+            savedRecipesContainer.innerHTML = '<p>No saved recipes yet.</p>';
           }
         });
       });
     } catch (error) {
-      console.error("Error loading saved recipes:", error);
+      console.error('Error loading saved recipes:', error);
       savedRecipesContainer.innerHTML =
-        "<p>Failed to load saved recipes. Please try again later.</p>";
+        '<p>Failed to load saved recipes. Please try again later.</p>';
     }
   }
 
   // Profile Picture Update
-  const profileImage = document.querySelector(".change_image img");
-  const imageUploadBtn = document.querySelector(".change_image button");
+  const profileImage = document.querySelector('.change_image img');
+  const imageUploadBtn = document.querySelector('.change_image button');
 
-  const savedProfileImage = localStorage.getItem("profileImage");
+  const savedProfileImage = localStorage.getItem('profileImage');
   if (savedProfileImage) profileImage.src = savedProfileImage;
 
-  imageUploadBtn.addEventListener("click", () => {
-    const input = document.createElement("input");
-    input.type = "file";
-    input.accept = "image/*";
+  imageUploadBtn.addEventListener('click', () => {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
 
-    input.addEventListener("change", (event) => {
+    input.addEventListener('change', (event) => {
       const file = event.target.files[0];
       if (file) {
         const reader = new FileReader();
         reader.onload = (e) => {
           profileImage.src = e.target.result;
-          localStorage.setItem("profileImage", e.target.result);
+          localStorage.setItem('profileImage', e.target.result);
         };
         reader.readAsDataURL(file);
       }
@@ -136,55 +108,55 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   // Name and Password Update
-  const nameInput = document.getElementById("name");
-  const passwordInput = document.getElementById("password");
+  const nameInput = document.getElementById('name');
+  const passwordInput = document.getElementById('password');
 
-  const savedName = localStorage.getItem("userName");
+  const savedName = localStorage.getItem('userName');
   if (savedName) nameInput.value = savedName;
 
   document
-    .querySelector(".change_settings form")
-    .addEventListener("submit", (event) => {
+    .querySelector('.change_settings form')
+    .addEventListener('submit', (event) => {
       event.preventDefault();
 
       const newName = nameInput.value.trim();
       const newPassword = passwordInput.value.trim();
 
       if (newName) {
-        localStorage.setItem("userName", newName);
-        alert("Profile name updated!");
+        localStorage.setItem('userName', newName);
+        alert('Profile name updated!');
       }
 
       if (newPassword) {
         alert(
-          "Password updated! (This should be handled securely in a backend)"
+          'Password updated! (This should be handled securely in a backend)',
         );
       }
     });
 
   // Recipe Preferences
   const preferenceCheckboxes = document.querySelectorAll(
-    ".recipe_prefrence_lists_checkboxes input[type='checkbox']"
+    ".recipe_prefrence_lists_checkboxes input[type='checkbox']",
   );
   const savePreferencesBtn = document.querySelector(
-    ".recipe_preferences button"
+    '.recipe_preferences button',
   );
 
   const savedPreferences =
-    JSON.parse(localStorage.getItem("recipePreferences")) || [];
+    JSON.parse(localStorage.getItem('recipePreferences')) || [];
   preferenceCheckboxes.forEach((checkbox) => {
     if (savedPreferences.includes(checkbox.value)) checkbox.checked = true;
   });
 
-  savePreferencesBtn.addEventListener("click", () => {
+  savePreferencesBtn.addEventListener('click', () => {
     const selectedPreferences = [...preferenceCheckboxes]
       .filter((checkbox) => checkbox.checked)
       .map((checkbox) => checkbox.value);
 
     localStorage.setItem(
-      "recipePreferences",
-      JSON.stringify(selectedPreferences)
+      'recipePreferences',
+      JSON.stringify(selectedPreferences),
     );
-    alert("Recipe preferences saved!");
+    alert('Recipe preferences saved!');
   });
 });

@@ -1,13 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const isLoggedIn = localStorage.getItem("isLoggedIn");
-
-  // If already logged in, redirect to Profile page
-  if (isLoggedIn === "true") {
-    window.location.href = "../Profile/Profile.html";
-  }
-});
-
-const loginForm = document.getElementById("my-login-form");
+const loginForm = document.getElementById('my-login-form');
 
 const login = async (event) => {
   event.preventDefault();
@@ -16,24 +7,26 @@ const login = async (event) => {
   const { email, password } = Object.fromEntries(formData);
 
   try {
-    const response = await fetch("http://localhost:3000/login", {
-      method: "POST",
+    const response = await fetch('http://localhost:3000/login', {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({ email, password }),
     });
 
+    const data = await response.json();
+
     if (!response.ok) {
-      throw new Error("Login failed. Please try again.");
+      throw new Error('Login failed. Please try again.');
     }
 
-    // window.location.assign('../Profile/Profile.html'); // Redirect to profile page
+    localStorage.setItem('user', JSON.stringify(data));
 
-    //window.location.assign('../MealPlan/MealPlan.html');  // Redirect to the meal plan page
+    window.location.replace('/Pages/Profile/Profile.html');
   } catch (error) {
     console.error(error);
   }
 };
 
-loginForm.addEventListener("submit", login);
+loginForm.addEventListener('submit', login);
