@@ -7,6 +7,7 @@ const getRecipeIngredients = document.querySelector('.recipe_ingredients');
 const getRecipeImage = document.querySelector('.recipe_image_img');
 const getRecipeInstructions = document.querySelector('.recipe_instructions');
 const heartIcon = document.querySelector('.heart-icon');
+const getRecipeContainer = document.querySelector('.recipe_container');
 
 // Retrieve recipe ID from URL
 const recipeId = new URLSearchParams(window.location.search).get('recipeId');
@@ -85,6 +86,7 @@ const handleSaveRecipe = (recipe) => {
     } else {
       savedRecipes = savedRecipes.filter((r) => r.id !== recipe.id);
       heartIcon.src = '/Assets/Etc/RecipeIcons/heart-regular.svg';
+      alert('Recipe removed from saved recipes.');
     }
 
     localStorage.setItem('savedRecipes', JSON.stringify(savedRecipes));
@@ -93,3 +95,66 @@ const handleSaveRecipe = (recipe) => {
 
 // Load and display the recipe
 document.addEventListener('DOMContentLoaded', () => displayRecipe(recipeId));
+
+// Generate Difficulty Icons
+const generateDifficultyIcons = (difficulty) => {
+  let icons = '';
+  for (let i = 0; i < difficulty; i++) {
+    icons += `<img src="/Assets/Etc/Saltshaker.svg" alt="Saltshaker" />`;
+  }
+  return icons;
+};
+
+// Generate Spice Level Icons
+const generateSpicyIcons = (spicyLevel) => {
+  let icons = '';
+  for (let i = 0; i < spicyLevel; i++) {
+    icons += `<img src="/Assets/Etc/flame.svg" alt="Flame" />`;
+  }
+  return icons;
+};
+
+//randomizing 3 recipes from db
+async function displayRandomRecipe() {
+  const response = await fetch('http://localhost:3000/recipes', {
+    method: 'GET',
+  });
+
+  const data = await response.json();
+
+  const randomizedRecipes = data
+    .toSorted(() => Math.random() - 0.5)
+    .slice(0, 3);
+
+  randomizedRecipes.forEach((recipe) => {
+    const recipeCard = document.createElement('div');
+    recipeCard.classList.add('recipe_card');
+    recipeCard.innerHTML = `
+            <a href="../Recipe/Recipe.html?recipeId=${recipe.id}">
+                <img src="${recipe.image}" alt="${
+      recipe.name
+    }" height="230px" width="230px"/>
+                <div class="recipe_card_info">
+                    <div class="recipe_card_name_time">
+                        <p>${recipe.name}</p>
+                        <div class="recipe_card_time">
+                            <img src="/Assets/Etc/Time.svg" alt="Clock" />
+                            <p>${recipe.tags.cookingTime}</p>
+                        </div>
+                    </div>
+                    <div>                      
+                        <div class="recipe_card_difficulty">${generateDifficultyIcons(
+                          recipe.tags.difficulty,
+                        )}</div>
+                        <div class="recipe_card_spicy">${generateSpicyIcons(
+                          recipe.tags.spicyLevel,
+                        )}</div>
+                    </div>
+                </div>
+            </a>
+        `;
+    getRecipeContainer.appendChild(recipeCard);
+  });
+}
+
+displayRandomRecipe();
