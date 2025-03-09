@@ -52,7 +52,7 @@ async function displayRandomRecipe() {
     recipeCard.classList.add('recipe_card');
     recipeCard.innerHTML = `
             <a href="/Pages/Recipe/Recipe.html?recipeId=${recipe.id}">
-                <img src="${recipe.image}" alt="${recipe.name}" height="230px" width="230px"/>
+                <img src="${recipe.image}" alt="${recipe.name}" height="250px" width="250px"/>
             </a>
         `;
     getExploreMore.appendChild(recipeCard);
