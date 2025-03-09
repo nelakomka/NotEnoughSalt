@@ -9,6 +9,28 @@
       "id": 1
     }
   ],
+  "submissionRecipes": [
+    {
+      "title": "a",
+      "origin": "a",
+      "mealType": "breakfast",
+      "cookingTime": "1",
+      "servings": "3",
+      "ingredients": [
+        {
+          "name": "1",
+          "quantity": "1"
+        },
+        {
+          "name": "1",
+          "quantity": "1"
+        }
+      ],
+      "instructions": "aaaaaa",
+      "story": "aaaaa",
+      "id": 1
+    }
+  ],
   "recipes": [
     {
       "name": "Pasta Carbonara",

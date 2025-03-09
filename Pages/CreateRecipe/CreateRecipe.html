@@ -7,7 +7,11 @@
     <title>NES - Create Recipe</title>
     <link rel="stylesheet" href="../../Basics/Template.css" />
     <link rel="stylesheet" href="../CreateRecipe/CreateRecipe.css" />
-    <link rel="icon" href="../../Assets/Etc/Saltshaker.svg" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="../../Assets/Etc/Saltshaker.svg"
+      type="image/x-icon"
+    />
   </head>
 
   <header>
@@ -19,7 +23,11 @@
           <li><a href="../Newsletter/Newsletter.html">News</a></li>
           <li>
             <a href="/">
-              <img class="nav_nes_logo" src="../../Assets/Etc/Logo.svg" alt="NotEnoughSalt Logo" />
+              <img
+                class="nav_nes_logo"
+                src="../../Assets/Etc/Logo.svg"
+                alt="NotEnoughSalt Logo"
+              />
             </a>
           </li>
           <li><a href="../About/About.html">About</a></li>
@@ -33,16 +41,31 @@
   <body>
     <main>
       <h1>Create a Recipe</h1>
-      <form class="create-recipe-form">
-        <div class="recipe-details-wrapper" style="display: flex; justify-content: space-between; gap: 20px;">
+      <form class="create-recipe-form" onsubmit="submissionRecipe(event)">
+        <div
+          class="recipe-details-wrapper"
+          style="display: flex; justify-content: space-between; gap: 20px"
+        >
           <!-- Add Title -->
-          <fieldset style="flex: 3;">
+          <fieldset style="flex: 3">
             <legend>Recipe Details</legend>
             <label for="recipe-title">Recipe Title:</label>
-            <input type="text" id="recipe-title" name="recipe-title" placeholder="Enter the recipe title" required />
+            <input
+              type="text"
+              id="recipe-title"
+              name="recipe-title"
+              placeholder="Enter the recipe title"
+              required
+            />
 
             <label for="recipe-origin">Recipe Origin:</label>
-            <input type="text" id="recipe-origin" name="recipe-origin" placeholder="e.g., Italian, Mexican" required />
+            <input
+              type="text"
+              id="recipe-origin"
+              name="recipe-origin"
+              placeholder="e.g., Italian, Mexican"
+              required
+            />
 
             <label for="meal-type">Meal Type:</label>
             <select id="meal-type" name="meal-type" required>
@@ -54,28 +77,73 @@
             </select>
 
             <label for="cooking-time">Cooking Time:</label>
-            <input type="text" id="cooking-time" name="cooking-time" placeholder="e.g., 30 minutes" required />
+            <input
+              type="text"
+              id="cooking-time"
+              name="cooking-time"
+              placeholder="e.g., 30 minutes"
+              required
+            />
 
             <label for="servings">Servings:</label>
-            <input type="number" id="servings" name="servings" placeholder="e.g., 4" required />
+            <input
+              type="number"
+              id="servings"
+              name="servings"
+              placeholder="e.g., 4"
+              required
+            />
           </fieldset>
 
           <!-- Recipe Image -->
-          <div class="recipe-image" style="flex: 1; text-align: center;">
-            <label for="recipe-image" style="display: block; margin-bottom: 10px;">Recipe Image:</label>
-            <input type="file" id="recipe-image" name="recipe-image" accept="image/*" />
+          <div class="recipe-image" style="flex: 1; text-align: center">
+            <label
+              for="recipe-image"
+              style="display: block; margin-bottom: 10px"
+              >Recipe Image:</label
+            >
+            <input
+              type="file"
+              id="recipe-image"
+              name="recipe-image"
+              accept="image/*"
+            />
           </div>
         </div>
 
         <!-- Ingredients Section -->
         <fieldset>
           <legend>Ingredients</legend>
-          <button type="button" onclick="addIngredientField()" aria-label="Add another ingredient">Add Ingredient</button>
+          <button
+            type="button"
+            onclick="addIngredientField()"
+            aria-label="Add another ingredient"
+          >
+            Add Ingredient
+          </button>
           <div class="ingredients-section">
             <div class="ingredient-item">
-              <input type="text" name="ingredient[]" placeholder="Ingredient name" aria-label="Ingredient name" required />
-              <input type="text" name="quantity[]" placeholder="Quantity (e.g., 1 cup)" aria-label="Ingredient quantity" required />
-              <button type="button" class="remove-ingredient" onclick="removeIngredientField(this)">Remove</button>
+              <input
+                type="text"
+                name="ingredient[]"
+                placeholder="Ingredient name"
+                aria-label="Ingredient name"
+                required
+              />
+              <input
+                type="text"
+                name="quantity[]"
+                placeholder="Quantity (e.g., 1 cup)"
+                aria-label="Ingredient quantity"
+                required
+              />
+              <button
+                type="button"
+                class="remove-ingredient"
+                onclick="removeIngredientField(this)"
+              >
+                Remove
+              </button>
             </div>
           </div>
         </fieldset>
@@ -84,14 +152,25 @@
         <fieldset>
           <legend>Instructions</legend>
           <label for="recipe-instructions"></label>
-          <textarea id="recipe-instructions" name="recipe-instructions" rows="6" placeholder="Step-by-step instructions..." required></textarea>
+          <textarea
+            id="recipe-instructions"
+            name="recipe-instructions"
+            rows="6"
+            placeholder="Step-by-step instructions..."
+            required
+          ></textarea>
         </fieldset>
 
         <!-- Add Story -->
         <fieldset>
           <legend>Recipe Story</legend>
           <label for="recipe-story">(Optional):</label>
-          <textarea id="recipe-story" name="recipe-story" rows="4" placeholder="Share the story behind this recipe..."></textarea>
+          <textarea
+            id="recipe-story"
+            name="recipe-story"
+            rows="4"
+            placeholder="Share the story behind this recipe..."
+          ></textarea>
         </fieldset>
 
         <!-- Save Recipe Button -->
@@ -104,17 +183,29 @@
       <div class="keep_in_touch">
         <div class="keep_in_touch_top">
           <h2>Let's keep in touch!</h2>
-          <img src="/Assets/Etc/NeedHelpSalt.svg" alt="Need Help?" onclick="toggleChat()" />
+          <img
+            src="/Assets/Etc/NeedHelpSalt.svg"
+            alt="Need Help?"
+            onclick="toggleChat()"
+          />
           <div class="keep_in_touch_top_bot close">
             <div class="keep_in_touch_top_bot_toggle">
-              <button class="active" onclick="toggleChatSelect(event, 'chat')">Chat Assistant</button>
-              <button onclick="toggleChatSelect(event, 'calc')">Calculator</button>
+              <button class="active" onclick="toggleChatSelect(event, 'chat')">
+                Chat Assistant
+              </button>
+              <button onclick="toggleChatSelect(event, 'calc')">
+                Calculator
+              </button>
             </div>
             <div class="keep_in_touch_top_bot_chat">
               <h4>It's empty...</h4>
               <input type="text" placeholder="Ask away..." />
             </div>
-            <img class="keep_in_touch_top_bot_calc close" src="../../Assets/Etc/Coming.png" width="170px" />
+            <img
+              class="keep_in_touch_top_bot_calc close"
+              src="../../Assets/Etc/Coming.png"
+              width="170px"
+            />
           </div>
         </div>
         <div class="keep_in_touch_bottom">
@@ -137,9 +228,12 @@
     </footer>
 
     <script src="../../Basics/Chat.js"></script>
+    <script src="./CreateRecipe.js"></script>
     <script>
       function addIngredientField() {
-        const ingredientsSection = document.querySelector('.ingredients-section');
+        const ingredientsSection = document.querySelector(
+          '.ingredients-section',
+        );
         const newField = document.createElement('div');
         newField.classList.add('ingredient-item');
         newField.innerHTML = `
