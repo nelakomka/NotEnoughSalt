@@ -76,7 +76,7 @@ h2 {
     background-image: url('/Assets/Etc/Search.svg');
     background-repeat: no-repeat;
     background-position: 15px;
-    cursor: pointer;
+    cursor: text;
   }
 }
 

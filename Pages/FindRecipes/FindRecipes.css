@@ -19,10 +19,17 @@
 
     select {
       appearance: none;
+      text-align: center;
+      width: 125px;
       padding: 3px 10px;
       background-color: #f17e37;
       cursor: pointer;
       border: 1px solid black;
+    }
+
+    select:hover {
+      background-color: #e56f25;
+      transition: 0.35s;
     }
 
     select:nth-child(2) {
