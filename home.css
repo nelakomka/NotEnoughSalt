@@ -46,15 +46,14 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 100px;
   height: 100%;
 
   .find_perfect_recipe {
     position: relative;
     background-color: #79b3e6;
     border-radius: 10px;
-    height: 240px;
-    margin-top: 90px;
-    padding: 20px;
+    width: 350px;
 
     .find_perfect_recipe_text {
       position: absolute;
@@ -74,22 +73,26 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      gap: 35px;
+      margin-bottom: 35px;
+      gap: 20px;
 
       .find_perfect_recipe_dropdowns {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 25px;
+        gap: 20px;
         margin-top: 50px;
 
         select {
           background-color: #f8efdf;
           padding: 7px;
           border-radius: 8px;
-
           font-size: 15px;
           font-weight: 500;
+          width: 200px;
+          text-align: center;
+          cursor: pointer;
         }
       }
 
@@ -97,7 +100,8 @@
         background-color: #b8b880;
         padding: 7px 25px;
         border-radius: 10px;
-        box-shadow: #522a12 2px 3px 3px;
+        border: #522a12 solid 2px;
+        box-shadow: #522a12 2px 3px;
         cursor: pointer;
         margin-top: 15px;
         font-size: 17px;
@@ -107,7 +111,8 @@
   }
 
   .recent_favorites {
-    align-self: flex-end;
+    position: relative;
+    margin-bottom: 50px;
 
     .recent_favorites_top {
       border: 2px solid #522a12;
