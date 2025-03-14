@@ -5,11 +5,12 @@ const sendEmail = (event) => {
   event.preventDefault();
 
   const formData = new FormData(event.target);
-  const { email } = Object.fromEntries(formData);
+  const data = Object.fromEntries(formData);
 
   fetch('http://localhost:3000/emails', {
     method: 'POST',
-    body: JSON.stringify({ email }),
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data),
   });
 
   window.location.assign('Pages/ThankYou/ThankYou.html');

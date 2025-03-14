@@ -1,5 +1,10 @@
 {
-  "emails": [],
+  "emails": [
+    {
+      "email": "dasda@gmail.com",
+      "id": 1
+    }
+  ],
   "feedback": [],
   "users": [
     {
@@ -9,8 +14,7 @@
       "id": 1
     }
   ],
-  "submissionRecipes": [
-  ],
+  "submissionRecipes": [],
   "recipes": [
     {
       "name": "Pasta Carbonara",
