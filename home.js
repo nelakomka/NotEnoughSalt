@@ -7,13 +7,15 @@ const sendEmail = (event) => {
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
 
-  fetch('http://localhost:3000/emails', {
+  fetch('https://4c1be2ab503a4b95.mokky.dev/emails', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data),
-  });
-
-  window.location.assign('Pages/ThankYou/ThankYou.html');
+  })
+    .then((response) => response.json())
+    .then(() => {
+      window.location.assign('Pages/ThankYou/ThankYou.html');
+    });
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -39,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //randomizing 4 recipes from db
 async function displayRandomRecipe() {
-  const response = await fetch('http://localhost:3000/recipes', {
+  const response = await fetch('https://4c1be2ab503a4b95.mokky.dev/recipes', {
     method: 'GET',
   });
 
@@ -65,7 +67,7 @@ displayRandomRecipe();
 
 //random recipes for ecah category links
 async function getRandomRecipeByCategory() {
-  const response = await fetch('http://localhost:3000/recipes', {
+  const response = await fetch('https://4c1be2ab503a4b95.mokky.dev/recipes', {
     method: 'GET',
   });
 

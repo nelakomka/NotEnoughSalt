@@ -20,13 +20,11 @@ const displayRecipe = async (recipeId) => {
 
   try {
     // Fetch the recipe data dynamically
-    const response = await fetch('/db.json');
+    const response = await fetch('https://4c1be2ab503a4b95.mokky.dev/recipes');
     const data = await response.json();
 
     // Ensure recipe ID comparison matches expected type (string vs. number issue)
-    const recipe = data.recipes.find(
-      (r) => r.id.toString() === recipeId.toString(),
-    );
+    const recipe = data.find((r) => r.id.toString() === recipeId.toString());
 
     if (!recipe) {
       console.error('Recipe not found.');
@@ -116,7 +114,7 @@ const generateSpicyIcons = (spicyLevel) => {
 
 //randomizing 3 recipes from db
 async function displayRandomRecipe() {
-  const response = await fetch('http://localhost:3000/recipes', {
+  const response = await fetch('https://4c1be2ab503a4b95.mokky.dev/recipes', {
     method: 'GET',
   });
 

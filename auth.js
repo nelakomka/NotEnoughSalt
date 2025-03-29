@@ -3,14 +3,14 @@ async function checkUser() {
 
   const userData = JSON.parse(user || '{}');
 
-  if (!userData.accessToken) {
+  if (!userData.token) {
     window.location.replace('/Pages/Login/Login.html');
   }
 
-  const response = await fetch('http://localhost:3000/user/me', {
+  const response = await fetch('https://4c1be2ab503a4b95.mokky.dev/auth_me', {
     method: 'GET',
     headers: {
-      Authorization: `Bearer ${userData.accessToken}`,
+      Authorization: `Bearer ${userData.token}`,
     },
   });
 

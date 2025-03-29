@@ -7,7 +7,7 @@ const login = async (event) => {
   const { email, password } = Object.fromEntries(formData);
 
   try {
-    const response = await fetch('http://localhost:3000/login', {
+    const response = await fetch('https://4c1be2ab503a4b95.mokky.dev/auth', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
