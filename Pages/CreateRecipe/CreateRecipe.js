@@ -37,7 +37,7 @@ function submissionRecipe(event) {
     }
   }
 
-  fetch('http://localhost:3000/submissionRecipes', {
+  fetch('https://4c1be2ab503a4b95.mokky.dev/submissionRecipes', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -45,13 +45,11 @@ function submissionRecipe(event) {
     body: JSON.stringify(recipe),
   })
     .then((response) => response.json())
-    .then((data) => {
-      console.log('Recipe added successfully:', data);
+    .then(() => {
+      window.location.assign('../ThankYou/ThankYou.html');
     })
     .catch((error) => {
       console.error('Error submitting recipe:', error);
       alert('Failed to submit recipe.');
     });
-
-  window.location.assign('../ThankYou/ThankYou.html');
 }

@@ -13,9 +13,9 @@ const getQueryParams = () => {
 
 // Fetch and display recipes with filtering
 const displayRecipes = async () => {
-  const response = await fetch('/db.json');
+  const response = await fetch('https://4c1be2ab503a4b95.mokky.dev/recipes');
   const data = await response.json();
-  let recipes = data.recipes;
+  let recipes = data;
 
   // Get selected filter values (query params OR dropdown selections)
   const selectedFilters = {

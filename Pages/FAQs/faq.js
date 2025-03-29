@@ -41,11 +41,13 @@ const sendFeedback = (event) => {
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
 
-  fetch('http://localhost:3000/feedback', {
+  fetch('https://4c1be2ab503a4b95.mokky.dev/feedback', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' }, // headers in json
     body: JSON.stringify(data), // all fields in one line
-  });
-
-  window.location.assign('../ThankYou/ThankYou.html');
+  })
+    .then((response) => response.json())
+    .then(() => {
+      window.location.assign('../ThankYou/ThankYou.html');
+    });
 };

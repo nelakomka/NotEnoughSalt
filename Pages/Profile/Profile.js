@@ -24,11 +24,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     savedRecipesContainer.innerHTML = '<p>No saved recipes yet.</p>';
   } else {
     try {
-      const response = await fetch('/db.json');
+      const response = await fetch('https://4c1be2ab503a4b95.mokky.dev/recipes');
       if (!response.ok) throw new Error('Failed to load recipes.');
 
-      const data = await response.json();
-      const allRecipes = data.recipes;
+      const allRecipes = await response.json();
 
       savedRecipesContainer.innerHTML = savedRecipes
         .map((savedRecipe) => {

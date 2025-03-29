@@ -7,7 +7,7 @@ const register = async (event) => {
   const { email, name, password } = Object.fromEntries(formData);
 
   try {
-    const response = await fetch('http://localhost:3000/register', {
+    const response = await fetch('https://4c1be2ab503a4b95.mokky.dev/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

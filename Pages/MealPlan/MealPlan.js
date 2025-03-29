@@ -28,13 +28,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   if (savedRecipes.length > 0) {
     try {
-      const response = await fetch('/db.json');
-      const data = await response.json();
-      const allRecipes = data.recipes;
+      const response = await fetch(
+        'https://4c1be2ab503a4b95.mokky.dev/recipes',
+      );
+      const allRecipes = await response.json();
 
       savedRecipes.forEach((savedRecipe) => {
         let recipeData = allRecipes.find(
-          (recipe) => recipe.id === String(savedRecipe.id),
+          (recipe) => recipe.id === savedRecipe.id,
         );
 
         if (recipeData) {
@@ -85,11 +86,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     try {
-      const response = await fetch('/db.json');
-      const data = await response.json();
-      const recipe = data.recipes.find(
-        (r) => r.id === String(selectedRecipeId),
+      const response = await fetch(
+        'https://4c1be2ab503a4b95.mokky.dev/recipes',
       );
+      const data = await response.json();
+      const recipe = data.find((r) => r.id === Number(selectedRecipeId));
 
       if (recipe) {
         calendar.addEvent({
