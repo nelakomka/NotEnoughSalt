@@ -3,8 +3,17 @@
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+}
 
-  img {
-    width: 900px;
+.newsletter img {
+  width: 100%; 
+  max-width: 900px; 
+  height: auto; 
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .newsletter img {
+    max-width: 120vw; 
   }
 }

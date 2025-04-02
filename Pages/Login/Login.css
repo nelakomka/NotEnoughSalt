@@ -3,6 +3,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .container {
@@ -10,39 +11,65 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 90vw;
+  max-width: 400px;
 
   h2 {
     margin-bottom: 20px;
-    font-size: 62px;
+    font-size: clamp(45px, 5vw, 62px); 
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   #my-login-form {
     display: flex;
     flex-direction: column;
+    width: 60%;
   }
 
   input {
-    width: auto;
+    width: 100;
     padding: 15px;
     border-radius: 12px;
     border: 2px solid #522a12;
     text-align: center;
     background-color: transparent;
+    font-size: 18px;
   }
 
   .loginbtn {
-    width: auto;
+    width: 100%;
     background-color: #b8b880;
     border-radius: 12px;
     border: 1px solid #522a12;
-    padding: 8px 70px;
+    padding: 10px;
     text-align: center;
     cursor: pointer;
     opacity: 0.9;
     font-size: 20px;
-    margin-bottom: 10%;
+    margin-top: 15px;
   }
   .containersignin a {
     color: #522a12;
+  }
+}
+
+/* Mobile Design */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 40px;
+  }
+  .container {
+    width: 95vw; /* Slightly wider on small screens */
+  }
+  
+  input {
+    font-size: 16px; 
+    padding: 12px;
+  }
+  .loginbtn {
+    font-size: 18px;
+    padding: 10px;
   }
 }
