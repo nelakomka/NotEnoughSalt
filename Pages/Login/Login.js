@@ -18,7 +18,7 @@ const login = async (event) => {
     const data = await response.json();
 
     if (!response.ok) {
-      throw new Error('Login failed. Please try again.');
+      alert('Login failed. Please try again.');
     }
 
     localStorage.setItem('user', JSON.stringify(data));

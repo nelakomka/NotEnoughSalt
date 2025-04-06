@@ -7,16 +7,23 @@ const register = async (event) => {
   const { email, name, password } = Object.fromEntries(formData);
 
   try {
-    const response = await fetch('https://4c1be2ab503a4b95.mokky.dev/register', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
+    const response = await fetch(
+      'https://4c1be2ab503a4b95.mokky.dev/register',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, name, password }),
       },
-      body: JSON.stringify({ email, name, password }),
-    });
+    );
 
     if (!response.ok) {
       throw new Error('Registration failed. Please try again.');
+    }
+
+    if (response.ok) {
+      window.location.assign('../Login/Login.html');
     }
 
     // window.location.assign('../Profile/Profile.html'); // Redirect to profile page
