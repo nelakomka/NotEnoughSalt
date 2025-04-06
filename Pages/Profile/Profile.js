@@ -24,7 +24,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     savedRecipesContainer.innerHTML = '<p>No saved recipes yet.</p>';
   } else {
     try {
-      const response = await fetch('https://4c1be2ab503a4b95.mokky.dev/recipes');
+      const response = await fetch(
+        'https://4c1be2ab503a4b95.mokky.dev/recipes',
+      );
       if (!response.ok) throw new Error('Failed to load recipes.');
 
       const allRecipes = await response.json();
@@ -127,9 +129,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
 
       if (newPassword) {
-        alert(
-          'Password updated! (This should be handled securely in a backend)',
-        );
+        alert('Password Update is unavailable');
       }
     });
 
