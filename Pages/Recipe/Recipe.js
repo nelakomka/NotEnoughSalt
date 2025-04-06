@@ -67,6 +67,8 @@ const displayRecipe = async (recipeId) => {
 
 // Handle Saving Recipe
 const handleSaveRecipe = (recipe) => {
+  const isLoggedIn = JSON.parse(localStorage.getItem('user')) || [];
+
   let savedRecipes = JSON.parse(localStorage.getItem('savedRecipes')) || [];
 
   // Check if the recipe is already saved
@@ -76,6 +78,12 @@ const handleSaveRecipe = (recipe) => {
     : '/Assets/Etc/RecipeIcons/heart-regular.svg';
 
   heartIcon.addEventListener('click', () => {
+    //save recipe only if logged in
+    if (!isLoggedIn.token) {
+      window.location.replace('/Pages/Login/Login.html');
+      return;
+    }
+
     let savedRecipes = JSON.parse(localStorage.getItem('savedRecipes')) || [];
 
     if (!savedRecipes.some((r) => r.id === recipe.id)) {
@@ -84,7 +92,6 @@ const handleSaveRecipe = (recipe) => {
     } else {
       savedRecipes = savedRecipes.filter((r) => r.id !== recipe.id);
       heartIcon.src = '/Assets/Etc/RecipeIcons/heart-regular.svg';
-      alert('Recipe removed from saved recipes.');
     }
 
     localStorage.setItem('savedRecipes', JSON.stringify(savedRecipes));
