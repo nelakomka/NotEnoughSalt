@@ -30,3 +30,14 @@ const login = async (event) => {
 };
 
 loginForm.addEventListener('submit', login);
+
+
+const passwordInput = document.getElementById('password');
+const togglePassword = document.getElementById('togglePassword');
+
+if (togglePassword) {
+  togglePassword.addEventListener('change', () => {
+    const type = togglePassword.checked ? 'text' : 'password';
+    passwordInput.setAttribute('type', type);
+  });
+}

@@ -1,3 +1,4 @@
+
 main {
   display: flex;
   flex-direction: column;
@@ -29,13 +30,22 @@ main {
   }
 
   input {
-    width: 100;
+    width: 100%;
     padding: 15px;
     border-radius: 12px;
     border: 2px solid #522a12;
     text-align: center;
     background-color: transparent;
     font-size: 18px;
+  }
+
+  .toggle-password {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 5px;
+    gap: 5px;
+    color: #522a12;
   }
 
   .loginbtn {
@@ -61,7 +71,7 @@ main {
     font-size: 40px;
   }
   .container {
-    width: 95vw; /* Slightly wider on small screens */
+    width: 95vw;
   }
   
   input {

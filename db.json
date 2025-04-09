@@ -22,7 +22,7 @@
       "history": null,
       "tags": {
         "cuisine": "Italian",
-        "region": "Europe",
+        "region": "europe",
         "mealTypes": [
           "Lunch",
           "Dinner"
@@ -30,7 +30,12 @@
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "Under 30 minutes",
-        "servings": 3
+        "servings": 3,
+        "dietaryPreference": [
+          "Vegetarian",
+          "Low-Sugar",
+          "Low-Carb"
+        ]
       },
       "ingredients": [
         {
@@ -94,7 +99,7 @@
       "history": "Traditional dish from Moldova, with deep personal connection.",
       "tags": {
         "cuisine": "Romanian",
-        "region": "Eastern Europe",
+        "region": "europe",
         "mealTypes": [
           "Lunch",
           "Dinner"
@@ -102,7 +107,12 @@
         "spicyLevel": 0,
         "difficulty": 2,
         "cookingTime": "1 hour",
-        "servings": 6
+        "servings": 6,
+        "dietaryPreference": [
+          "Vegetarian",
+          "Gluten-Free",
+          "Low-Sugar"
+        ]
       },
       "ingredients": [
         {
@@ -183,7 +193,7 @@
       "history": null,
       "tags": {
         "cuisine": "Pakistani",
-        "region": "Asia",
+        "region": "asia",
         "mealTypes": [
           "Lunch",
           "Dinner"
@@ -191,7 +201,11 @@
         "spicyLevel": 3,
         "difficulty": 2,
         "cookingTime": "1 hour 30 minutes",
-        "servings": 4
+        "servings": 4,
+        "dietaryPreference": [
+          "Gluten-Free",
+          "Low-Sugar"
+        ]
       },
       "ingredients": [
         {
@@ -314,7 +328,7 @@
         },
         {
           "step": 7,
-          "instruction": "Bake at 350°F for 20 minutes."
+          "instruction": "Bake at 350\u00b0F for 20 minutes."
         }
       ],
       "id": "3"
@@ -325,7 +339,7 @@
       "history": null,
       "tags": {
         "cuisine": "Russian",
-        "region": "Eastern Europe",
+        "region": "europe",
         "mealTypes": [
           "Breakfast",
           "Lunch",
@@ -334,7 +348,10 @@
         "spicyLevel": 0,
         "difficulty": 2,
         "cookingTime": "35 minutes",
-        "servings": 10
+        "servings": 10,
+        "dietaryPreference": [
+          "Vegetarian"
+        ]
       },
       "ingredients": [
         {
@@ -400,7 +417,7 @@
       "history": "The Classic Margherita Pizza originated in Naples in 1889, created by pizzaiolo Raffaele Esposito to honor Queen Margherita of Savoy. He used red tomatoes, white mozzarella, and green basil to represent the Italian flag. The queen loved it, and the pizza was named in her honor, becoming a beloved symbol of Italian cuisine.",
       "tags": {
         "cuisine": "Italian",
-        "region": "Europe",
+        "region": "europe",
         "mealTypes": [
           "Lunch",
           "Dinner"
@@ -408,7 +425,12 @@
         "spicyLevel": 0,
         "difficulty": 2,
         "cookingTime": "1 hour 30 minutes",
-        "servings": "2-4"
+        "servings": "2-4",
+        "dietaryPreference": [
+          "Vegetarian",
+          "Low-Sugar",
+          "Low-Carb"
+        ]
       },
       "ingredients": [
         {
@@ -475,7 +497,7 @@
         },
         {
           "step": 6,
-          "instruction": "Preheat the oven to 475°F (245°C). If you have a pizza stone, place it in the oven to heat."
+          "instruction": "Preheat the oven to 475\u00b0F (245\u00b0C). If you have a pizza stone, place it in the oven to heat."
         },
         {
           "step": 7,
@@ -511,17 +533,21 @@
     {
       "name": "Sauerbraten",
       "image": "/Assets/Food/Sauerbraten.jpg",
-      "history": "Sauerbraten is often considered Germany’s national dish. Its origins date back to the Middle Ages when meat was marinated to preserve it. The dish varies by region, with different marinades and accompaniments, reflecting local traditions.",
+      "history": "Sauerbraten is often considered Germany\u2019s national dish. Its origins date back to the Middle Ages when meat was marinated to preserve it. The dish varies by region, with different marinades and accompaniments, reflecting local traditions.",
       "tags": {
         "cuisine": "German",
-        "region": "Europe",
+        "region": "europe",
         "mealTypes": [
           "Dinner"
         ],
         "spicyLevel": 0,
         "difficulty": 3,
         "cookingTime": "~3-4 hours (plus overnight marinating 72-120 hours)",
-        "servings": "6-8"
+        "servings": "6-8",
+        "dietaryPreference": [
+          "Gluten-Free",
+          "Dairy-Free"
+        ]
       },
       "ingredients": [
         {
@@ -645,7 +671,7 @@
       "history": "Bibimbap translates to 'mixed rice.' It originated as a way to use up leftover vegetables and meat, served over rice. It's a colorful, nutritious dish that showcases seasonal ingredients and is often topped with a fried egg and gochujang (Korean chili paste).",
       "tags": {
         "cuisine": "Korean",
-        "region": "Asia",
+        "region": "asia",
         "mealTypes": [
           "Lunch",
           "Dinner"
@@ -653,7 +679,14 @@
         "spicyLevel": 2,
         "difficulty": 2,
         "cookingTime": "40 minutes",
-        "servings": "2-4"
+        "servings": "2-4",
+        "dietaryPreference": [
+          "Vegetarian",
+          "Gluten-Free",
+          "Dairy-Free",
+          "Low-Sugar",
+          "Low-Carb"
+        ]
       },
       "ingredients": [
         {
@@ -709,7 +742,7 @@
         },
         {
           "step": 2,
-          "instruction": "Blanch or sauté each vegetable separately until tender. Season with a little salt and sesame oil. Set aside."
+          "instruction": "Blanch or saut\u00e9 each vegetable separately until tender. Season with a little salt and sesame oil. Set aside."
         },
         {
           "step": 3,
@@ -760,7 +793,12 @@
           "Lunch",
           "Dinner"
         ],
-        "dietaryPreference": "Vegan",
+        "dietaryPreference": [
+          "Vegetarian",
+          "Gluten-Free",
+          "Low-Sugar",
+          "Low-Carb"
+        ],
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "15-20 minutes",
@@ -856,7 +894,7 @@
       "image": "/Assets/Food/Simple_shrimp_bowl.jpeg",
       "tags": {
         "cuisine": "Chinese",
-        "region": "Asia",
+        "region": "asia",
         "mealTypes": [
           "Lunch",
           "Dinner"
@@ -864,7 +902,11 @@
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "25 minutes",
-        "servings": 6
+        "servings": 6,
+        "dietaryPreference": [
+          "Gluten-Free",
+          "Dairy-Free"
+        ]
       },
       "ingredients": [
         {
@@ -952,10 +994,10 @@
     {
       "name": "Cuban Picadillo",
       "image": "/Assets/Food/CubanPicadillo.jpg",
-      "history": "Cuban picadillo is a traditional dish, beloved across the Caribbean and Latin America. It has Spanish origins but was adapted with local ingredients in Cuba. Picadillo is a versatile, savory ground beef filling that includes a mix of sweet and salty flavors from raisins and olives. It’s often served with rice, used in empanadas, or as a filling for stuffed peppers or pastries.",
+      "history": "Cuban picadillo is a traditional dish, beloved across the Caribbean and Latin America. It has Spanish origins but was adapted with local ingredients in Cuba. Picadillo is a versatile, savory ground beef filling that includes a mix of sweet and salty flavors from raisins and olives. It\u2019s often served with rice, used in empanadas, or as a filling for stuffed peppers or pastries.",
       "tags": {
         "cuisine": "Cuban",
-        "region": "North America",
+        "region": "americas",
         "mealTypes": [
           "Appetizer",
           "Lunch",
@@ -964,7 +1006,12 @@
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "35 minutes",
-        "servings": "4-6"
+        "servings": "4-6",
+        "dietaryPreference": [
+          "Gluten-Free",
+          "Dairy-Free",
+          "Low-Sugar"
+        ]
       },
       "ingredients": [
         {
@@ -1044,7 +1091,7 @@
       "steps": [
         {
           "step": 1,
-          "instruction": "Heat the olive oil in a large skillet over medium heat. Add the chopped onion and green bell pepper, and sauté for about 3-4 minutes, until softened."
+          "instruction": "Heat the olive oil in a large skillet over medium heat. Add the chopped onion and green bell pepper, and saut\u00e9 for about 3-4 minutes, until softened."
         },
         {
           "step": 2,
@@ -1087,7 +1134,7 @@
       "history": "Grilled cheese and tomato soup is a classic comfort food pairing, particularly popular in American cuisine. The dish gained prominence in the mid-20th century, often served in homes and school cafeterias. The combination of buttery, crispy grilled bread with melted cheese and a rich, tangy tomato soup creates a cozy, nostalgic meal perfect for any time of year.",
       "tags": {
         "cuisine": "American",
-        "region": "North America",
+        "region": "americas",
         "mealTypes": [
           "Lunch",
           "Dinner"
@@ -1095,7 +1142,11 @@
         "spicyLevel": 0,
         "difficulty": 1,
         "cookingTime": "30 minutes",
-        "servings": 4
+        "servings": 4,
+        "dietaryPreference": [
+          "Vegetarian",
+          "Low-Carb"
+        ]
       },
       "ingredients": [
         {
@@ -1166,7 +1217,7 @@
         },
         {
           "step": 2,
-          "instruction": "Heat olive oil in a medium pot over medium heat. Add the diced onion and sauté for 4-5 minutes, until softened."
+          "instruction": "Heat olive oil in a medium pot over medium heat. Add the diced onion and saut\u00e9 for 4-5 minutes, until softened."
         },
         {
           "step": 3,
@@ -1182,7 +1233,7 @@
         },
         {
           "step": 6,
-          "instruction": "For a smoother texture, use an immersion blender or transfer the soup to a blender to purée until smooth. Be careful with hot liquids!"
+          "instruction": "For a smoother texture, use an immersion blender or transfer the soup to a blender to pur\u00e9e until smooth. Be careful with hot liquids!"
         },
         {
           "step": 7,
@@ -1221,7 +1272,7 @@
       "history": "Baja shrimp tacos are inspired by the fresh, coastal cuisine of Baja California, Mexico. Known for their combination of seasoned shrimp, a crisp cabbage slaw, and a tangy crema sauce, these tacos capture the essence of surf-side Mexican street food. They're typically served in warm corn tortillas with a fresh squeeze of lime, offering a perfect balance of flavors and textures.",
       "tags": {
         "cuisine": "Mexican",
-        "region": "North America",
+        "region": "americas",
         "mealTypes": [
           "Lunch",
           "Dinner"
@@ -1229,7 +1280,11 @@
         "spicyLevel": 1,
         "difficulty": 2,
         "cookingTime": "25 minutes",
-        "servings": 4
+        "servings": 4,
+        "dietaryPreference": [
+          "Gluten-Free",
+          "Low-Sugar"
+        ]
       },
       "ingredients": [
         {
@@ -1360,7 +1415,7 @@
         },
         {
           "step": 8,
-          "instruction": "Sautéed version: Heat a non-stick skillet over medium-high heat. Add a drizzle of olive oil and cook the shrimp in batches for 2-3 minutes per side, until cooked through."
+          "instruction": "Saut\u00e9ed version: Heat a non-stick skillet over medium-high heat. Add a drizzle of olive oil and cook the shrimp in batches for 2-3 minutes per side, until cooked through."
         },
         {
           "step": 9,
@@ -1387,15 +1442,17 @@
       "history": "A quick and easy meal perfect for lunch or a light dinner.",
       "tags": {
         "cuisine": "American",
-        "region": "North America",
+        "region": "americas",
         "mealTypes": [
           "Lunch",
           "Snack"
         ],
         "dietaryPreference": [
-          "Under 30 Minutes",
+          "Vegetarian",
+          "Vegan",
           "Gluten-Free",
-          "Simple"
+          "Dairy-Free",
+          "Low-Sugar"
         ],
         "spicyLevel": 0,
         "difficulty": 1,
@@ -1438,13 +1495,15 @@
       "history": "A trendy breakfast or snack option that's healthy and satisfying.",
       "tags": {
         "cuisine": "Australian",
-        "region": "Oceania",
+        "region": "oceania",
         "mealTypes": [
           "Breakfast",
           "Snack"
         ],
         "dietaryPreference": [
-          "Under 30 Minutes"
+          "Vegetarian",
+          "Low-Sugar",
+          "Low-Carb"
         ],
         "spicyLevel": 0,
         "difficulty": 1,
@@ -1493,13 +1552,15 @@
       "history": "A flavorful and juicy steak cooked quickly in an air fryer.",
       "tags": {
         "cuisine": "American, European",
-        "region": "North America, Europe",
+        "region": "north america, europe",
         "mealTypes": [
           "Lunch",
           "Dinner"
         ],
         "dietaryPreference": [
-          "Under 30 Minutes"
+          "Vegetarian",
+          "Gluten-Free",
+          "Low-Sugar"
         ],
         "spicyLevel": 0,
         "difficulty": 1,
@@ -1534,7 +1595,7 @@
       "steps": [
         {
           "step": 1,
-          "instruction": "Preheat the air fryer to 400°F (200°C)."
+          "instruction": "Preheat the air fryer to 400\u00b0F (200\u00b0C)."
         },
         {
           "step": 2,
@@ -1553,12 +1614,14 @@
       "history": "Lo Mein, a Cantonese-inspired dish, became popular in Western countries due to its balance of flavors and versatility. Traditionally made with soft egg noodles, this dish incorporates a mix of protein, vegetables, and soy-based sauces, making it a satisfying one-pan meal. The combination of beef and broccoli is a favorite variation in Chinese-American cuisine, offering rich umami and nutritious greens.",
       "tags": {
         "cuisine": "Chinese-American",
-        "region": "Asia",
+        "region": "asia",
         "mealTypes": [
           "Dinner"
         ],
         "dietaryPreference": [
-          "Quick Meals"
+          "Gluten-Free",
+          "Dairy-Free",
+          "Low-Carb"
         ],
         "spicyLevel": 1,
         "difficulty": 1,
@@ -1657,7 +1720,7 @@
         },
         {
           "step": 5,
-          "instruction": "In the same skillet, heat another 1 tbsp oil. Sauté garlic and ginger until fragrant (about 30 seconds)."
+          "instruction": "In the same skillet, heat another 1 tbsp oil. Saut\u00e9 garlic and ginger until fragrant (about 30 seconds)."
         },
         {
           "step": 6,
@@ -1681,17 +1744,18 @@
     {
       "name": "Classic Smashed Burger",
       "image": "/Assets/Food/ClassicSmashedBurger.jpg",
-      "history": "The smashed burger originated in American diners during the Great Depression as an affordable way to serve flavorful food quickly. Popularized in the Midwest by places like Steak 'n Shake and Sid’s Diner, the technique involved pressing ground beef onto a hot surface to create a crispy crust through the Maillard reaction.",
+      "history": "The smashed burger originated in American diners during the Great Depression as an affordable way to serve flavorful food quickly. Popularized in the Midwest by places like Steak 'n Shake and Sid\u2019s Diner, the technique involved pressing ground beef onto a hot surface to create a crispy crust through the Maillard reaction.",
       "tags": {
         "cuisine": "American",
-        "region": "North America",
+        "region": "americas",
         "mealTypes": [
           "Lunch",
           "Dinner"
         ],
         "dietaryPreference": [
-          "Quick",
-          "Beginner-Friendly"
+          "Gluten-Free",
+          "Low-Sugar",
+          "Low-Carb"
         ],
         "spicyLevel": 0,
         "difficulty": 1,

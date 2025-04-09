@@ -191,4 +191,20 @@
       }
     }
   }
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+    .grocery_store_list, .grocery_store_list * {
+      visibility: visible;
+    }
+    .grocery_store_list {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background: white !important;
+      color: black !important;
+    }
+  }
 }

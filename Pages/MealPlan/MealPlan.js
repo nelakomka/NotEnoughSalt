@@ -163,7 +163,44 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     alert('Grocery List Generated!');
   }
+  const printButton = document.getElementById('print-grocery-list-btn');
 
+  if (printButton) {
+    printButton.addEventListener('click', () => {
+      const printContents = document.querySelector('.grocery_store_list').innerHTML;
+      const printWindow = window.open('', '', 'height=700,width=900');
+      printWindow.document.write(`
+        <html>
+          <head>
+            <title>Print Grocery List</title>
+            <style>
+              body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+              }
+              .recipe_grocery_list {
+                margin-bottom: 30px;
+                border: 1px solid #ccc;
+                padding: 15px;
+                border-radius: 5px;
+              }
+              h2, h3 {
+                color: #333;
+              }
+            </style>
+          </head>
+          <body>
+            
+            ${printContents}
+          </body>
+        </html>
+      `);
+      printWindow.document.close();
+      printWindow.focus();
+      printWindow.print();
+      printWindow.close();
+    });
+  }
   // Event listener for Generate Grocery List button
   generateGroceryBtn.addEventListener('click', generateGroceryList);
 });

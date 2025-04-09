@@ -62,12 +62,19 @@
           <br />
 
           <!--Password  -->
-          <input
-            type="password"
-            placeholder="Enter Password"
-            name="password"
-            autocomplete="current-password"
-          />
+          <div style="position: relative;">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter Password"
+              autocomplete="current-password"
+            />
+            <label style="display: inline-block; margin-top: 10px;">
+              <input type="checkbox" id="togglePassword" />
+              Show Password
+            </label>
+          </div>
           <br />
           <button type="submit" class="loginbtn">Login</button>
         </form>

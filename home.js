@@ -27,14 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const region = document.getElementById('find_recipe_region').value;
     const time = document.getElementById('find_recipe_time').value;
 
-    // Construct query parameters
-    const queryParams = new URLSearchParams({
-      course: course,
-      region: region,
-      time: time,
-    });
+    const queryParams = new URLSearchParams();
 
-    // Redirect to FindRecipes.html with query parameters
+    if (course && course.toLowerCase() !== 'by course') queryParams.append('course', course);
+    if (region && region.toLowerCase() !== 'by region') queryParams.append('region', region);
+    if (time && time.toLowerCase() !== 'by time') queryParams.append('time', time);
+
+    // Redirect only if any filters are applied
     window.location.href = `./Pages/FindRecipes/FindRecipes.html?${queryParams.toString()}`;
   });
 });
