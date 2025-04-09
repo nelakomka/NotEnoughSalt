@@ -3,18 +3,56 @@
     {
       "email": "dasda@gmail.com",
       "id": 1
+    },
+    {
+      "email": "aaaa@aaa.a",
+      "id": 2
     }
   ],
-  "feedback": [],
+  "feedback": [
+    {
+      "feedback-name": "aaa",
+      "feedback-email": "aaa@aaaaa.a",
+      "feedback-comment": "aaaaa",
+      "id": 1
+    }
+  ],
   "users": [
     {
       "email": "nelakomka@gmail.com",
       "password": "$2a$10$jSO4wgjuPXEOvXD23P3ChObTHcj22AdUrTbR1OzzYP5ysNbdsKsjC",
       "name": "nelakomka",
       "id": 1
+    },
+    {
+      "email": "ca935414@ucf.edu",
+      "password": "$2a$10$ObI7WIbRmuXRb8LGYyns0u8oO0NdDsUfyY3rhOFWJl6WT/waX1cYm",
+      "name": "ca935414",
+      "id": 2
     }
   ],
-  "submissionRecipes": [],
+  "submissionRecipes": [
+    {
+      "title": "a",
+      "origin": "a",
+      "mealType": "breakfast",
+      "cookingTime": "a",
+      "servings": "0",
+      "ingredients": [
+        {
+          "name": "a",
+          "quantity": "a"
+        },
+        {
+          "name": "a",
+          "quantity": "a"
+        }
+      ],
+      "instructions": "aaaaa",
+      "story": "aaaa",
+      "id": 1
+    }
+  ],
   "recipes": [
     {
       "name": "Pasta Carbonara",
